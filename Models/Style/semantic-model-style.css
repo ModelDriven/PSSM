@@ -1,0 +1,56 @@
+Package{
+	bold: true;
+	qualifiedNameDepth:full;
+	fillColor: white;
+}
+
+Class > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+
+[appliedStereotypes~="Metaclass"]{
+	bold: true;
+	fillColor: lightgrey;
+}
+
+Class{
+	bold: true;
+	fillColor: white;
+	qualifiedNameDepth:full;
+	fontName: Consolas;
+}
+
+Class > Property{
+	bold: true;
+    fontColor: blue;
+    fontName: Consolas;
+}
+
+Operation{
+	maskLabel: name,
+	return multiplicity,
+	return type,
+	parametersdirection,
+	parametersmultiplicity,
+	parameterstype,
+	visibility;
+	fontName: Consolas;
+}
+
+Model {
+	bold: true;
+	fillColor: beige;
+	gradient: white;
+}
+
+Comment{
+	fillColor: beige;
+	gradient: none;
+	fontColor: black;
+	bold: true;
+	fontName: Consolas;
+}
+
+Association, Generalization, Dependency{
+	routing: Rectilinear;
+}

@@ -1,0 +1,69 @@
+Class{
+	bold: true;
+	fillColor: beige;
+}
+
+StateMachine{
+	bold: true;
+	fillColor: white;
+}
+
+Transition{
+	lineColor: blueviolet;
+	routing: Rectilinear;
+}
+
+ObjectFlow{
+	lineColor: chocolate;
+}
+
+ObjectFlow > Label{
+	visible: false;
+}
+
+Pseudostate > Label{
+	visible: false;
+}
+
+State, ActivityNode{
+	bold: true;
+	fillColor: lightblue;
+}
+
+InputPin, OutputPin{
+	fillColor: orange;
+}
+
+Activity{
+	bold: true;
+	fillColor: beige;
+}
+
+ActivityParameterNode{
+	bold: true;
+	fillColor: orange;
+}
+
+Comment{
+	fillColor: lightblue;
+	gradient: none;
+	fontColor: black;
+	bold: true;
+}
+
+Signal{
+	fillColor: red;
+}
+
+Signal > Compartment[kind="attributes"]{
+	visible: false;
+}
+
+Class > Reception{
+	bold: true;
+	fontColor: red;
+}
+
+Pseudostate{
+	fillColor:green; 
+}
