@@ -200,7 +200,6 @@
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_WzhK8HWKEeSvTf7EWD7QRA" name="activate"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_ycOHAPiJEeSlpJn94rgDzA" name="activateTransitions"/>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_C5a-kHWLEeSvTf7EWD7QRA" name="fireInitialTransition" visibility="protected"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_29IGYPiJEeSlpJn94rgDzA" name="getVertexActivations">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_GnBzcPiKEeSlpJn94rgDzA" type="_z0JjMHV3EeSvTf7EWD7QRA" direction="return">
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H4rBgPiKEeSlpJn94rgDzA"/>
@@ -218,9 +217,7 @@
               </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_jmWfYJRPEeWAs5MYUhc8EQ" name="enter">
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_uRX3oJRPEeWAs5MYUhc8EQ" name="explicit">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_uRX3oJRPEeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
             </ownedOperation>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_rVacUHV3EeSvTf7EWD7QRA" name="StateActivation">
@@ -242,7 +239,7 @@
             <ownedAttribute xmi:type="uml:Property" xmi:id="_A1jIAJRREeWAs5MYUhc8EQ" name="isExitCompleted">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedAttribute>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_6cP1IHYSEeSvTf7EWD7QRA" name="tryExecuteEntry"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_6cP1IHYSEeSvTf7EWD7QRA" name="tryExecuteEntry" visibility="protected"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_8gFVIHYSEeSvTf7EWD7QRA" name="tryExecuteDoActivity" visibility="protected"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_-A0IEHYSEeSvTf7EWD7QRA" name="tryExecuteDoExit" visibility="protected"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_DZfc8HYTEeSvTf7EWD7QRA" name="activate"/>
@@ -265,18 +262,20 @@
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_VtCUQJRREeWAs5MYUhc8EQ" name="enter">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_YGISkJRREeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_aJLvcJRREeWAs5MYUhc8EQ" name="explicit">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_aJLvcJRREeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3uMEQJ37EeWR28_9aJ_f5g"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3uSK4J37EeWR28_9aJ_f5g" value="1"/>
               </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_bAzT8JRREeWAs5MYUhc8EQ" name="enterRegions">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_gZ1OIJRREeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_gZ4RcJRREeWAs5MYUhc8EQ" name="explicit">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-              </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_hWttIJRREeWAs5MYUhc8EQ" name="exit">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_mUIpYJRREeWAs5MYUhc8EQ" name="exitingTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_9qKTcJ37EeWR28_9aJ_f5g" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__SpUMJ37EeWR28_9aJ_f5g"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__StloJ37EeWR28_9aJ_f5g" value="1"/>
+              </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_on9GIJRREeWAs5MYUhc8EQ" name="hasCompleted">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_s_8aEJRREeWAs5MYUhc8EQ" direction="return">
@@ -392,11 +391,8 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             <ownedOperation xmi:type="uml:Operation" xmi:id="_zUQ0oJRNEeWAs5MYUhc8EQ" name="getContainingState">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_3sKpAJRNEeWAs5MYUhc8EQ" name="stateActivation" type="_rVacUHV3EeSvTf7EWD7QRA" direction="return"/>
             </ownedOperation>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_L65zMJROEeWAs5MYUhc8EQ" name="isExplicitEntry" visibility="private">
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_RJFvUJROEeWAs5MYUhc8EQ" direction="return">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-              </ownedParameter>
-            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_lNJZsJ31EeWR28_9aJ_f5g" name="enterTarget"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_nNoDsJ31EeWR28_9aJ_f5g" name="exitSource"/>
             <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_kHnqIPfzEeS41tijFXo_Iw" name="TransitionMetadata">
               <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ilq-sPiBEeS41tijFXo_Iw" name="NONE"/>
               <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jzZWEPiBEeS41tijFXo_Iw" name="REACHED"/>
@@ -426,9 +422,6 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             <ownedComment xmi:type="uml:Comment" xmi:id="_CBFG0PfsEeS41tijFXo_Iw">
               <body>&#xD;
 Provide elements to represent a state-machine configuration at runtime. A state-machine configuration describes at a particluar moment of the execution the configuration (i.e. the active states) in which the executed state-machine is. This configuration is used to calculate the set of fireable transitions.</body>
-            </ownedComment>
-            <ownedComment xmi:type="uml:Comment" xmi:id="_tXvZIPiMEeSlpJn94rgDzA">
-              <body>StateMachineConfiguration cartography  is a Map whose generic parameters are binded to Integer and a Set of VertexActivation. It provides an easily usable representation of the active states level by level</body>
             </ownedComment>
             <packagedElement xmi:type="uml:Class" xmi:id="_0CstIIU8EeSZ05Pgomb11g" name="StateConfiguration">
               <ownedAttribute xmi:type="uml:Property" xmi:id="_rkkNwYU9EeSZ05Pgomb11g" name="parent" type="_0CstIIU8EeSZ05Pgomb11g" association="_rkkNwIU9EeSZ05Pgomb11g">
@@ -587,8 +580,9 @@ Provide elements to represent a state-machine configuration at runtime. A state-
               <ownedOperation xmi:type="uml:Operation" xmi:id="_WvgPYHYTEeSvTf7EWD7QRA" name="run"/>
               <ownedOperation xmi:type="uml:Operation" xmi:id="_aCjJsJRWEeWAs5MYUhc8EQ" name="enter">
                 <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCjJsZRWEeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-                <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCjJspRWEeWAs5MYUhc8EQ" name="explicit">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCjJspRWEeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v6BkkJ4gEeWR28_9aJ_f5g"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v6HrMJ4gEeWR28_9aJ_f5g" value="1"/>
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
@@ -599,8 +593,9 @@ Provide elements to represent a state-machine configuration at runtime. A state-
               <generalization xmi:type="uml:Generalization" xmi:id="_Mmu8QIVAEeSZ05Pgomb11g" general="_CDaHsKlAEeSY3-SNA3r3jg"/>
               <ownedOperation xmi:type="uml:Operation" xmi:id="_EbK8IJRXEeWAs5MYUhc8EQ" name="enter">
                 <ownedParameter xmi:type="uml:Parameter" xmi:id="_EbK8IZRXEeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-                <ownedParameter xmi:type="uml:Parameter" xmi:id="_EbK8IpRXEeWAs5MYUhc8EQ" name="explicit">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_EbK8IpRXEeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-vasJ4hEeWR28_9aJ_f5g"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-06QJ4hEeWR28_9aJ_f5g" value="1"/>
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
@@ -608,8 +603,9 @@ Provide elements to represent a state-machine configuration at runtime. A state-
               <generalization xmi:type="uml:Generalization" xmi:id="_L6BnQIVAEeSZ05Pgomb11g" general="_CDaHsKlAEeSY3-SNA3r3jg"/>
               <ownedOperation xmi:type="uml:Operation" xmi:id="_8hu6sJRWEeWAs5MYUhc8EQ" name="enter">
                 <ownedParameter xmi:type="uml:Parameter" xmi:id="_8hu6sZRWEeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-                <ownedParameter xmi:type="uml:Parameter" xmi:id="_8hu6spRWEeWAs5MYUhc8EQ" name="explicit">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_8hu6spRWEeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eo7awJ4hEeWR28_9aJ_f5g"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_epCIcJ4hEeWR28_9aJ_f5g" value="1"/>
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
@@ -620,6 +616,16 @@ Provide elements to represent a state-machine configuration at runtime. A state-
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Dependency" xmi:id="_jYczAJRfEeWAs5MYUhc8EQ" client="_-ZUisIU8EeSZ05Pgomb11g" supplier="_z0JjMHV3EeSvTf7EWD7QRA"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_cCFw0J4gEeWR28_9aJ_f5g" name="ChoicePseudostateActivation">
+              <generalization xmi:type="uml:Generalization" xmi:id="_LZULQJ4hEeWR28_9aJ_f5g" general="_htW88HV3EeSvTf7EWD7QRA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_n57FAJ4hEeWR28_9aJ_f5g" name="enter">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_n57FAZ4hEeWR28_9aJ_f5g" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_n57FAp4hEeWR28_9aJ_f5g" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n57FA54hEeWR28_9aJ_f5g"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n57FBJ4hEeWR28_9aJ_f5g" value="1"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_lMns4IVAEeSZ05Pgomb11g" name="Selection">
             <packagedElement xmi:type="uml:Class" xmi:id="_uYauEIVAEeSZ05Pgomb11g" name="TransitionChoiceStrategy" isAbstract="true">
@@ -765,23 +771,52 @@ Provide elements to represent a state-machine configuration at runtime. A state-
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Snh_EKVsEeWdedL6rOcLVw" name="DoActivityExecutionEventAccepter">
+              <generalization xmi:type="uml:Generalization" xmi:id="_ZiSKsKVsEeWdedL6rOcLVw">
+                <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
+              </generalization>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_bZsYQKVsEeWdedL6rOcLVw" name="match" visibility="public" isAbstract="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_bZsYQaVsEeWdedL6rOcLVw"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_bZsYQqVsEeWdedL6rOcLVw" name="eventOccurrence" visibility="public" effect="create">
+                  <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+                </ownedParameter>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_bZsYQ6VsEeWdedL6rOcLVw" name="result" visibility="public" direction="return" effect="create">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_bZwCoKVsEeWdedL6rOcLVw" name="accept" visibility="public" isAbstract="true">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_bZwCoaVsEeWdedL6rOcLVw"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_bZwCoqVsEeWdedL6rOcLVw" name="eventOccurrence" visibility="public" effect="create">
+                  <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_y2-iEKVsEeWdedL6rOcLVw" memberEnd="_y3BlYKVsEeWdedL6rOcLVw _y3BlYaVsEeWdedL6rOcLVw" navigableOwnedEnd="_y3BlYKVsEeWdedL6rOcLVw">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_y3AXQKVsEeWdedL6rOcLVw" source="org.eclipse.papyrus">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_y3A-UKVsEeWdedL6rOcLVw" key="nature" value="UML_Nature"/>
+              </eAnnotations>
+              <ownedEnd xmi:type="uml:Property" xmi:id="_y3BlYaVsEeWdedL6rOcLVw" name="accepter" type="_Snh_EKVsEeWdedL6rOcLVw" association="_y2-iEKVsEeWdedL6rOcLVw"/>
+              <ownedEnd xmi:type="uml:Property" xmi:id="_y3BlYKVsEeWdedL6rOcLVw" name="execution" association="_y2-iEKVsEeWdedL6rOcLVw">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
+              </ownedEnd>
+            </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Association" xmi:id="_US5q0JRMEeWAs5MYUhc8EQ" memberEnd="_US6R4pRMEeWAs5MYUhc8EQ _US6R45RMEeWAs5MYUhc8EQ" navigableOwnedEnd="_US6R45RMEeWAs5MYUhc8EQ _US6R4pRMEeWAs5MYUhc8EQ">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_US6R4JRMEeWAs5MYUhc8EQ" source="org.eclipse.papyrus">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_US6R4ZRMEeWAs5MYUhc8EQ" key="nature" value="UML_Nature"/>
             </eAnnotations>
-            <ownedEnd xmi:type="uml:Property" xmi:id="_US6R45RMEeWAs5MYUhc8EQ" name="transitions" type="_vJ5akHV3EeSvTf7EWD7QRA" association="_US5q0JRMEeWAs5MYUhc8EQ">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_US6R45RMEeWAs5MYUhc8EQ" name="outgoingTransitions" type="_vJ5akHV3EeSvTf7EWD7QRA" association="_US5q0JRMEeWAs5MYUhc8EQ">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8nPEJRMEeWAs5MYUhc8EQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8pEQJRMEeWAs5MYUhc8EQ" value="*"/>
             </ownedEnd>
             <ownedEnd xmi:type="uml:Property" xmi:id="_US6R4pRMEeWAs5MYUhc8EQ" name="source" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_US5q0JRMEeWAs5MYUhc8EQ"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Association" xmi:id="_p47YEJRMEeWAs5MYUhc8EQ" memberEnd="_p47YE5RMEeWAs5MYUhc8EQ _p47YFJRMEeWAs5MYUhc8EQ">
+          <packagedElement xmi:type="uml:Association" xmi:id="_p47YEJRMEeWAs5MYUhc8EQ" memberEnd="_p47YE5RMEeWAs5MYUhc8EQ _p47YFJRMEeWAs5MYUhc8EQ" navigableOwnedEnd="_p47YFJRMEeWAs5MYUhc8EQ _p47YE5RMEeWAs5MYUhc8EQ">
             <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p47YEZRMEeWAs5MYUhc8EQ" source="org.eclipse.papyrus">
               <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p47YEpRMEeWAs5MYUhc8EQ" key="nature" value="UML_Nature"/>
             </eAnnotations>
             <ownedEnd xmi:type="uml:Property" xmi:id="_p47YFJRMEeWAs5MYUhc8EQ" name="target" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_p47YEJRMEeWAs5MYUhc8EQ"/>
-            <ownedEnd xmi:type="uml:Property" xmi:id="_p47YE5RMEeWAs5MYUhc8EQ" name="transitions" type="_vJ5akHV3EeSvTf7EWD7QRA" association="_p47YEJRMEeWAs5MYUhc8EQ">
+            <ownedEnd xmi:type="uml:Property" xmi:id="_p47YE5RMEeWAs5MYUhc8EQ" name="incomingTransitions" type="_vJ5akHV3EeSvTf7EWD7QRA" association="_p47YEJRMEeWAs5MYUhc8EQ">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1s8_wJRMEeWAs5MYUhc8EQ"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1s_cAJRMEeWAs5MYUhc8EQ" value="*"/>
             </ownedEnd>
@@ -796,8 +831,6 @@ Provide elements to represent a state-machine configuration at runtime. A state-
           <packagedElement xmi:type="uml:Class" xmi:id="_z0JjMHV3EeSvTf7EWD7QRA" name="VertexActivation" isAbstract="true">
             <generalization xmi:type="uml:Generalization" xmi:id="_MeYqgHWHEeSvTf7EWD7QRA" general="_yWknYHV2EeSvTf7EWD7QRA"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_4eyfsPiEEeSlpJn94rgDzA" name="state" visibility="protected" type="_6aglgPiEEeSlpJn94rgDzA"/>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_nNvzoHWIEeSvTf7EWD7QRA" name="run"/>
-            <ownedOperation xmi:type="uml:Operation" xmi:id="_nn_foHWIEeSvTf7EWD7QRA" name="exit"/>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_skgfAPiEEeSlpJn94rgDzA" name="getParentState">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_Em-kEPiGEeSlpJn94rgDzA" type="_z0JjMHV3EeSvTf7EWD7QRA" direction="return"/>
             </ownedOperation>
@@ -833,17 +866,90 @@ Provide elements to represent a state-machine configuration at runtime. A state-
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_Iuv1sJRNEeWAs5MYUhc8EQ" name="enter">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_NFtO4JRNEeWAs5MYUhc8EQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_WJEFwJRNEeWAs5MYUhc8EQ" name="explicit">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_WJEFwJRNEeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b_92QJ3mEeWR28_9aJ_f5g"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cADV0J3mEeWR28_9aJ_f5g" value="1"/>
               </ownedParameter>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_JttYUJRNEeWAs5MYUhc8EQ" name="exit">
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_aXM6IJRNEeWAs5MYUhc8EQ" name="exitingTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_snfIgJ3uEeWR28_9aJ_f5g" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uZUSgJ3uEeWR28_9aJ_f5g"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uZaZIJ3uEeWR28_9aJ_f5g" value="1"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_gA3f4J3mEeWR28_9aJ_f5g" name="getLeastCommonAncestor">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_eJYgMJ3uEeWR28_9aJ_f5g" type="_mUrtYHV3EeSvTf7EWD7QRA" direction="return"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ivnrgJ3uEeWR28_9aJ_f5g" type="_z0JjMHV3EeSvTf7EWD7QRA"/>
             </ownedOperation>
             <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_6aglgPiEEeSlpJn94rgDzA" name="StateMetadata">
               <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9M838PiEEeSlpJn94rgDzA" name="IDLE"/>
               <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-GXMMPiEEeSlpJn94rgDzA" name="ACTIVE"/>
             </nestedClassifier>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="__bV2AKV2EeWdedL6rOcLVw" name="DoActivityExecution">
+            <generalization xmi:type="uml:Generalization" xmi:id="_h5vj4KV3EeWdedL6rOcLVw">
+              <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
+            </generalization>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wN3EKV3EeWdedL6rOcLVw" name="execute" visibility="public" isAbstract="true">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_8wN3EaV3EeWdedL6rOcLVw"/>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wPFMKV3EeWdedL6rOcLVw" name="terminate" visibility="public"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wPsQKV3EeWdedL6rOcLVw" name="copy" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wPsQaV3EeWdedL6rOcLVw" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wQ6YKV3EeWdedL6rOcLVw" name="new_" visibility="public" isAbstract="true">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_8wQ6YaV3EeWdedL6rOcLVw"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wQ6YqV3EeWdedL6rOcLVw" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wRhcKV3EeWdedL6rOcLVw" name="setParameterValue" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wRhcaV3EeWdedL6rOcLVw" name="parameterValue" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wT9sKV3EeWdedL6rOcLVw" name="getParameterValue" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wT9saV3EeWdedL6rOcLVw" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wT9sqV3EeWdedL6rOcLVw" name="parameter" visibility="public" effect="create"/>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wVL0KV3EeWdedL6rOcLVw" name="getOutputParameterValues" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wVL0aV3EeWdedL6rOcLVw" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8wVL0qV3EeWdedL6rOcLVw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8wVL06V3EeWdedL6rOcLVw" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_8wVy4KV3EeWdedL6rOcLVw" name="getBehavior" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_8wVy4aV3EeWdedL6rOcLVw" name="ReturnResult" visibility="public" direction="return" effect="create"/>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_BA7eUKV4EeWdedL6rOcLVw" name="encapsulate">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_HGbc8KV4EeWdedL6rOcLVw" name="execution">
+                <type xmi:type="uml:Class" href="pathmap://PAPYRUS_MOKA_FUML_TYPES/fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ITrTMKV4EeWdedL6rOcLVw" name="invoke"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_o6KdMKV4EeWdedL6rOcLVw" name="destroy" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_P3OkMKV4EeWdedL6rOcLVw" memberEnd="_P3PLQqV4EeWdedL6rOcLVw _P3PyUKV4EeWdedL6rOcLVw" navigableOwnedEnd="_P3PLQqV4EeWdedL6rOcLVw">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P3PLQKV4EeWdedL6rOcLVw" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P3PLQaV4EeWdedL6rOcLVw" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_P3PyUKV4EeWdedL6rOcLVw" name="owner" type="__bV2AKV2EeWdedL6rOcLVw" association="_P3OkMKV4EeWdedL6rOcLVw"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_P3PLQqV4EeWdedL6rOcLVw" name="execution" association="_P3OkMKV4EeWdedL6rOcLVw">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_dj6Z0KV8EeWdedL6rOcLVw" memberEnd="_dj7A4qV8EeWdedL6rOcLVw _dj7A46V8EeWdedL6rOcLVw" navigableOwnedEnd="_dj7A4qV8EeWdedL6rOcLVw">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dj7A4KV8EeWdedL6rOcLVw" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dj7A4aV8EeWdedL6rOcLVw" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_dj7A46V8EeWdedL6rOcLVw" name="doactivityexecution" type="__bV2AKV2EeWdedL6rOcLVw" association="_dj6Z0KV8EeWdedL6rOcLVw"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_dj7A4qV8EeWdedL6rOcLVw" name="owner" type="_rVacUHV3EeSvTf7EWD7QRA" association="_dj6Z0KV8EeWdedL6rOcLVw"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
