@@ -2,6 +2,7 @@ Package{
 	bold: true;
 	qualifiedNameDepth:full;
 	fillColor: white;
+	elementIcon:false;
 }
 
 Class > Compartment[kind="nestedclassifiers"] {
@@ -18,12 +19,14 @@ Class{
 	fillColor: white;
 	qualifiedNameDepth:full;
 	fontName: Consolas;
+	elementIcon:false;
 }
 
 Class > Property{
 	bold: true;
     fontColor: blue;
     fontName: Consolas;
+    elementIcon:false;
 }
 
 Operation{
@@ -35,6 +38,7 @@ Operation{
 	parameterstype,
 	visibility;
 	fontName: Consolas;
+	elementIcon:false;
 }
 
 Model {
@@ -53,4 +57,8 @@ Comment{
 
 Association, Generalization, Dependency{
 	routing: Rectilinear;
+}
+
+Association > Label:name {
+	visible:false;
 }
