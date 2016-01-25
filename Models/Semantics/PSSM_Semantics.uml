@@ -142,9 +142,14 @@
           <packageImport xmi:type="uml:PackageImport" xmi:id="_RP2tUMNvEeWpYp0WmASFoQ">
             <importedPackage xmi:type="uml:Package" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications"/>
           </packageImport>
-          <packageImport xmi:type="uml:PackageImport" xmi:id="_9A32EMNvEeWpYp0WmASFoQ" importedPackage="_KOgS0MNhEeWpYp0WmASFoQ"/>
           <packageImport xmi:type="uml:PackageImport" xmi:id="_QcNo4MN6EeWpYp0WmASFoQ">
             <importedPackage xmi:type="uml:Package" href="../Syntax/UML.uml#StateMachines"/>
+          </packageImport>
+          <packageImport xmi:type="uml:PackageImport" xmi:id="_bXuBcMOsEeWpYp0WmASFoQ">
+            <importedPackage xmi:type="uml:Package" href="PSCS_SyntaxAndSemantics.uml#_YlZoMN2OEeGnO-TF_1T_iQ"/>
+          </packageImport>
+          <packageImport xmi:type="uml:PackageImport" xmi:id="_5G94kMOsEeWpYp0WmASFoQ">
+            <importedPackage xmi:type="uml:Package" href="../Syntax/UML.uml#StructuredClassifiers"/>
           </packageImport>
           <packagedElement xmi:type="uml:Class" xmi:id="_mUrtYHV3EeSvTf7EWD7QRA" name="RegionActivation">
             <generalization xmi:type="uml:Generalization" xmi:id="_sHYxMHWKEeSvTf7EWD7QRA" general="_yWknYHV2EeSvTf7EWD7QRA"/>
@@ -995,6 +1000,103 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_deFl0oU-EeSZ05Pgomb11g" value="1"/>
             </ownedEnd>
           </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_jl2UoJRFEeWAs5MYUhc8EQ" name="StateMachineObject">
+            <generalization xmi:type="uml:Generalization" xmi:id="_o_YIoJRGEeWAs5MYUhc8EQ">
+              <general xmi:type="uml:Class" href="PSCS_SyntaxAndSemantics.uml#_wUwzPd2JEeGnO-TF_1T_iQ"/>
+            </generalization>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_nxIHYMDpEeWpevkdGfdnMA" name="startBehavior" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_nxIHYcDpEeWpevkdGfdnMA" name="classifier" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="../Syntax/UML.uml#Class"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxIHYsDpEeWpevkdGfdnMA"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_nxIHY8DpEeWpevkdGfdnMA" name="inputs" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxIHZMDpEeWpevkdGfdnMA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nxIHZcDpEeWpevkdGfdnMA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_w3LF4MDpEeWpevkdGfdnMA" name="destroy" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_EF92AMDqEeWpevkdGfdnMA" name="DoActivityContextObject">
+            <generalization xmi:type="uml:Generalization" xmi:id="_TCHsQMDqEeWpevkdGfdnMA">
+              <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+            </generalization>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ylb3IMDsEeWpevkdGfdnMA" name="getFeatureValue" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3IcDsEeWpevkdGfdnMA" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3IsDsEeWpevkdGfdnMA" name="feature" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_ylb3I8DsEeWpevkdGfdnMA" name="setFeatureValue" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3JMDsEeWpevkdGfdnMA" name="feature" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3JcDsEeWpevkdGfdnMA" name="values" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylb3JsDsEeWpevkdGfdnMA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylb3J8DsEeWpevkdGfdnMA" value="*"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3KMDsEeWpevkdGfdnMA" name="position" visibility="public" effect="create">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylb3KcDsEeWpevkdGfdnMA"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_KeaecMDtEeWpevkdGfdnMA" name="dispatch" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaeccDtEeWpevkdGfdnMA" name="ReturnResult" visibility="public" direction="return" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
+              </ownedParameter>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaecsDtEeWpevkdGfdnMA" name="operation" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_Keaec8DtEeWpevkdGfdnMA" name="send" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaedMDtEeWpevkdGfdnMA" name="signalInstance" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-SignalInstance"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_P1WG4MDtEeWpevkdGfdnMA" name="unregister" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_P1WG4cDtEeWpevkdGfdnMA" name="accepter" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_P1WG4sDtEeWpevkdGfdnMA" name="register" visibility="public">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_P1WG48DtEeWpevkdGfdnMA" name="accepter" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_de9hwMDuEeWiyPv18KZ0lg" name="destroy" visibility="public"/>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_fkDmAMDuEeWiyPv18KZ0lg" name="unregisterFromContext" visibility="protected">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_lV5BwMDuEeWiyPv18KZ0lg" name="encapsulatedAccepter" visibility="public" effect="create">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_2QwAYMDuEeWiyPv18KZ0lg" name="initialize">
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_7OGrMMDuEeWiyPv18KZ0lg">
+                <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_BRefsMDrEeWpevkdGfdnMA" name="assoc_stateActivation_doActivityContextObject" memberEnd="_BRoQsMDrEeWpevkdGfdnMA _BRoQscDrEeWpevkdGfdnMA" navigableOwnedEnd="_BRoQscDrEeWpevkdGfdnMA _BRoQsMDrEeWpevkdGfdnMA">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BRefscDrEeWpevkdGfdnMA" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BRefssDrEeWpevkdGfdnMA" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_BRoQsMDrEeWpevkdGfdnMA" name="owner" type="_rVacUHV3EeSvTf7EWD7QRA" association="_BRefsMDrEeWpevkdGfdnMA"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_BRoQscDrEeWpevkdGfdnMA" name="doActivityContextObject" type="_EF92AMDqEeWpevkdGfdnMA" association="_BRefsMDrEeWpevkdGfdnMA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nwiQgMNlEeWpYp0WmASFoQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwl64MNlEeWpYp0WmASFoQ" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_gQD3wMDrEeWpevkdGfdnMA" name="assoc_context_doActivityContextObject" memberEnd="_gQD3w8DrEeWpevkdGfdnMA _gQD3xMDrEeWpevkdGfdnMA" navigableOwnedEnd="_gQD3w8DrEeWpevkdGfdnMA">
+            <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gQD3wcDrEeWpevkdGfdnMA" source="org.eclipse.papyrus">
+              <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gQD3wsDrEeWpevkdGfdnMA" key="nature" value="UML_Nature"/>
+            </eAnnotations>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_gQD3xMDrEeWpevkdGfdnMA" name="doActivityContextObject" type="_EF92AMDqEeWpevkdGfdnMA" association="_gQD3wMDrEeWpevkdGfdnMA"/>
+            <ownedEnd xmi:type="uml:Property" xmi:id="_gQD3w8DrEeWpevkdGfdnMA" name="context" association="_gQD3wMDrEeWpevkdGfdnMA">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+            </ownedEnd>
+          </packagedElement>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_4bWFIMNeEeWpYp0WmASFoQ" name="Values">
@@ -1028,112 +1130,6 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
               </ownedParameter>
             </ownedOperation>
           </packagedElement>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_KOgS0MNhEeWpYp0WmASFoQ" name="StructuredClassifiers">
-        <packageImport xmi:type="uml:PackageImport" xmi:id="_uhGQQMNjEeWpYp0WmASFoQ" importedPackage="_Xq5ZgHV3EeSvTf7EWD7QRA"/>
-        <packageImport xmi:type="uml:PackageImport" xmi:id="_CN6ZIMNkEeWpYp0WmASFoQ">
-          <importedPackage xmi:type="uml:Package" href="PSCS_SyntaxAndSemantics.uml#_YlZoMN2OEeGnO-TF_1T_iQ"/>
-        </packageImport>
-        <packageImport xmi:type="uml:PackageImport" xmi:id="_mPZd0MN5EeWpYp0WmASFoQ">
-          <importedPackage xmi:type="uml:Package" href="../Syntax/UML.uml#StructuredClassifiers"/>
-        </packageImport>
-        <packagedElement xmi:type="uml:Class" xmi:id="_jl2UoJRFEeWAs5MYUhc8EQ" name="StateMachineObject">
-          <generalization xmi:type="uml:Generalization" xmi:id="_o_YIoJRGEeWAs5MYUhc8EQ">
-            <general xmi:type="uml:Class" href="PSCS_SyntaxAndSemantics.uml#_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          </generalization>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_nxIHYMDpEeWpevkdGfdnMA" name="startBehavior" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nxIHYcDpEeWpevkdGfdnMA" name="classifier" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#Class"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxIHYsDpEeWpevkdGfdnMA"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nxIHY8DpEeWpevkdGfdnMA" name="inputs" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nxIHZMDpEeWpevkdGfdnMA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nxIHZcDpEeWpevkdGfdnMA" value="*"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_w3LF4MDpEeWpevkdGfdnMA" name="destroy" visibility="public"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_EF92AMDqEeWpevkdGfdnMA" name="DoActivityContextObject">
-          <generalization xmi:type="uml:Generalization" xmi:id="_TCHsQMDqEeWpevkdGfdnMA">
-            <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
-          </generalization>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ylb3IMDsEeWpevkdGfdnMA" name="getFeatureValue" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3IcDsEeWpevkdGfdnMA" name="ReturnResult" visibility="public" direction="return" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3IsDsEeWpevkdGfdnMA" name="feature" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ylb3I8DsEeWpevkdGfdnMA" name="setFeatureValue" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3JMDsEeWpevkdGfdnMA" name="feature" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3JcDsEeWpevkdGfdnMA" name="values" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylb3JsDsEeWpevkdGfdnMA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ylb3J8DsEeWpevkdGfdnMA" value="*"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ylb3KMDsEeWpevkdGfdnMA" name="position" visibility="public" effect="create">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ylb3KcDsEeWpevkdGfdnMA"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_KeaecMDtEeWpevkdGfdnMA" name="dispatch" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaeccDtEeWpevkdGfdnMA" name="ReturnResult" visibility="public" direction="return" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaecsDtEeWpevkdGfdnMA" name="operation" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_Keaec8DtEeWpevkdGfdnMA" name="send" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KeaedMDtEeWpevkdGfdnMA" name="signalInstance" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-SignalInstance"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_P1WG4MDtEeWpevkdGfdnMA" name="unregister" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_P1WG4cDtEeWpevkdGfdnMA" name="accepter" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_P1WG4sDtEeWpevkdGfdnMA" name="register" visibility="public">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_P1WG48DtEeWpevkdGfdnMA" name="accepter" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_de9hwMDuEeWiyPv18KZ0lg" name="destroy" visibility="public"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_fkDmAMDuEeWiyPv18KZ0lg" name="unregisterFromContext" visibility="protected">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_lV5BwMDuEeWiyPv18KZ0lg" name="encapsulatedAccepter" visibility="public" effect="create">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventAccepter"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_2QwAYMDuEeWiyPv18KZ0lg" name="initialize">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_7OGrMMDuEeWiyPv18KZ0lg">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
-            </ownedParameter>
-          </ownedOperation>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_BRefsMDrEeWpevkdGfdnMA" name="assoc_stateActivation_doActivityContextObject" memberEnd="_BRoQsMDrEeWpevkdGfdnMA _BRoQscDrEeWpevkdGfdnMA" navigableOwnedEnd="_BRoQscDrEeWpevkdGfdnMA _BRoQsMDrEeWpevkdGfdnMA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BRefscDrEeWpevkdGfdnMA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BRefssDrEeWpevkdGfdnMA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_BRoQsMDrEeWpevkdGfdnMA" name="owner" type="_rVacUHV3EeSvTf7EWD7QRA" association="_BRefsMDrEeWpevkdGfdnMA"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_BRoQscDrEeWpevkdGfdnMA" name="doActivityContextObject" type="_EF92AMDqEeWpevkdGfdnMA" association="_BRefsMDrEeWpevkdGfdnMA">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nwiQgMNlEeWpYp0WmASFoQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwl64MNlEeWpYp0WmASFoQ" value="1"/>
-          </ownedEnd>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_gQD3wMDrEeWpevkdGfdnMA" name="assoc_context_doActivityContextObject" memberEnd="_gQD3w8DrEeWpevkdGfdnMA _gQD3xMDrEeWpevkdGfdnMA" navigableOwnedEnd="_gQD3w8DrEeWpevkdGfdnMA">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gQD3wcDrEeWpevkdGfdnMA" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gQD3wsDrEeWpevkdGfdnMA" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_gQD3xMDrEeWpevkdGfdnMA" name="doActivityContextObject" type="_EF92AMDqEeWpevkdGfdnMA" association="_gQD3wMDrEeWpevkdGfdnMA"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_gQD3w8DrEeWpevkdGfdnMA" name="context" association="_gQD3wMDrEeWpevkdGfdnMA">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
-          </ownedEnd>
         </packagedElement>
       </packagedElement>
     </packagedElement>
