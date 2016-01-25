@@ -9,7 +9,6 @@ StateMachine{
 }
 
 Transition{
-	lineColor: blueviolet;
 	routing: Rectilinear;
 }
 
