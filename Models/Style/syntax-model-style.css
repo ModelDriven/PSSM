@@ -1,0 +1,81 @@
+Package{
+	bold: true;
+	qualifiedNameDepth:full;
+	fillColor: white;
+	elementIcon:false;
+}
+
+Class > Compartment[kind="nestedclassifiers"] {
+    visible:false;
+}
+
+[appliedStereotypes~="Metaclass"]{
+	bold: true;
+	fillColor: lightgrey;
+}
+
+Class{
+	bold: true;
+	fillColor: white;
+	qualifiedNameDepth:full;
+	fontName: Helvetica;
+	elementIcon:false;
+}
+
+Class > Property{
+	bold: true;
+    fontColor: black;
+    fontName: Helvetica;
+    elementIcon:false;
+}
+
+Operation{
+	maskLabel: name,
+	return multiplicity,
+	return type,
+	parametersdirection,
+	parametersmultiplicity,
+	parameterstype,
+	visibility;
+	fontName: Helvetica;
+	elementIcon:false;
+}
+
+Model {
+	bold: true;
+	fillColor: white;
+	gradient: white;
+}
+
+Comment{
+	fillColor: beige;
+	gradient: none;
+	fontColor: black;
+	bold: true;
+	fontName: Helvetica;
+}
+
+Association, Generalization, Dependency{
+	routing: Rectilinear;
+}
+
+Association > Label:name {
+	visible:false;
+}
+
+DataType{
+	bold: true;
+	fillColor: white;
+	qualifiedNameDepth:full;
+	fontName: Helvetica;
+	elementIcon:false;
+}
+
+Enumeration{
+	bold: true;
+	fillColor: white;
+	qualifiedNameDepth:full;
+	fontName: Helvetica;
+	elementIcon:false;
+}
+

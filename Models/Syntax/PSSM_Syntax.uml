@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:BackupProfile="http:///schemas/BackupProfile/_J7IFgKInEeS_KNX0nfvIVQ/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http:///schemas/BackupProfile/_J7IFgKInEeS_KNX0nfvIVQ/1 pathmap://PAPYRUS_BACKUP_PROFILE/backup-profile.profile.uml#_J7IFgaInEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_q6BcIMU1EeWXLLOylfwRMQ" name="PSSM_Syntax">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_FLCzsMVIEeWXLLOylfwRMQ">
+      <body>package StateMachines {
+
+}</body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_UGdqIMVIEeWXLLOylfwRMQ">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_gEUL8MU3EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VzjeEMVIEeWXLLOylfwRMQ">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_7sx8wMU3EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_bybQQMVIEeWXLLOylfwRMQ" importedPackage="_coJpQMVGEeWXLLOylfwRMQ"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_c-k6UMVIEeWXLLOylfwRMQ" importedPackage="_ssoZgMVGEeWXLLOylfwRMQ"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_hG9E8MVIEeWXLLOylfwRMQ" importedPackage="_YR7acMVHEeWXLLOylfwRMQ"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_fHvJwMVJEeWXLLOylfwRMQ" importedPackage="_MULkIMVJEeWXLLOylfwRMQ"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_GKJgQMVIEeWXLLOylfwRMQ">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_RY31wMU4EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-dkuwMVKEeWXLLOylfwRMQ" importedPackage="_ro3SkMVKEeWXLLOylfwRMQ"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_a0VeEMVNEeWXLLOylfwRMQ">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MULkIMVJEeWXLLOylfwRMQ" name="CommonStructure">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_MU7LAMVJEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::CommonStructure::Constraint;
+public import fUML_Syntax::CommonStructure::*;
+package CommonStructure {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_NsdJMMVKEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Constraint"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_FD-3gMVKEeWXLLOylfwRMQ">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_coJpQMVGEeWXLLOylfwRMQ" name="Values">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_cpOAQMVGEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::Values::OpaqueExpression;
+public import fUML_Syntax::Values::*;
+package Values {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_1SE6cMVIEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_zIiDwMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ro3SkMVKEeWXLLOylfwRMQ" name="SimpleClassifiers">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_rpj2IMVKEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::SimpleClassifiers::Interface;
+public import UML::SimpleClassifiers::InterfaceRealization;
+public import fUML_Syntax::SimpleClassifiers::*;
+package SimpleClassifiers {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_jtHukMVLEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Interface"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_mgX5UMVLEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#InterfaceRealization"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_Xi83wMVLEeWXLLOylfwRMQ">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_3M54IMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ssoZgMVGEeWXLLOylfwRMQ" name="StructuredClassifiers">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_stYncMVGEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::StructuredClassifiers::StructuredClassifier;
+public import UML::StructuredClassifiers::Port;
+public import UML::StructuredClassifiers::EncapsulatedClassifier;
+public import fUML_Syntax::StructuredClassifiers::*;
+package StructuredClassifiers {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Hu5BwMVOEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#StructuredClassifier"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_JSKyYMVOEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#EncapsulatedClassifier"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_LACCYMVOEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Port"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_5dYgcMVMEeWXLLOylfwRMQ">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_YR7acMVHEeWXLLOylfwRMQ" name="CommonBehavior" URI="">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_YSn-AMVHEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::CommonBehavior::CallEvent;
+public import fUML_Syntax::CommonBehavior::*;
+package CommonBehavior {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_sw4twMVOEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#CallEvent"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_kdR40MVOEeWXLLOylfwRMQ">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_CkpMcMU4EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Q_2pEMVJEeWXLLOylfwRMQ" name="StateMachines">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_RAjMoMVJEeWXLLOylfwRMQ">
+        <body>namespace PSSM_Syntax;
+
+public import UML::StateMachines::State;
+public import UML::StateMachines::Pseudostate;
+public import UML::StateMachines::Transition;
+public import UML::StateMachines::StateMachine;
+public import UML::StateMachines::FinalState;
+public import UML::StateMachines::PseudostateKind;
+public import UML::StateMachines::Vertex;
+public import UML::StateMachines::ProtocolTransition;
+public import UML::StateMachines::ProtocolConformance;
+public import UML::StateMachines::Region;
+public import UML::StateMachines::TransitionKind;
+public import UML::StateMachines::ProtocolStateMachine;
+package StateMachines {
+
+}</body>
+      </ownedComment>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_AvCeQMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#FinalState"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_DQ_doMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#ProtocolConformance"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Ex_WUMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#ProtocolStateMachine"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_HzKoUMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#ProtocolTransition"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_KKu8oMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Pseudostate"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_LcmNIMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Region"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_M-v8YMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#State"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_ORsyAMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_aA8AUMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_kleWEMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Vertex"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_m3Uc4MVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Enumeration" href="UML.uml#PseudostateKind"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_pNqpMMVPEeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Enumeration" href="UML.uml#TransitionKind"/>
+      </elementImport>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cpTf0MVGEeWXLLOylfwRMQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cpTf0cVGEeWXLLOylfwRMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cpoP8MVGEeWXLLOylfwRMQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cpoP8cVGEeWXLLOylfwRMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_BACKUP_PROFILE/backup-profile.profile.uml#_J7IFgaInEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_BACKUP_PROFILE/backup-profile.profile.uml#_74TbUKFzEeS_KNX0nfvIVQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dImD4MVGEeWXLLOylfwRMQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dImD4cVGEeWXLLOylfwRMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_cpjXcMVGEeWXLLOylfwRMQ" base_Comment="_cpOAQMVGEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_cp3ggMVGEeWXLLOylfwRMQ" timestamp="2016-01-27 17:53:50.969" state="MERGED" base_Comment="_cpOAQMVGEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_stYnccVGEeWXLLOylfwRMQ" base_Comment="_stYncMVGEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_stZOgMVGEeWXLLOylfwRMQ" timestamp="2016-01-27 18:32:04.2" state="MERGED" base_Comment="_stYncMVGEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YSolEMVHEeWXLLOylfwRMQ" base_Comment="_YSn-AMVHEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_YSolEcVHEeWXLLOylfwRMQ" timestamp="2016-01-27 18:35:50.781" state="MERGED" base_Comment="_YSn-AMVHEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_FLDawMVIEeWXLLOylfwRMQ" base_Comment="_FLCzsMVIEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_FLDawcVIEeWXLLOylfwRMQ" timestamp="2016-01-27 18:26:40.801" state="MERGED" base_Comment="_FLCzsMVIEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_MU7yEMVJEeWXLLOylfwRMQ" base_Comment="_MU7LAMVJEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_MU7yEcVJEeWXLLOylfwRMQ" timestamp="2016-01-27 18:03:44.293" state="MERGED" base_Comment="_MU7LAMVJEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_RAjMocVJEeWXLLOylfwRMQ" base_Comment="_RAjMoMVJEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_RAjMosVJEeWXLLOylfwRMQ" timestamp="2016-01-27 18:42:36.472" state="MERGED" base_Comment="_RAjMoMVJEeWXLLOylfwRMQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_rpj2IcVKEeWXLLOylfwRMQ" base_Comment="_rpj2IMVKEeWXLLOylfwRMQ" language="Alf"/>
+  <BackupProfile:Backup xmi:id="_rpkdMMVKEeWXLLOylfwRMQ" timestamp="2016-01-27 18:13:40.293" state="MERGED" base_Comment="_rpj2IMVKEeWXLLOylfwRMQ"/>
+</xmi:XMI>
