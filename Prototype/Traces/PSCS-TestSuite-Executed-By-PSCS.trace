@@ -1,0 +1,917 @@
+---- Running Test Suite 1 ----
+
+-- Running test case: Assembly connector between two parts --
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==2: true
+UnconnectedPattern - ends2->size()==3: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+
+- Testing instantiation of A_Array_Pattern
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern
+StarPattern - ends1->size()==4: true
+StarPattern - ends2->size()==3: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[4] is connected to ends2[1]: true
+StarPattern - ends1[4] is connected to ends2[2]: true
+StarPattern - ends1[4] is connected to ends2[3]: true
+-- End of test case --
+
+-- Running test case: Assembly connector between a part with port and a part --
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==4: true
+UnconnectedPattern - ends2->size()==3: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[3]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==4: true
+StarPattern - ends2->size()==5: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[1] is connected to ends2[5]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[5]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[5]: true
+StarPattern - ends1[4] is connected to ends2[1]: true
+StarPattern - ends1[4] is connected to ends2[2]: true
+StarPattern - ends1[4] is connected to ends2[3]: true
+StarPattern - ends1[4] is connected to ends2[4]: true
+StarPattern - ends1[4] is connected to ends2[5]: true
+
+-- Running test case: Assembly connector between a part with port and a part with port --
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==4: true
+UnconnectedPattern - ends2->size()==3: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[3]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==4: true
+StarPattern - ends2->size()==5: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[1] is connected to ends2[5]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[5]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[5]: true
+StarPattern - ends1[4] is connected to ends2[1]: true
+StarPattern - ends1[4] is connected to ends2[2]: true
+StarPattern - ends1[4] is connected to ends2[3]: true
+StarPattern - ends1[4] is connected to ends2[4]: true
+StarPattern - ends1[4] is connected to ends2[5]: true
+
+-- Running test case: Delegation connector between a port and a part --
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==3: true
+UnconnectedPattern - ends2->size()==2: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+
+- Testing instantiation of A_Array_Pattern
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern
+StarPattern - ends1->size()==3: true
+StarPattern - ends2->size()==4: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+
+-- Running test case: Delegation connector between a port and a part with port --
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==3: true
+UnconnectedPattern - ends2->size()==4: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[4]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[4]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[4]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==3: true
+StarPattern - ends2->size()==4: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+
+-- Running test case: Hierarchical instantiation --
+
+a.b is not empty: true
+a.b.c is not empty: true
+a.b.c.d is not empty: true
+a.b.c.d.e is empty: true
+
+-- Running test case - Instantiation of Default values - basic types --
+Default value of a.pInteger==4: true
+Default value of a.pString=="Hello": true
+Default value of a.pBoolean==true: true
+Default value of a.pUnlimitedNatural==*: true
+-- End of test case --
+
+-- Running test case - Instantiation of Default values - Structures --
+Default value of a.b[1].p==1: true
+Default value of a.b[2].p==2: true
+Default value of a.b[3].p==3: true
+Default value of a.b[4].p==4: true
+-- End of test case --
+
+
+---- End of Test Suite 1 ----
+
+
+
+---- Running Test Suite 1 - Bis: Ports typed by Interfaces ----
+
+-- Running test case: Assembly connector between a part with port and a part -- Ports typed by Interfaces
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==4: true
+UnconnectedPattern - ends2->size()==3: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[3]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==4: true
+StarPattern - ends2->size()==5: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[1] is connected to ends2[5]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[5]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[5]: true
+StarPattern - ends1[4] is connected to ends2[1]: true
+StarPattern - ends1[4] is connected to ends2[2]: true
+StarPattern - ends1[4] is connected to ends2[3]: true
+StarPattern - ends1[4] is connected to ends2[4]: true
+StarPattern - ends1[4] is connected to ends2[5]: true
+
+-- Running test case: Assembly connector between a part with port and a part with port -- Ports typed by Interfaces
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==4: true
+UnconnectedPattern - ends2->size()==3: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[4] is not connected to ends2[3]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==4: true
+StarPattern - ends2->size()==5: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[1] is connected to ends2[5]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[5]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[5]: true
+StarPattern - ends1[4] is connected to ends2[1]: true
+StarPattern - ends1[4] is connected to ends2[2]: true
+StarPattern - ends1[4] is connected to ends2[3]: true
+StarPattern - ends1[4] is connected to ends2[4]: true
+StarPattern - ends1[4] is connected to ends2[5]: true
+
+-- Running test case: Delegation connector between a port and a part -- Ports typed by Interfaces
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==3: true
+UnconnectedPattern - ends2->size()==2: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+
+- Testing instantiation of A_Array_Pattern
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern
+StarPattern - ends1->size()==3: true
+StarPattern - ends2->size()==4: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+
+-- Running test case: Delegation connector between a port and a part with port -- Ports typed by Interfaces
+
+- Testing instantiation of A_Empty_Pattern -
+EmptyPattern - ends1->size()==0: true
+EmptyPattern - ends2->size()==0: true
+
+- Testing instantiation of A_Unconnected_Pattern -
+UnconnectedPattern - ends1->size()==3: true
+UnconnectedPattern - ends2->size()==4: true
+UnconnectedPattern - ends1[1] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[1] is not connected to ends2[4]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[2] is not connected to ends2[4]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[1]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[2]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[3]: true
+UnconnectedPattern - ends1[3] is not connected to ends2[4]: true
+
+- Testing instantiation of A_Array_Pattern -
+ArrayPattern - ends1->size()==4: true
+ArrayPattern - ends2->size()==4: true
+ArrayPattern - ends1[1] is connected to ends2[1]: true
+ArrayPattern - ends1[1] is not connected to ends2[2]: true
+ArrayPattern - ends1[1] is not connected to ends2[3]: true
+ArrayPattern - ends1[1] is not connected to ends2[4]: true
+ArrayPattern - ends1[2] is not connected to ends2[1]: true
+ArrayPattern - ends1[2] is connected to ends2[2]: true
+ArrayPattern - ends1[2] is not connected to ends2[3]: true
+ArrayPattern - ends1[2] is not connected to ends2[4]: true
+ArrayPattern - ends1[3] is not connected to ends2[1]: true
+ArrayPattern - ends1[3] is not connected to ends2[2]: true
+ArrayPattern - ends1[3] is connected to ends2[3]: true
+ArrayPattern - ends1[3] is not connected to ends2[4]: true
+ArrayPattern - ends1[4] is not connected to ends2[1]: true
+ArrayPattern - ends1[4] is not connected to ends2[2]: true
+ArrayPattern - ends1[4] is not connected to ends2[3]: true
+ArrayPattern - ends1[4] is connected to ends2[4]: true
+
+- Testing instantiation of A_Star_Pattern -
+StarPattern - ends1->size()==3: true
+StarPattern - ends2->size()==4: true
+StarPattern - ends1[1] is connected to ends2[1]: true
+StarPattern - ends1[1] is connected to ends2[2]: true
+StarPattern - ends1[1] is connected to ends2[3]: true
+StarPattern - ends1[1] is connected to ends2[4]: true
+StarPattern - ends1[2] is connected to ends2[1]: true
+StarPattern - ends1[2] is connected to ends2[2]: true
+StarPattern - ends1[2] is connected to ends2[3]: true
+StarPattern - ends1[2] is connected to ends2[4]: true
+StarPattern - ends1[3] is connected to ends2[1]: true
+StarPattern - ends1[3] is connected to ends2[2]: true
+StarPattern - ends1[3] is connected to ends2[3]: true
+StarPattern - ends1[3] is connected to ends2[4]: true
+
+
+---- End of Test Suite 1 - Bis----
+
+
+
+---- Running Test Suite 2 ----
+
+-- Running test case: Reception of a Signal on a behavior port --
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Loss of Operation call on non-behavior ports with no delegation connector --
+! Operation call received: true
+-- End of test case --
+
+-- Running test case: Loss of Signal on non-behavior ports with no delegation connector --
+! Signal received: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part with port --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part with port --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part with port--
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part with port --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part --
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part with port --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part with port --
+Signal delegated: true
+-- End of test case --
+
+
+---- End of Test Suite 2 ----
+
+
+
+---- Running Test Suite 2 - Untyped Connectors ----
+
+-- Running test case: Single delegation connector - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part --
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part with port --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part with port --
+Signal delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part with port --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part with port --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part --
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part with port--
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part with port --
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+
+---- End of Test Suite 2 - Untyped Connectors ----
+
+
+
+---- Running Test Suite 2 - Ter ---- Ports typed by Interface
+
+-- Running test case: Reception of a Signal on a behavior port -- Ports typed by Interfaces
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Loss of Operation call on non-behavior ports with no delegation connector -- Ports typed by Interfaces
+! Operation call received: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part -- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part -- Ports typed by Interfaces
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part with port -- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part with port -- Ports typed by Interfaces
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part -- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part -- Ports typed by Interfaces
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part with port-- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part with port -- Ports typed by Interfaces
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part -- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part -- Ports typed by Interfaces
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part with port -- Ports typed by Interfaces
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part with port -- Ports typed by Interfaces
+Signal delegated: true
+-- End of test case --
+
+
+---- End of Test Suite 2 - Ter ----
+
+
+
+---- Running Test Suite 2 - Quater ---- Ports typed by Interface, Untyped Connectors
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Operation delegated from port to part with port -- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Multiple delegation connectors - Multiple links - Signal delegated from port to part with port -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Operation delegated from port to part with port-- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Multiple links - Signal delegated from port to part with port -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated on all links (shall be true for default strategy): true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated to classifier behavior: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Operation delegated from port to part with port -- Ports typed by Interfaces, Untyped Connectors
+Operation call delegated: true
+-- End of test case --
+
+-- Running test case: Single delegation connector - Signal delegated from port to part with port -- Ports typed by Interfaces, Untyped Connectors
+Signal delegated: true
+-- End of test case --
+
+
+---- End of Test Suite 2 - Quater ----
+
+
+
+---- Running Test Suite 3 ----
+
+-- Running test case - SendSignalAction using onPort - Single assembly connector --
+Signal correctly sent and received: true
+-- End of test case --
+
+-- Running test case - SendSignalAction using onPort - Delegation/Assembly connector chain--
+Signal correctly sent and received: true
+-- End of test case --
+
+-- Running test case: Feature on Provided Interface --
+Invocation made into a through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface --
+Invocation forwarded out of c through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface with Delegation Chain--
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+-- Running test case: Feature on both Required and Provided Interface --
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+
+---- End of Test Suite 3 ----
+
+
+
+---- Running Test Suite 3 - Untyped Connectors ----
+
+-- Running test case - SendSignalAction using onPort - Single assembly connector --
+Signal correctly sent and received: true
+-- End of test case --
+
+-- Running test case - SendSignalAction using onPort - Delegation/Assembly connector chain--
+Signal correctly sent and received: true
+-- End of test case --
+
+-- Running test case: Feature on Provided Interface --
+Invocation made into a through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface --
+Invocation forwarded out of c through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface with Delegation Chain--
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+-- Running test case: Feature on both Required and Provided Interface --
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+
+---- End of Test Suite 3 - Untyped Connectors ----
+
+
+
+---- Running Test Suite 3 ---- Ports typed by Interfaces
+
+-- Running test case: Feature on Provided Interface -- Ports typed by Interfaces
+Invocation made into a through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface -- Ports typed by Interfaces
+Invocation forwarded out of c through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface with Delegation Chain-- Ports typed by Interfaces
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+-- Running test case: Feature on both Required and Provided Interface -- Ports typed by Interfaces
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+
+---- End of Test Suite 3 ----
+
+
+
+---- Running Test Suite 3 ---- Ports typed by Interfaces, Untyped connectors
+
+-- Running test case: Feature on Provided Interface -- Ports typed by Interfaces, Untyped Connectors
+Invocation made into a through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface -- Ports typed by Interfaces, Untyped Connectors
+Invocation forwarded out of c through q: true
+-- End of test case --
+
+-- Running test case: Feature on Required Interface with Delegation Chain-- Ports typed by Interfaces, Untyped Connectors
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+-- Running test case: Feature on both Required and Provided Interface -- Ports typed by Interfaces, Untyped Connectors
+Invocation forwarded out of e through q: true
+-- End of test case --
+
+
+---- End of Test Suite 3 ----
