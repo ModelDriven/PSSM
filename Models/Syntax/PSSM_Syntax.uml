@@ -2,7 +2,10 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:BackupProfile="http:///schemas/BackupProfile/_J7IFgKInEeS_KNX0nfvIVQ/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http:///schemas/BackupProfile/_J7IFgKInEeS_KNX0nfvIVQ/1 pathmap://PAPYRUS_BACKUP_PROFILE/backup-profile.profile.uml#_J7IFgaInEeS_KNX0nfvIVQ">
   <uml:Model xmi:id="_q6BcIMU1EeWXLLOylfwRMQ" name="PSSM_Syntax">
     <ownedComment xmi:type="uml:Comment" xmi:id="_FLCzsMVIEeWXLLOylfwRMQ">
-      <body>package StateMachines {
+      <body>public import UML::SimpleClassifiers::InterfaceRealization;
+public import UML::SimpleClassifiers::Interface;
+public import fUML_Syntax::SimpleClassifiers::*;
+package SimpleClassifiers {
 
 }</body>
     </ownedComment>
@@ -23,6 +26,7 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_a0VeEMVNEeWXLLOylfwRMQ">
       <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
     </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_kOcF4MaeEeWmIYomuH94TA" importedPackage="_Q_2pEMVJEeWXLLOylfwRMQ"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_MULkIMVJEeWXLLOylfwRMQ" name="CommonStructure">
       <ownedComment xmi:type="uml:Comment" xmi:id="_MU7LAMVJEeWXLLOylfwRMQ">
         <body>namespace PSSM_Syntax;
@@ -203,7 +207,7 @@ package StateMachines {
   <ActionLanguage:TextualRepresentation xmi:id="_YSolEMVHEeWXLLOylfwRMQ" base_Comment="_YSn-AMVHEeWXLLOylfwRMQ" language="Alf"/>
   <BackupProfile:Backup xmi:id="_YSolEcVHEeWXLLOylfwRMQ" timestamp="2016-01-27 18:35:50.781" state="MERGED" base_Comment="_YSn-AMVHEeWXLLOylfwRMQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_FLDawMVIEeWXLLOylfwRMQ" base_Comment="_FLCzsMVIEeWXLLOylfwRMQ" language="Alf"/>
-  <BackupProfile:Backup xmi:id="_FLDawcVIEeWXLLOylfwRMQ" timestamp="2016-01-27 18:26:40.801" state="MERGED" base_Comment="_FLCzsMVIEeWXLLOylfwRMQ"/>
+  <BackupProfile:Backup xmi:id="_FLDawcVIEeWXLLOylfwRMQ" timestamp="2016-01-29 10:40:07.009" state="MERGED" base_Comment="_FLCzsMVIEeWXLLOylfwRMQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_MU7yEMVJEeWXLLOylfwRMQ" base_Comment="_MU7LAMVJEeWXLLOylfwRMQ" language="Alf"/>
   <BackupProfile:Backup xmi:id="_MU7yEcVJEeWXLLOylfwRMQ" timestamp="2016-01-27 18:03:44.293" state="MERGED" base_Comment="_MU7LAMVJEeWXLLOylfwRMQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_RAjMocVJEeWXLLOylfwRMQ" base_Comment="_RAjMoMVJEeWXLLOylfwRMQ" language="Alf"/>

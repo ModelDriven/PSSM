@@ -91,6 +91,15 @@
       <element xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C-3dwcVNEeWXLLOylfwRMQ" x="61" y="521"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_iM8IMMaeEeWmIYomuH94TA" type="2007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iNI8gMaeEeWmIYomuH94TA" type="5026"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_iNI8gcaeEeWmIYomuH94TA" type="7016">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_iNI8gsaeEeWmIYomuH94TA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iNI8g8aeEeWmIYomuH94TA"/>
+      </children>
+      <element xmi:type="uml:Package" href="PSSM_Syntax.uml#_Q_2pEMVJEeWXLLOylfwRMQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iM8IMcaeEeWmIYomuH94TA" x="375" y="524"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_vrw5kcVFEeWXLLOylfwRMQ" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_vrw5ksVFEeWXLLOylfwRMQ"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_vrw5k8VFEeWXLLOylfwRMQ">
@@ -186,6 +195,16 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_a043ssVNEeWXLLOylfwRMQ" points="[-8, 8, 121, -139]$[-125, 146, 4, -1]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a1fUoMVNEeWXLLOylfwRMQ" id="(0.0,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_a1fUocVNEeWXLLOylfwRMQ" id="(1.0,0.31)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_kqS7cMaeEeWmIYomuH94TA" type="4010" source="_wHbh4MVFEeWXLLOylfwRMQ" target="_iM8IMMaeEeWmIYomuH94TA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_kqS7c8aeEeWmIYomuH94TA" type="6022">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_kqS7dMaeEeWmIYomuH94TA" x="-21" y="30"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_kqS7ccaeEeWmIYomuH94TA"/>
+      <element xmi:type="uml:PackageImport" href="PSSM_Syntax.uml#_kOcF4MaeEeWmIYomuH94TA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kqS7csaeEeWmIYomuH94TA" points="[5, 50, 0, -113]$[5, 185, 0, 22]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_krHa0MaeEeWmIYomuH94TA" id="(0.485,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_krHa0caeEeWmIYomuH94TA" id="(0.495,0.0)"/>
     </edges>
   </notation:Diagram>
   <css:ModelStyleSheets xmi:id="_y9GugMVFEeWXLLOylfwRMQ">
