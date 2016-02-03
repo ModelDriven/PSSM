@@ -210,8 +210,7 @@ package StateMachines {
         </ownedRule>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Cpr9wMnIEeWAiZQZbeZaoA" name="Values" visibility="public">
-        <packagedElement xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w" name="pssm_opaque_expression_has_behavior">
-          <constrainedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w" name="pssm_opaque_expression_has_behavior" constrainedElement="_Cpr9wMnIEeWAiZQZbeZaoA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w">
             <language>Natural language</language>
             <body>The OpaqueExpression must have a behavior.</body>
@@ -259,6 +258,13 @@ package StateMachines {
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_ddy8wMq1EeWF7I4YWspV6w">
             <language>Natural language</language>
             <body>A State must not have any connectionPoints.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w" name="pssm_state_machine_extends_at_most_one">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A StateMachine must not have more than one extendedStateMachine.</body>
           </specification>
         </packagedElement>
       </packagedElement>
