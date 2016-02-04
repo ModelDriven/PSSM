@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_muWqsMrMEeWF7I4YWspV6w" name="PSSMExamples">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_qSm0kMrMEeWF7I4YWspV6w" name="Stack">
+      <region xmi:type="uml:Region" xmi:id="_wcTWsMrMEeWF7I4YWspV6w" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_UJTlsMrNEeWF7I4YWspV6w" name="/stkSize=0" source="_RgwPEMrNEeWF7I4YWspV6w" target="_y7tYYMrMEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_ByHWgMrOEeWF7I4YWspV6w" name="pop/errorEmpty()" source="_y7tYYMrMEeWF7I4YWspV6w" target="_y7tYYMrMEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_ZTYBYMrOEeWF7I4YWspV6w" name="push/pushItem()" source="_y7tYYMrMEeWF7I4YWspV6w" target="_USW-kMrOEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_hwbtQMrOEeWF7I4YWspV6w" name="pop[stkSize==1]/popItem()" source="_USW-kMrOEeWF7I4YWspV6w" target="_y7tYYMrMEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_vrrgIMrOEeWF7I4YWspV6w" name="push[stkSize==(max-1)]/pushItem()" source="_USW-kMrOEeWF7I4YWspV6w" target="_rDl6sMrOEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_5ckycMrOEeWF7I4YWspV6w" name="pop/popItem()" source="_rDl6sMrOEeWF7I4YWspV6w" target="_USW-kMrOEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_-lQjgMrOEeWF7I4YWspV6w" name="push[stkSize&lt;(max-1)]/pushItem()" source="_USW-kMrOEeWF7I4YWspV6w" target="_USW-kMrOEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_L0xRwMrPEeWF7I4YWspV6w" name="pop[stkSize>1]/popItem()" source="_USW-kMrOEeWF7I4YWspV6w" target="_USW-kMrOEeWF7I4YWspV6w"/>
+        <transition xmi:type="uml:Transition" xmi:id="_dJfh4MrPEeWF7I4YWspV6w" name="push/errorFull()" source="_rDl6sMrOEeWF7I4YWspV6w" target="_rDl6sMrOEeWF7I4YWspV6w"/>
+        <subvertex xmi:type="uml:State" xmi:id="_y7tYYMrMEeWF7I4YWspV6w" name="Empty"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_RgwPEMrNEeWF7I4YWspV6w" name=""/>
+        <subvertex xmi:type="uml:State" xmi:id="_USW-kMrOEeWF7I4YWspV6w" name="Normal"/>
+        <subvertex xmi:type="uml:State" xmi:id="_rDl6sMrOEeWF7I4YWspV6w" name="Full"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_bqfpwMrOEeWF7I4YWspV6w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bqfpwcrOEeWF7I4YWspV6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_bqgQ0MrOEeWF7I4YWspV6w" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+</xmi:XMI>
