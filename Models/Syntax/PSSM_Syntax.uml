@@ -219,13 +219,13 @@ package StateMachines {
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_qu9HQMqpEeWF7I4YWspV6w" name="Classification">
         <ownedComment xmi:type="uml:Comment" xmi:id="_RsYvwMqrEeWF7I4YWspV6w" annotatedElement="_S7rp4MqqEeWF7I4YWspV6w">
-          <body>This replaces fUML constraint Operation::zero_or_one_method.</body>
+          <body>This replaces fUML constraint zero_or_one_method on Operation.</body>
         </ownedComment>
         <packagedElement xmi:type="uml:Constraint" xmi:id="_S7rp4MqqEeWF7I4YWspV6w" name="pssm_operation_has_at_most_one_method">
           <constrainedElement xmi:type="uml:Class" href="UML.uml#Operation"/>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRFhMMqqEeWF7I4YWspV6w">
             <language>Natural language</language>
-            <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method.</body>
+            <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active class.</body>
           </specification>
         </packagedElement>
       </packagedElement>
@@ -239,6 +239,13 @@ package StateMachines {
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_apctEMnJEeWAiZQZbeZaoA" name="StateMachines">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w" name="Of_pssm_transition_signal_event_receptions">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dduWIct3EeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The Signals of any SignalEvents on the triggers of a Transition must have matching Receptions that are owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          </specification>
+        </ownedRule>
         <packagedElement xmi:type="uml:Constraint" xmi:id="_SNpToMq0EeWF7I4YWspV6w" name="pssm_state_has_no_submachine">
           <constrainedElement xmi:type="uml:Package" href="#_apctEMnJEeWAiZQZbeZaoA"/>
           <constrainedElement xmi:type="uml:Property" href="UML.uml#State-isSimple"/>
@@ -253,18 +260,46 @@ package StateMachines {
             <body>A State must not have a stateInvariant.</body>
           </specification>
         </packagedElement>
-        <packagedElement xmi:type="uml:Constraint" xmi:id="_O1G1EMq1EeWF7I4YWspV6w" name="pssm_state_has_no_connection_points">
-          <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ddy8wMq1EeWF7I4YWspV6w">
-            <language>Natural language</language>
-            <body>A State must not have any connectionPoints.</body>
-          </specification>
-        </packagedElement>
         <packagedElement xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w" name="pssm_state_machine_extends_at_most_one">
           <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w">
             <language>Natural language</language>
             <body>A StateMachine must not have more than one extendedStateMachine.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_ZAtrMMtqEeWF7I4YWspV6w" name="pssm_state_machine_context">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_spC8sMtqEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A StateMachine may not be a method and, if it has a context, it must be a classifierBehavior for that context.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_r0dooMtrEeWF7I4YWspV6w" name="pssm_transition_triggers">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VUBsIMtsEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The triggers of a Transition must all be for CallEvents or SignalEvents.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_eVRDIMtsEeWF7I4YWspV6w" name="pssm_transition_call_event_operations">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-GJa0MtsEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The Operations of any CallEvents on the triggers of a Transition must be owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_FtgNwMttEeWF7I4YWspV6w" name="pssm_transition_behavior_parameters">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Be2mkMtuEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>If all triggers of a Transition are for SignalEvents, then an effect Behavior of the Transition may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the Transition triggers. If all the triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an effect Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an effect Behavior must have no Parameters.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_Whi9QMtuEeWF7I4YWspV6w" name="pssm_state_behavior_parameters">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Yp1MMtuEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>If all the relevant Triggers of an entry, doActivity or effect Behavior are for SignalEvents, then the Behavior may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the relevant Triggers. If all the relevant Triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an entry or exit behavior Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents and a doActivity Behavior may have a signature that input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an entry, doActivity or exit Behavior must have no Parameters.</body>
           </specification>
         </packagedElement>
       </packagedElement>

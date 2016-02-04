@@ -99,3 +99,20 @@ EnumerationLiteral{
     elementIcon: false;
 }
 
+StateMachine{
+	bold: true;
+	fillColor: white;
+	fontName: Helvetica;
+	elementIcon:false;
+	gradient: none;
+}
+
+State{
+	bold: true;
+	fillColor: lightgray;
+	fontName: Helvetica;
+	elementIcon:false;
+	gradient: none;
+}
+
+
