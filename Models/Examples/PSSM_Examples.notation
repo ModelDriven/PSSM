@@ -11,7 +11,10 @@
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wccgp8rMEeWF7I4YWspV6w" key="RegionZoneKey" value=""/>
           </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_wccgqMrMEeWF7I4YWspV6w" type="3002">
-            <children xmi:type="notation:Shape" xmi:id="_y7xCwMrMEeWF7I4YWspV6w" type="6000">
+            <children xmi:type="notation:Shape" xmi:id="_y7xCwMrMEeWF7I4YWspV6w" type="6000" fillColor="12632256">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEp60MwiEeWF7I4YWspV6w" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MEsXEMwiEeWF7I4YWspV6w" key="fillColor" value="true"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_y7xCwsrMEeWF7I4YWspV6w" type="6001">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0XZ6UMrMEeWF7I4YWspV6w" width="99"/>
               </children>
@@ -34,7 +37,10 @@
               <element xmi:type="uml:Pseudostate" href="PSSM_Examples.uml#_RgwPEMrNEeWF7I4YWspV6w"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rg1HkcrNEeWF7I4YWspV6w" x="81" y="19"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_USbQAMrOEeWF7I4YWspV6w" type="6000">
+            <children xmi:type="notation:Shape" xmi:id="_USbQAMrOEeWF7I4YWspV6w" type="6000" fillColor="12632256">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEuMQMwiEeWF7I4YWspV6w" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MEuMQcwiEeWF7I4YWspV6w" key="fillColor" value="true"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_USbQAsrOEeWF7I4YWspV6w" type="6001">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VbXOAMrOEeWF7I4YWspV6w" width="105"/>
               </children>
@@ -47,7 +53,10 @@
               <element xmi:type="uml:State" href="PSSM_Examples.uml#_USW-kMrOEeWF7I4YWspV6w"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_USbQAcrOEeWF7I4YWspV6w" x="295" y="86" width="105"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_rDt2gMrOEeWF7I4YWspV6w" type="6000">
+            <children xmi:type="notation:Shape" xmi:id="_rDt2gMrOEeWF7I4YWspV6w" type="6000" fillColor="12632256">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MEvaYMwiEeWF7I4YWspV6w" source="PapyrusCSSForceValue">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MEvaYcwiEeWF7I4YWspV6w" key="fillColor" value="true"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_rDt2gsrOEeWF7I4YWspV6w" type="6001">
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rnGQYMrOEeWF7I4YWspV6w" width="107"/>
               </children>

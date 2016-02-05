@@ -107,9 +107,17 @@ StateMachine{
 	gradient: none;
 }
 
+Region{
+	bold: true;
+	fillColor: white;
+	fontName: Helvetica;
+	elementIcon:false;
+	gradient: none;
+}
+
 State{
 	bold: true;
-	fillColor: lightgray;
+	fillColor: white;
 	fontName: Helvetica;
 	elementIcon:false;
 	gradient: none;
