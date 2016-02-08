@@ -804,6 +804,7 @@
     </edges>
   </notation:Diagram>
   <css:ModelStyleSheets xmi:id="_Ga1wAMU6EeWXLLOylfwRMQ">
+    <stylesheets xmi:type="css:StyleSheetReference" xmi:id="_KH3MQM66EeWF7I4YWspV6w" path="/PSSM/Models/Style/common-model-style.css"/>
     <stylesheets xmi:type="css:StyleSheetReference" xmi:id="_CHdY0MVGEeWXLLOylfwRMQ" path="/PSSM/Models/Style/syntax-model-style.css"/>
   </css:ModelStyleSheets>
   <notation:Diagram xmi:id="_IFRmoMU8EeWXLLOylfwRMQ" type="PapyrusUMLClassDiagram" name="fUML Values" measurementUnit="Pixel">

@@ -87,6 +87,12 @@ package CommonStructure {
 
 }</body>
         </ownedComment>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_pomscMwYEeWF7I4YWspV6w">
+          <importedElement xmi:type="uml:Class" href="UML.uml#Constraint"/>
+        </elementImport>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_lq0oQMwYEeWF7I4YWspV6w">
+          <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
+        </packageImport>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_coJpQMVGEeWXLLOylfwRMQ" name="Values">
         <ownedComment xmi:type="uml:Comment" xmi:id="_cpOAQMVGEeWXLLOylfwRMQ">
@@ -204,7 +210,7 @@ package StateMachines {
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_gGfLQMnOEeWAiZQZbeZaoA">
             <language>Natural language</language>
             <language>OCL</language>
-            <body>The Constraint must be owned as a guard by a Transition and its constrainedElements must be empty.</body>
+            <body>A Constraint must be owned as a guard by a Transition and its constrainedElements must be empty.</body>
             <body>self.owner.oclIsKindOf(UML::StateMachines::Transition) and self.constrainedElement->isEmpty()</body>
           </specification>
         </ownedRule>
