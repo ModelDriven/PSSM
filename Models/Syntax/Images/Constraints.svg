@@ -43,7 +43,7 @@
 <path d="M290 265 L400 265 L400 278 L290 278 L290 265 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath14">
-<path d="M257 276 L428 276 L428 311 L257 311 L257 276 Z"/>
+<path d="M257 276 L427 276 L427 311 L257 311 L257 276 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath15">
 <path d="M-1 -1 L734 -1 L734 331 L-1 331 L-1 -1 Z"/>
@@ -144,9 +144,9 @@
 <g stroke-linecap="butt" font-size="9" fill="rgb(245,245,220)" font-family="'Helvetica'" stroke="rgb(245,245,220)" stroke-width="1.1">
 <path d="M252 260 L252 260 L434 260 L446 272 L446 319 L252 319 L252 260 ZM252 260" clip-path="url(#clipPath12)" fill-rule="evenodd" stroke="none"/>
 <text x="291" y="273" clip-path="url(#clipPath13)" fill="black" stroke="none" xml:space="preserve">pssm_constraint_is_guard</text>
-<text x="258" y="284" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">{{Natural language} The Constraint must</text>
-<text x="258" y="295" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">be owned as a guard by a Transition and</text>
-<text x="258" y="306" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">its constrainedElements must be empty.}</text>
+<text x="258" y="284" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">{{Natural language} A Constraint must be</text>
+<text x="258" y="295" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">owned as a guard by a Transition and its</text>
+<text x="258" y="306" clip-path="url(#clipPath14)" fill="black" stroke="none" xml:space="preserve">constrainedElements must be empty.}</text>
 <line clip-path="url(#clipPath12)" fill="none" x1="252" x2="434" y1="260" y2="260" stroke="black"/>
 <line clip-path="url(#clipPath12)" fill="none" x1="434" x2="446" y1="260" y2="272" stroke="black"/>
 <line clip-path="url(#clipPath12)" fill="none" x1="446" x2="446" y1="272" y2="319" stroke="black"/>
