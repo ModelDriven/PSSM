@@ -70,8 +70,6 @@ package Syntax {
       <packageImport xmi:type="uml:PackageImport" xmi:id="_kOcF4MaeEeWmIYomuH94TA" importedPackage="_Q_2pEMVJEeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_fHvJwMVJEeWXLLOylfwRMQ" importedPackage="_MULkIMVJEeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_bybQQMVIEeWXLLOylfwRMQ" importedPackage="_coJpQMVGEeWXLLOylfwRMQ"/>
-      <packageImport xmi:type="uml:PackageImport" xmi:id="_-dkuwMVKEeWXLLOylfwRMQ"/>
-      <packageImport xmi:type="uml:PackageImport" xmi:id="_c-k6UMVIEeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_hG9E8MVIEeWXLLOylfwRMQ" importedPackage="_YR7acMVHEeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_3KCPQMqmEeWF7I4YWspV6w">
         <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
