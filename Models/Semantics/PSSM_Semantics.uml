@@ -87,9 +87,19 @@
           <generalization xmi:type="uml:Generalization" xmi:id="_QSn78MDxEeWiyPv18KZ0lg">
             <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-ObjectActivation"/>
           </generalization>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7QjUING2EeWMvYElZ5Ee4w" name="deferredEventPool" type="_VpelING2EeWMvYElZ5Ee4w" association="_7PTW8NG2EeWMvYElZ5Ee4w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EUFxMNG3EeWMvYElZ5Ee4w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EUQwUNG3EeWMvYElZ5Ee4w" value="*"/>
+          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_GKDJcMDxEeWiyPv18KZ0lg" name="registerCompletionEvent">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_WPAa0MDxEeWiyPv18KZ0lg" name="stateActivation" type="_rVacUHV3EeSvTf7EWD7QRA"/>
           </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_7PTW8NG2EeWMvYElZ5Ee4w" name="A_objectActivation_deferredEventPool" memberEnd="_7QjUING2EeWMvYElZ5Ee4w _7QjUIdG2EeWMvYElZ5Ee4w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7QNV4NG2EeWMvYElZ5Ee4w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7QNV4dG2EeWMvYElZ5Ee4w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_7QjUIdG2EeWMvYElZ5Ee4w" name="objectActivation" type="_02bFgMDwEeWiyPv18KZ0lg" association="_7PTW8NG2EeWMvYElZ5Ee4w"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_2wgcEHV2EeSvTf7EWD7QRA" name="StateMachines">
@@ -143,7 +153,7 @@
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_5QK6sMD1EeWiyPv18KZ0lg" name="terminate"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_rVacUHV3EeSvTf7EWD7QRA" name="StateActivation">
+        <packagedElement xmi:type="uml:Class" xmi:id="_rVacUHV3EeSvTf7EWD7QRA" name="StateActivation" visibility="public">
           <generalization xmi:type="uml:Generalization" xmi:id="_4Qu_0HYSEeSvTf7EWD7QRA" general="_z0JjMHV3EeSvTf7EWD7QRA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_uXNSAPlQEeSDPZmHIzgmig" name="connectionPointActivations" type="_CDaHsKlAEeSY3-SNA3r3jg" aggregation="composite" association="_uXOgIPlQEeSDPZmHIzgmig">
             <ownedComment xmi:type="uml:Comment" xmi:id="_lrgisM9jEeWYevbRTGHfwg">
@@ -169,6 +179,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nwiQgMNlEeWpYp0WmASFoQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwl64MNlEeWpYp0WmASFoQ" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OWl-oNG8EeWB0O9YzCwUNg" association="_OWjiYNG8EeWB0O9YzCwUNg">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_6cP1IHYSEeSvTf7EWD7QRA" name="tryExecuteEntry" visibility="protected"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_8gFVIHYSEeSvTf7EWD7QRA" name="tryExecuteDoActivity" visibility="protected"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_-A0IEHYSEeSvTf7EWD7QRA" name="tryExecuteExit" visibility="protected"/>
@@ -193,6 +206,15 @@
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_DufjMPlSEeSDPZmHIzgmig" type="_mUrtYHV3EeSvTf7EWD7QRA" direction="return">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GjWQcPlSEeSDPZmHIzgmig"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GjW3gPlSEeSDPZmHIzgmig" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lX4poNG0EeWMvYElZ5Ee4w" name="getFireableTransitions" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_1zaA4NG0EeWMvYElZ5Ee4w" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_DmsKkNG1EeWMvYElZ5Ee4w" type="_vJ5akHV3EeSvTf7EWD7QRA" direction="return">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EhgNANG1EeWMvYElZ5Ee4w"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehu2gNG1EeWMvYElZ5Ee4w" value="*"/>
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_VtCUQJRREeWAs5MYUhc8EQ" name="enter">
@@ -239,6 +261,20 @@
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_7iVVIsD2EeWiyPv18KZ0lg" name="exitingTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DRNfQNG0EeWMvYElZ5Ee4w" name="canDefer">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_DRNfQdG0EeWMvYElZ5Ee4w" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_eNQO8NG0EeWMvYElZ5Ee4w" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_PL6WsNG0EeWMvYElZ5Ee4w" name="defer">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_S8OmoNG0EeWMvYElZ5Ee4w" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_i8Y3kNG0EeWMvYElZ5Ee4w" name="releaseDeferredEvents"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_7iXKUMD2EeWiyPv18KZ0lg" name="terminate"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_tAbzsHV3EeSvTf7EWD7QRA" name="StateMachineExecution">
@@ -818,6 +854,27 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZH3iwJRZEeWAs5MYUhc8EQ" value="*"/>
             </ownedParameter>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_8yqi8NG9EeWB0O9YzCwUNg" name="isDeferred">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_MWVFING-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Oett8NG-EeWB0O9YzCwUNg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QZTyYNG-EeWB0O9YzCwUNg" name="defer">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_WeAfwNG-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_XahLUNG-EeWB0O9YzCwUNg" name="isTriggering">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_bJRVANG-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_kXPgcNG-EeWB0O9YzCwUNg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_800tQIVAEeSZ05Pgomb11g" name="DefaultTransitionSelectionStrategy">
           <generalization xmi:type="uml:Generalization" xmi:id="_gxP4UIVBEeSZ05Pgomb11g" general="_2Y06MIVAEeSZ05Pgomb11g"/>
@@ -847,6 +904,57 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_t2twYJRZEeWAs5MYUhc8EQ" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_oaIHENG-EeWB0O9YzCwUNg" name="isDeferred">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_oaIHEdG-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_oaIHEtG-EeWB0O9YzCwUNg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_oaJVMNG-EeWB0O9YzCwUNg" name="defer">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_oaJVMdG-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_oaKjUNG-EeWB0O9YzCwUNg" name="isTriggering">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_oaKjUdG-EeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_oaKjUtG-EeWB0O9YzCwUNg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_r05k0NG-EeWB0O9YzCwUNg" name="group" visibility="package">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_73h68NG-EeWB0O9YzCwUNg" name="fireableTransitions" type="_vJ5akHV3EeSvTf7EWD7QRA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DamDwNG_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dan48NG_EeWB0O9YzCwUNg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ag7H8NG_EeWB0O9YzCwUNg" type="_vJ5akHV3EeSvTf7EWD7QRA" direction="return">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EwnbgNG_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EwopoNG_EeWB0O9YzCwUNg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_GjV9YNG_EeWB0O9YzCwUNg" name="getConflictingTransitions">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NbC1ANG_EeWB0O9YzCwUNg" name="group" type="_vJ5akHV3EeSvTf7EWD7QRA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QXMdENG_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QXNrMNG_EeWB0O9YzCwUNg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_WwmPING_EeWB0O9YzCwUNg" type="_vJ5akHV3EeSvTf7EWD7QRA" direction="return">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhReING_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhSFMNG_EeWB0O9YzCwUNg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_a1BG0NG_EeWB0O9YzCwUNg" name="resolveConflicts">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_igEG8NG_EeWB0O9YzCwUNg" name="group" type="_vJ5akHV3EeSvTf7EWD7QRA" direction="inout">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lQtpoNG_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lQu3wNG_EeWB0O9YzCwUNg" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_po6Y8NG_EeWB0O9YzCwUNg" name="conflictingTransitions" type="_vJ5akHV3EeSvTf7EWD7QRA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qkkv8NG_EeWB0O9YzCwUNg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qkl-ENG_EeWB0O9YzCwUNg" value="*"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
@@ -1099,6 +1207,39 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jzZWEPiBEeS41tijFXo_Iw" name="reached"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lLOEoPiBEeS41tijFXo_Iw" name="traversed"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mLrcEPiBEeS41tijFXo_Iw" name="completed"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VpelING2EeWMvYElZ5Ee4w" name="DeferredEventOccurrence">
+          <generalization xmi:type="uml:Generalization" xmi:id="_rNbOwNG2EeWMvYElZ5Ee4w">
+            <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+          </generalization>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_8w1B0NG7EeWB0O9YzCwUNg" name="constrainingStateActivation" type="_rVacUHV3EeSvTf7EWD7QRA" association="_8wTdYNG7EeWB0O9YzCwUNg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_B5LmQdG9EeWB0O9YzCwUNg" name="deferredEventOccurrence" association="_B5KYING9EeWB0O9YzCwUNg">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_8wTdYNG7EeWB0O9YzCwUNg" name="A_constrainingStateActivation_deferredEventOccurrence" memberEnd="_8w1B0NG7EeWB0O9YzCwUNg _8w7vgNG7EeWB0O9YzCwUNg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8wzzsNG7EeWB0O9YzCwUNg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8wzzsdG7EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_8w7vgNG7EeWB0O9YzCwUNg" name="deferredEventOccurrence" type="_VpelING2EeWMvYElZ5Ee4w" association="_8wTdYNG7EeWB0O9YzCwUNg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pn-PsNG9EeWB0O9YzCwUNg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pn-2wNG9EeWB0O9YzCwUNg" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_OWjiYNG8EeWB0O9YzCwUNg" memberEnd="_OWkJctG8EeWB0O9YzCwUNg _OWl-oNG8EeWB0O9YzCwUNg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OWkJcNG8EeWB0O9YzCwUNg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OWkJcdG8EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_OWkJctG8EeWB0O9YzCwUNg" name="stateactivation" type="_rVacUHV3EeSvTf7EWD7QRA" association="_OWjiYNG8EeWB0O9YzCwUNg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_B5KYING9EeWB0O9YzCwUNg" name="A_deferredEventOccurrence_deferral" memberEnd="_B5LmQdG9EeWB0O9YzCwUNg _B5LmQtG9EeWB0O9YzCwUNg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B5K_MNG9EeWB0O9YzCwUNg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B5LmQNG9EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_B5LmQtG9EeWB0O9YzCwUNg" name="deferral" type="_VpelING2EeWMvYElZ5Ee4w" association="_B5KYING9EeWB0O9YzCwUNg">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oZEzoNG9EeWB0O9YzCwUNg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oZHP4NG9EeWB0O9YzCwUNg" value="*"/>
+          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_LFUAwHVxEeSfVojhNHzNrw" name="Loci">
