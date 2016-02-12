@@ -1,10 +1,26 @@
-Package{
-	bold: true;
-	qualifiedNameDepth:full;
+/* Apply to all elements */
+*{
 	fillColor: white;
 	fontName: Helvetica;
 	elementIcon:false;
 	gradient:none
+}
+
+/* Structure related style */
+
+Model {
+	bold: true;
+	fillColor: white;
+	gradient: white;
+}
+
+Package{
+	bold: true;
+	qualifiedNameDepth:full;
+}
+
+Class{
+	bold: true;
 }
 
 Class > Compartment[kind="attributes"] {
@@ -20,19 +36,12 @@ Class > Compartment[kind="nestedclassifiers"] {
 	fillColor: lightgrey;
 }
 
-Class{
-	bold: true;
-	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
-	gradient: none;
-}
-
 Property{
 	bold: false;
-    fontColor: black;
-    fontName: Helvetica;
-    elementIcon: false;
+}
+
+Comment{
+	fillColor: beige;
 }
 
 Operation{
@@ -45,29 +54,10 @@ Operation{
 	parameterstype,
 	visibility;
 	fontName: Helvetica;
-	elementIcon:false;
-}
-
-Model {
-	bold: true;
-	fillColor: white;
-	gradient: white;
-}
-
-Comment{
-	fillColor: beige;
-	gradient: none;
-	fontColor: black;
-	fontName: Helvetica;
 }
 
 Constraint{
 	fillColor: beige;
-	gradient: none;
-	fontColor: black;
-	bold: false;
-	fontName: Helvetica;
-	elementIcon:false
 }
 
 Association, Generalization, Dependency{
@@ -80,49 +70,89 @@ Association > Label:name {
 
 DataType{
 	bold: true;
-	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
-	gradient: none;
 }
 
 Enumeration{
 	bold: true;
-	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
-	gradient: none;
 }
 
 EnumerationLiteral{
 	bold: false;
-    fontColor: black;
-    fontName: Helvetica;
-    elementIcon: false;
 }
+
+/* State machine style */
 
 StateMachine{
 	bold: true;
-	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
-	gradient: none;
 }
 
 Region{
 	bold: true;
-	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
-	gradient: none;
 }
 
 State{
 	bold: true;
+}
+
+FinalState{
 	fillColor: white;
-	fontName: Helvetica;
-	elementIcon:false;
 	gradient: none;
 }
 
+FinalState > Label{
+	visible: false;
+}
 
+Pseudostate{
+	fillColor: black;
+}
+
+Pseudostate[kind=exitPoint]{
+	fillColor: white;
+}
+
+Pseudostate[kind=entryPoint]{
+	fillColor: white;
+}
+
+Pseudostate > Label {
+	visible:false;
+}
+
+Transition{
+	routing: Rectilinear;
+}
+
+/* Activity style */
+
+InitialNode{
+	fillColor: black;
+}
+
+InitialNode > Label{
+	visible: false;
+}
+
+FinalNode > Label{
+	visible: false;
+}
+
+ForkNode > Label{
+	visible: false;
+}
+
+JoinNode > Label{
+	visible: false;
+}
+
+InputPin, OutputPin{
+	fillColor: black;
+}
+
+ObjectFlow, ControlFlow{
+	routing: Rectilinear;
+}
+
+ObjectFlow > Label{
+	visible: false;
+}
