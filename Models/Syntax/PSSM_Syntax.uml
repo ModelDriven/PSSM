@@ -229,7 +229,7 @@ package StateMachines {
           <constrainedElement xmi:type="uml:Class" href="UML.uml#Operation"/>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRFhMMqqEeWF7I4YWspV6w">
             <language>Natural language</language>
-            <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active class.</body>
+            <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active Class.</body>
           </specification>
         </packagedElement>
       </packagedElement>
@@ -255,7 +255,7 @@ package StateMachines {
           <constrainedElement xmi:type="uml:Property" href="UML.uml#State-isSimple"/>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1zTYMq0EeWF7I4YWspV6w">
             <language>Natural language</language>
-            <body>A State must not be a submachine state.</body>
+            <body>A State must not have a submachine.</body>
           </specification>
         </packagedElement>
         <packagedElement xmi:type="uml:Constraint" xmi:id="_eJHAEMq0EeWF7I4YWspV6w" name="pssm_state_has_no_invariant" constrainedElement="_apctEMnJEeWAiZQZbeZaoA">
@@ -304,6 +304,13 @@ package StateMachines {
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Yp1MMtuEeWF7I4YWspV6w">
             <language>Natural language</language>
             <body>If all the relevant Triggers of an entry, doActivity or effect Behavior are for SignalEvents, then the Behavior may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the relevant Triggers. If all the relevant Triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an entry or exit behavior Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents and a doActivity Behavior may have a signature that input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an entry, doActivity or exit Behavior must have no Parameters.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_mzLw8NEaEeWMvYElZ5Ee4w" name="pssm_transition_vertexes">
+          <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_44KZUNEaEeWMvYElZ5Ee4w">
+            <language>Natural language</language>
+            <body>The source and target Vertexes of a Transition must be contained by the same StateMachine as the Transition.</body>
           </specification>
         </packagedElement>
       </packagedElement>

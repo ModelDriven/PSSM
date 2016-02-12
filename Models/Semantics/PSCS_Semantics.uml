@@ -2409,6 +2409,9 @@ import fUML.Syntax.CommonBehaviors.BasicBehaviors.Behavior;&#xD;
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_3NM98N-9EeGnO-TF_1T_iQ" name="Loci">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_OQNUwND2EeWMvYElZ5Ee4w">
+        <importedPackage xmi:type="uml:Package" href="fUML_Semantics.uml#Semantics-Loci"/>
+      </packageImport>
       <packagedElement xmi:type="uml:Class" xmi:id="_ScbvYN--EeGnO-TF_1T_iQ" name="CS_ExecutionFactory">
         <ownedComment xmi:type="uml:Comment" xmi:id="_IYqJsOH1EeG4NZyomhkW-A">
           <body>// Imports&#xD;

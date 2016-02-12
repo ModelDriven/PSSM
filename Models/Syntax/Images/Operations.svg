@@ -44,7 +44,7 @@
 <text x="189" y="45" clip-path="url(#clipPath5)" fill="black" stroke="none" xml:space="preserve">it must have no method. Otherwise it must not</text>
 <text x="189" y="56" clip-path="url(#clipPath5)" fill="black" stroke="none" xml:space="preserve">have more than one method and it must have</text>
 <text x="189" y="67" clip-path="url(#clipPath5)" fill="black" stroke="none" xml:space="preserve">exactly one method unless owned by an</text>
-<text x="189" y="78" clip-path="url(#clipPath5)" fill="black" stroke="none" xml:space="preserve">active class.}</text>
+<text x="189" y="78" clip-path="url(#clipPath5)" fill="black" stroke="none" xml:space="preserve">active Class.}</text>
 <line clip-path="url(#clipPath3)" fill="none" x1="183" x2="384" y1="10" y2="10" stroke="black"/>
 <line clip-path="url(#clipPath3)" fill="none" x1="384" x2="396" y1="10" y2="22" stroke="black"/>
 <line clip-path="url(#clipPath3)" fill="none" x1="396" x2="396" y1="22" y2="87" stroke="black"/>

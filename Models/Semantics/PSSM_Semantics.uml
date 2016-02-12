@@ -30,6 +30,9 @@
         <packageImport xmi:type="uml:PackageImport" xmi:id="_uIP7MM7DEeWF7I4YWspV6w">
           <importedPackage xmi:type="uml:Package" href="fUML_Semantics.uml#Semantics-CommonBehaviors"/>
         </packageImport>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_k_kTgM6DEeWF7I4YWspV6w">
+          <importedPackage xmi:type="uml:Package" href="PSCS_Semantics.uml#_YlZoMN2OEeGnO-TF_1T_iQ"/>
+        </packageImport>
         <packagedElement xmi:type="uml:Association" xmi:id="_Fxqp8HV-EeSvTf7EWD7QRA" name="A_context_opaqueExpressionEvaluation" memberEnd="_Fxqp8XV-EeSvTf7EWD7QRA _FxoNsHV-EeSvTf7EWD7QRA">
           <ownedEnd xmi:type="uml:Property" xmi:id="_Fxqp8XV-EeSvTf7EWD7QRA" name="opaqueExpressionEvaluation" type="_sb52MHVqEeS94falTMzzgw" association="_Fxqp8HV-EeSvTf7EWD7QRA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fxqp8nV-EeSvTf7EWD7QRA"/>
@@ -55,9 +58,6 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_DOXNEMOyEeWpYp0WmASFoQ" name="StructuredClassifiers">
-        <packageImport xmi:type="uml:PackageImport" xmi:id="_k_kTgM6DEeWF7I4YWspV6w">
-          <importedPackage xmi:type="uml:Package" href="PSCS_Semantics.uml#_YlZoMN2OEeGnO-TF_1T_iQ"/>
-        </packageImport>
         <packageImport xmi:type="uml:PackageImport" xmi:id="_6BEXYM6DEeWF7I4YWspV6w">
           <importedPackage xmi:type="uml:Package" href="../Syntax/fUML_Syntax_UML_2.5.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
         </packageImport>
@@ -548,7 +548,10 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_GYUqEM9XEeWYevbRTGHfwg" name="level">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_M785oPlEEeSDPZmHIzgmig" type="_z0JjMHV3EeSvTf7EWD7QRA" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_M785oPlEEeSDPZmHIzgmig" type="_z0JjMHV3EeSvTf7EWD7QRA" direction="return">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bmqo8NAHEeW1e7U-Wzl1ng"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BmseINAHEeW1e7U-Wzl1ng" value="*"/>
+            </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_cJr8QPiNEeSlpJn94rgDzA" name="register">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_f1CfgPlEEeSDPZmHIzgmig" name="stateActivation" type="_rVacUHV3EeSvTf7EWD7QRA"/>
