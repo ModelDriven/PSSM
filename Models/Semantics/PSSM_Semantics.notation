@@ -55,13 +55,23 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_MSSj88NrEeWpYp0WmASFoQ" type="8510">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_MSSj9MNrEeWpYp0WmASFoQ" y="5"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_MSSj9cNrEeWpYp0WmASFoQ" visible="false" type="7017">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_MSSj9cNrEeWpYp0WmASFoQ" type="7017">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WEKVANHBEeWB0O9YzCwUNg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WEKVAdHBEeWB0O9YzCwUNg" key="visible" value="true"/>
+        </eAnnotations>
         <styles xmi:type="notation:TitleStyle" xmi:id="_MSSj9sNrEeWpYp0WmASFoQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_MSSj98NrEeWpYp0WmASFoQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_MSSj-MNrEeWpYp0WmASFoQ"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MSSj-cNrEeWpYp0WmASFoQ"/>
       </children>
-      <children xmi:type="notation:BasicCompartment" xmi:id="_MSSj-sNrEeWpYp0WmASFoQ" visible="false" type="7018">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_MSSj-sNrEeWpYp0WmASFoQ" type="7018">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WEK8ENHBEeWB0O9YzCwUNg" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WEK8EdHBEeWB0O9YzCwUNg" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:Shape" xmi:id="_XdI6INHBEeWB0O9YzCwUNg" type="3013">
+          <element xmi:type="uml:Operation" href="PSSM_Semantics.uml#_XcxGsNHBEeWB0O9YzCwUNg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_XdI6IdHBEeWB0O9YzCwUNg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_MSSj-8NrEeWpYp0WmASFoQ"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_MSSj_MNrEeWpYp0WmASFoQ"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_MSSj_cNrEeWpYp0WmASFoQ"/>
@@ -74,7 +84,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MSSkA8NrEeWpYp0WmASFoQ"/>
       </children>
       <element xmi:type="uml:Class" href="PSSM_Semantics.uml#_vJ5akHV3EeSvTf7EWD7QRA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MSSj8cNrEeWpYp0WmASFoQ" x="294" y="148" height="51"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MSSj8cNrEeWpYp0WmASFoQ" x="194" y="147" height="51"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_PgMqYMNrEeWpYp0WmASFoQ" type="2008">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_T-k6MMNrEeWpYp0WmASFoQ" source="PapyrusCSSForceValue">
@@ -230,9 +240,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_T-0KwcNrEeWpYp0WmASFoQ"/>
       <element xmi:type="uml:Generalization" href="PSSM_Semantics.uml#_RKpzUMD1EeWiyPv18KZ0lg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T-0KwsNrEeWpYp0WmASFoQ" points="[22, 0, -178, 93]$[22, -42, -178, 51]$[204, -42, 4, 51]$[204, -93, 4, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXejsM9NEeWYevbRTGHfwg" id="(0.3467741935483871,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKwM9NEeWYevbRTGHfwg" id="(0.46,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_T-0KwsNrEeWpYp0WmASFoQ" points="[-44, 0, -182, 92]$[-44, -51, -182, 41]$[138, -51, 0, 41]$[138, -92, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXejsM9NEeWYevbRTGHfwg" id="(0.8790322580645161,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKwM9NEeWYevbRTGHfwg" id="(0.4983388704318937,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_VgvQgMNrEeWpYp0WmASFoQ" type="4002" source="_QAQqgMNrEeWpYp0WmASFoQ" target="_MSSj8MNrEeWpYp0WmASFoQ" routing="Tree">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l9RqIs9NEeWYevbRTGHfwg" source="PapyrusCSSForceValue">
@@ -243,9 +253,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_VgvQgcNrEeWpYp0WmASFoQ"/>
       <element xmi:type="uml:Generalization" href="PSSM_Semantics.uml#_QiAe8MD1EeWiyPv18KZ0lg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VgvQgsNrEeWpYp0WmASFoQ" points="[3, 0, 3, 90]$[3, -39, 3, 51]$[3, -39, 3, 51]$[3, -90, 3, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKw89NEeWYevbRTGHfwg" id="(0.4787234042553192,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKxM9NEeWYevbRTGHfwg" id="(0.47,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VgvQgsNrEeWpYp0WmASFoQ" points="[-12, 0, 4, 92]$[-12, -60, 4, 32]$[-12, -60, 4, 32]$[-12, -92, 4, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKw89NEeWYevbRTGHfwg" id="(0.5585106382978723,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKxM9NEeWYevbRTGHfwg" id="(0.4850498338870432,1.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_WKszgMNrEeWpYp0WmASFoQ" type="4002" source="_Pt02sMNrEeWpYp0WmASFoQ" target="_MSSj8MNrEeWpYp0WmASFoQ" routing="Tree">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l9RqIM9NEeWYevbRTGHfwg" source="PapyrusCSSForceValue">
@@ -256,9 +266,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_WKszgcNrEeWpYp0WmASFoQ"/>
       <element xmi:type="uml:Generalization" href="PSSM_Semantics.uml#_P4qnAMD1EeWiyPv18KZ0lg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WKszgsNrEeWpYp0WmASFoQ" points="[2, 0, 188, 91]$[2, -40, 188, 51]$[-182, -40, 4, 51]$[-182, -91, 4, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKwc9NEeWYevbRTGHfwg" id="(0.48760330578512395,0.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKws9NEeWYevbRTGHfwg" id="(0.46,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WKszgsNrEeWpYp0WmASFoQ" points="[-9, 0, 175, 92]$[-9, -51, 175, 41]$[-184, -51, 0, 41]$[-184, -92, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKwc9NEeWYevbRTGHfwg" id="(0.5041322314049587,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hXfKws9NEeWYevbRTGHfwg" id="(0.4983388704318937,1.0)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_35S1EMNrEeWpYp0WmASFoQ" type="PapyrusUMLClassDiagram" name="StateMachine PseudostateActivations" measurementUnit="Pixel">

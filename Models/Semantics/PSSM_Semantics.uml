@@ -396,6 +396,14 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           <ownedOperation xmi:type="uml:Operation" xmi:id="_c6Kj4MD0EeWiyPv18KZ0lg" name="getLeastCommonAncestor" visibility="protected">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_c6Kj4cD0EeWiyPv18KZ0lg" type="_mUrtYHV3EeSvTf7EWD7QRA" direction="return"/>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_XcxGsNHBEeWB0O9YzCwUNg" name="canFireOn">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_agIxENHBEeWB0O9YzCwUNg" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_cTxR4NHBEeWB0O9YzCwUNg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_ircQoHWJEeSvTf7EWD7QRA" name="A_vertexActivations_regionActivation" memberEnd="_ircQoXWJEeSvTf7EWD7QRA _irabcHWJEeSvTf7EWD7QRA">
           <ownedEnd xmi:type="uml:Property" xmi:id="_ircQoXWJEeSvTf7EWD7QRA" name="regionActivation" type="_mUrtYHV3EeSvTf7EWD7QRA" association="_ircQoHWJEeSvTf7EWD7QRA">
