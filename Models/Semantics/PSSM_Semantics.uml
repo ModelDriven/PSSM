@@ -17,6 +17,7 @@
       <importedPackage xmi:type="uml:Model" href="../Syntax/fUML_Syntax_UML_2.5.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_VU1pcHVpEeSRWcPi04czfg" name="Semantics">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_XgRdQNLrEeWrx8x7RhrVAQ" importedPackage="_1LSecMOyEeWpYp0WmASFoQ"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_4bWFIMNeEeWpYp0WmASFoQ" name="Values">
         <packageImport xmi:type="uml:PackageImport" xmi:id="_wVHkkM6FEeWF7I4YWspV6w">
           <importedPackage xmi:type="uml:Package" href="PSCS_Semantics.uml#_ddeK4OYUEeGYZqnbU6eCYw"/>
@@ -112,6 +113,9 @@
         <packageImport xmi:type="uml:PackageImport" xmi:id="_7Px7gM6qEeWF7I4YWspV6w" importedPackage="_VU1pcHVpEeSRWcPi04czfg"/>
         <packageImport xmi:type="uml:PackageImport" xmi:id="_8u0sYM6qEeWF7I4YWspV6w" importedPackage="_LFUAwHVxEeSfVojhNHzNrw"/>
         <packageImport xmi:type="uml:PackageImport" xmi:id="_MDHHEM6xEeWF7I4YWspV6w" importedPackage="_1LSecMOyEeWpYp0WmASFoQ"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_gQp8gNLlEeWrx8x7RhrVAQ">
+          <importedPackage xmi:type="uml:Package" href="fUML_Semantics.uml#Semantics-Loci"/>
+        </packageImport>
         <packagedElement xmi:type="uml:Class" xmi:id="_mUrtYHV3EeSvTf7EWD7QRA" name="RegionActivation">
           <generalization xmi:type="uml:Generalization" xmi:id="_sHYxMHWKEeSvTf7EWD7QRA" general="_yWknYHV2EeSvTf7EWD7QRA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jm_S4HWJEeSvTf7EWD7QRA" name="transitionActivations" visibility="protected" type="_vJ5akHV3EeSvTf7EWD7QRA" aggregation="composite" association="_jnAhAHWJEeSvTf7EWD7QRA">
