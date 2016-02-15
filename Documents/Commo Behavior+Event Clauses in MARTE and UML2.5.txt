@@ -9,29 +9,9 @@ The two key aspects in MARTE causality model are: the fact that a behavior occur
 The level of detail at which the relevant semantic aspects are described in MARTE, allows this proposal to fix the semantics of state machines freely as far as it is possible to distinguish the   start and termination event occurrences associated to each behavior execution. Additionally, when a communication is needed among active elements, it must be possible to indicate the invocation occurrence and the receive occurrence in the concrete instances involved. 
 In general terms it can be seen that the relationship of the precise semantics for UML state machines described in this proposal to the causality model in MARTE is conditioned by the evolution of UML since its version 2.1.
 
-
-
-
-
-
 -----------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(This more detailed review can be done for the final submission)
 
 Notes on the comparison between the Common Behavior Clauses in MARTE (formal/11-06-2) and UML2.5 (formal/15-03-01)
 (A Draft in preparation by the PSSM Submitters team – February-2016)
@@ -53,4 +33,3 @@ The Classifier/Instance nature of all the elements involved (both: inside events
 
 TBC….
 
-(I will need some more hours to work on these ones….)
