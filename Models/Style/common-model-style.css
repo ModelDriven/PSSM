@@ -1,9 +1,10 @@
 /* Apply to all elements */
 *{
 	fillColor: white;
-	fontName: Helvetica;
+	fontName: Arial;
 	elementIcon:false;
-	gradient:none
+	gradient:none;
+	fontHeight: 7;
 }
 
 /* Structure related style */
@@ -53,7 +54,7 @@ Operation{
 	parametersmultiplicity,
 	parameterstype,
 	visibility;
-	fontName: Helvetica;
+	fontName: Arial;
 }
 
 Constraint{
