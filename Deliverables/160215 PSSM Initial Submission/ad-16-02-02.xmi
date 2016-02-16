@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.omg.org/spec/UML/20131001">
+  <uml:Model xmi:id="_q6BcIMU1EeWXLLOylfwRMQ" name="PSSM_Syntax">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_iC3AEMnIEeWAiZQZbeZaoA" importingNamespace="_q6BcIMU1EeWXLLOylfwRMQ">
+      <importedElement xmi:type="uml:Package" href="http://www.omg.org/spec/UML/20131001/UML.xmi#_0"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_jh3UsMnIEeWAiZQZbeZaoA" importedElement="_IRDyIMU3EeWXLLOylfwRMQ" importingNamespace="_q6BcIMU1EeWXLLOylfwRMQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4P0jwMnDEeWAiZQZbeZaoA" name="Syntax">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_NsdJMMVKEeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA">
+        <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Constraint"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_FD-3gMVKEeWXLLOylfwRMQ" importedPackage="_-47vsMU3EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_GKJgQMVIEeWXLLOylfwRMQ" importedPackage="_RY31wMU4EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_UGdqIMVIEeWXLLOylfwRMQ" importedPackage="_gEUL8MU3EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_VzjeEMVIEeWXLLOylfwRMQ" importedPackage="_7sx8wMU3EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_a0VeEMVNEeWXLLOylfwRMQ" importedPackage="_bNYcwMU4EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_kOcF4MaeEeWmIYomuH94TA" importedPackage="_Q_2pEMVJEeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_fHvJwMVJEeWXLLOylfwRMQ" importedPackage="_MULkIMVJEeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_bybQQMVIEeWXLLOylfwRMQ" importedPackage="_coJpQMVGEeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_hG9E8MVIEeWXLLOylfwRMQ" importedPackage="_YR7acMVHEeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_3KCPQMqmEeWF7I4YWspV6w" importedPackage="_1J2bQMU3EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_7Ne2kMqmEeWF7I4YWspV6w" importedPackage="_3M54IMU3EeWXLLOylfwRMQ" importingNamespace="_4P0jwMnDEeWAiZQZbeZaoA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MULkIMVJEeWXLLOylfwRMQ" name="CommonStructure">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_pomscMwYEeWF7I4YWspV6w" importingNamespace="_MULkIMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Constraint"/>
+        </elementImport>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_lq0oQMwYEeWF7I4YWspV6w" importedPackage="_-47vsMU3EeWXLLOylfwRMQ" importingNamespace="_MULkIMVJEeWXLLOylfwRMQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_coJpQMVGEeWXLLOylfwRMQ" name="Values">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_1SE6cMVIEeWXLLOylfwRMQ" importingNamespace="_coJpQMVGEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#OpaqueExpression"/>
+        </elementImport>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ" importedPackage="_zIiDwMU3EeWXLLOylfwRMQ" importingNamespace="_coJpQMVGEeWXLLOylfwRMQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YR7acMVHEeWXLLOylfwRMQ" name="CommonBehavior" URI="">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_sw4twMVOEeWXLLOylfwRMQ" importingNamespace="_YR7acMVHEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallEvent"/>
+        </elementImport>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_kdR40MVOEeWXLLOylfwRMQ" importedPackage="_CkpMcMU4EeWXLLOylfwRMQ" importingNamespace="_YR7acMVHEeWXLLOylfwRMQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Q_2pEMVJEeWXLLOylfwRMQ" name="StateMachines">
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_AvCeQMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#FinalState"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_DQ_doMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ProtocolConformance"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_Ex_WUMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ProtocolStateMachine"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_HzKoUMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ProtocolTransition"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_KKu8oMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Pseudostate"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_LcmNIMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Region"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_M-v8YMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#State"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_ORsyAMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StateMachine"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_aA8AUMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_kleWEMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Vertex"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_m3Uc4MVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#PseudostateKind"/>
+        </elementImport>
+        <elementImport xmi:type="uml:ElementImport" xmi:id="_pNqpMMVPEeWXLLOylfwRMQ" importingNamespace="_Q_2pEMVJEeWXLLOylfwRMQ">
+          <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#TransitionKind"/>
+        </elementImport>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hj5BkMnHEeWAiZQZbeZaoA" name="Constraints">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_1DWDAMq7EeWF7I4YWspV6w" importedPackage="_MI8tgcnIEeWAiZQZbeZaoA" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_2oh4IMq7EeWF7I4YWspV6w" importedPackage="_Cpr9wMnIEeWAiZQZbeZaoA" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_4ALAgMq7EeWF7I4YWspV6w" importedPackage="_qu9HQMqpEeWF7I4YWspV6w" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_7cCDYMq7EeWF7I4YWspV6w" importedPackage="_R8j1cMnJEeWAiZQZbeZaoA" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_813kIMq7EeWF7I4YWspV6w" importedPackage="_apctEMnJEeWAiZQZbeZaoA" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_CYCWwMq9EeWF7I4YWspV6w" importedPackage="_ezoDEMq8EeWF7I4YWspV6w" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_E1hs4Mq9EeWF7I4YWspV6w" importedPackage="_kRmHoMq8EeWF7I4YWspV6w" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_Gi2KUMq9EeWF7I4YWspV6w" importedPackage="_nOhy0Mq8EeWF7I4YWspV6w" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_ILI90Mq9EeWF7I4YWspV6w" importedPackage="_pq2EQMq8EeWF7I4YWspV6w" importingNamespace="_hj5BkMnHEeWAiZQZbeZaoA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MI8tgcnIEeWAiZQZbeZaoA" name="CommonStructure" visibility="public">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_7azGcMnNEeWAiZQZbeZaoA" name="pssm_constraint_is_guard" context="_MI8tgcnIEeWAiZQZbeZaoA">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Constraint"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_gGfLQMnOEeWAiZQZbeZaoA">
+            <language>Natural language</language>
+            <language>OCL</language>
+            <body>A Constraint must be owned as a guard by a Transition and its constrainedElements must be empty.</body>
+            <body>self.owner.oclIsKindOf(UML::StateMachines::Transition) and self.constrainedElement->isEmpty()</body>
+          </specification>
+        </ownedRule>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Cpr9wMnIEeWAiZQZbeZaoA" name="Values" visibility="public">
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w" name="pssm_opaque_expression_has_behavior" constrainedElement="_Cpr9wMnIEeWAiZQZbeZaoA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The OpaqueExpression must have a behavior.</body>
+          </specification>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qu9HQMqpEeWF7I4YWspV6w" name="Classification">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_RsYvwMqrEeWF7I4YWspV6w" annotatedElement="_S7rp4MqqEeWF7I4YWspV6w">
+          <body>This replaces fUML constraint zero_or_one_method on Operation.</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_S7rp4MqqEeWF7I4YWspV6w" name="pssm_operation_has_at_most_one_method">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Operation"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRFhMMqqEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active Class.</body>
+          </specification>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R8j1cMnJEeWAiZQZbeZaoA" name="CommonBehavior">
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_AQVagMqpEeWF7I4YWspV6w" name="pssm_call_event_operation_has_no_method">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallEvent"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_T5J0MMqpEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The operation of the CallEvent must not have any methods.</body>
+          </specification>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_apctEMnJEeWAiZQZbeZaoA" name="StateMachines">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w" name="Of_pssm_transition_signal_event_receptions" context="_apctEMnJEeWAiZQZbeZaoA">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dduWIct3EeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The Signals of any SignalEvents on the triggers of a Transition must have matching Receptions that are owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          </specification>
+        </ownedRule>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_SNpToMq0EeWF7I4YWspV6w" name="pssm_state_has_no_submachine">
+          <constrainedElement xmi:type="uml:Package" href="#_apctEMnJEeWAiZQZbeZaoA"/>
+          <constrainedElement xmi:type="uml:Property" href="http://www.omg.org/spec/UML/20131001/UML.xmi#State-isSimple"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1zTYMq0EeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A State must not have a submachine.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_eJHAEMq0EeWF7I4YWspV6w" name="pssm_state_has_no_invariant" constrainedElement="_apctEMnJEeWAiZQZbeZaoA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLNw4Mq0EeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A State must not have a stateInvariant.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w" name="pssm_state_machine_extends_at_most_one">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StateMachine"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A StateMachine must not have more than one extendedStateMachine.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_ZAtrMMtqEeWF7I4YWspV6w" name="pssm_state_machine_context">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StateMachine"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_spC8sMtqEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>A StateMachine may not be a method and, if it has a context, it must be a classifierBehavior for that context.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_r0dooMtrEeWF7I4YWspV6w" name="pssm_transition_triggers">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VUBsIMtsEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The triggers of a Transition must all be for CallEvents or SignalEvents.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_eVRDIMtsEeWF7I4YWspV6w" name="pssm_transition_call_event_operations">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-GJa0MtsEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>The Operations of any CallEvents on the triggers of a Transition must be owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_FtgNwMttEeWF7I4YWspV6w" name="pssm_transition_behavior_parameters">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Be2mkMtuEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>If all triggers of a Transition are for SignalEvents, then an effect Behavior of the Transition may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the Transition triggers. If all the triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an effect Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an effect Behavior must have no Parameters.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_Whi9QMtuEeWF7I4YWspV6w" name="pssm_state_behavior_parameters">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#State"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Yp1MMtuEeWF7I4YWspV6w">
+            <language>Natural language</language>
+            <body>If all the relevant Triggers of an entry, doActivity or effect Behavior are for SignalEvents, then the Behavior may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the relevant Triggers. If all the relevant Triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an entry or exit behavior Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents and a doActivity Behavior may have a signature that input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an entry, doActivity or exit Behavior must have no Parameters.</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_mzLw8NEaEeWMvYElZ5Ee4w" name="pssm_transition_vertexes">
+          <constrainedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Transition"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_44KZUNEaEeWMvYElZ5Ee4w">
+            <language>Natural language</language>
+            <body>The source and target Vertexes of a Transition must be contained by the same StateMachine as the Transition.</body>
+          </specification>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_IRDyIMU3EeWXLLOylfwRMQ" name="fUML_Syntax">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_dGikgMU9EeWXLLOylfwRMQ" alias="" importingNamespace="_IRDyIMU3EeWXLLOylfwRMQ">
+        <importedElement xmi:type="uml:Package" href="http://www.omg.org/spec/UML/20131001/UML.xmi#_0"/>
+      </elementImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="_a-ZboMnEEeWAiZQZbeZaoA" name="Syntax">
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_O8abAMnFEeWAiZQZbeZaoA" importedPackage="_-47vsMU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_ZrBSwMnFEeWAiZQZbeZaoA" importedPackage="_RY31wMU4EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_h4j78MnFEeWAiZQZbeZaoA" importedPackage="_1J2bQMU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_jiLlIMnFEeWAiZQZbeZaoA" importedPackage="_7sx8wMU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_5iXe0MnFEeWAiZQZbeZaoA" importedPackage="_gEUL8MU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="__CffgMnFEeWAiZQZbeZaoA" importedPackage="_CkpMcMU4EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_AiwYYMnGEeWAiZQZbeZaoA" importedPackage="_bNYcwMU4EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_Sb5ZoMnFEeWAiZQZbeZaoA" importedPackage="_zIiDwMU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_grvjgMnFEeWAiZQZbeZaoA" importedPackage="_3M54IMU3EeWXLLOylfwRMQ" importingNamespace="_a-ZboMnEEeWAiZQZbeZaoA"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-47vsMU3EeWXLLOylfwRMQ" name="CommonStructure">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-6G0YMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::CommonStructure::VisibilityKind;
+public import UML::CommonStructure::PackageableElement;
+public import UML::CommonStructure::Comment;
+public import UML::CommonStructure::TypedElement;
+public import UML::CommonStructure::DirectedRelationship;
+public import UML::CommonStructure::Namespace;
+public import UML::CommonStructure::Relationship;
+public import UML::CommonStructure::Element;
+public import UML::CommonStructure::PackageImport;
+public import UML::CommonStructure::MultiplicityElement;
+public import UML::CommonStructure::ElementImport;
+public import UML::CommonStructure::Type;
+public import UML::CommonStructure::NamedElement;
+package CommonStructure {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_gWP6YMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Comment"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_tgixcMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#DirectedRelationship"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_xWuY0MVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Element"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_ytCEcMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ElementImport"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_zwPN4MVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#MultiplicityElement"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_1jJV8MVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#NamedElement"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_22S_4MVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Namespace"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_4pv6gMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#PackageableElement"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_7HdTEMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#PackageImport"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_-eXkgMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Relationship"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="__gqvAMVAEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Type"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_A9J7IMVBEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#TypedElement"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_DRbq4MVBEeWXLLOylfwRMQ" importingNamespace="_-47vsMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#VisibilityKind"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_zIiDwMU3EeWXLLOylfwRMQ" name="Values">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_zML0sMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::Values::ValueSpecification;
+public import UML::Values::LiteralSpecification;
+public import UML::Values::LiteralReal as ;
+public import UML::Values::LiteralBoolean;
+public import UML::Values::LiteralUnlimitedNatural;
+public import UML::Values::LiteralInteger as ;
+public import UML::Values::LiteralNull;
+public import UML::Values::LiteralString;
+package Values {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_y1KCgMU8EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralBoolean"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_0fs4wMU8EeWXLLOylfwRMQ" alias="" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralInteger"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_4Bp8kMU8EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralNull"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_5-y-sMU8EeWXLLOylfwRMQ" alias="" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralReal"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_GyON4MU9EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralSpecification"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_J0N_QMU9EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralString"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_L9agYMU9EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LiteralUnlimitedNatural"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_O4qwkMU9EeWXLLOylfwRMQ" importingNamespace="_zIiDwMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ValueSpecification"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_RY31wMU4EeWXLLOylfwRMQ" name="Classification">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RZ2tMMU4EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::Classification::AggregationKind;
+public import UML::Classification::InstanceSpecification;
+public import UML::Classification::ParameterDirectionKind;
+public import UML::Classification::Slot;
+public import UML::Classification::BehavioralFeature;
+public import UML::Classification::Feature;
+public import UML::Classification::CallConcurrencyKind;
+public import UML::Classification::StructuralFeature;
+public import UML::Classification::Generalization;
+public import UML::Classification::InstanceValue;
+public import UML::Classification::Classifier;
+public import UML::Classification::Parameter;
+public import UML::Classification::RedefinableElement;
+public import UML::Classification::Property;
+public import UML::Classification::Operation;
+public import UML::Classification::ParameterEffectKind;
+package Classification {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_NMdUIMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#BehavioralFeature"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_O80egMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Classifier"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_RnWyIMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Feature"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_SlfOUMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Generalization"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Vgg1AMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#InstanceSpecification"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_aSYokMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#InstanceValue"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_bjz0MMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Operation"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_cvXBUMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Parameter"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_eCZWgMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Property"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_fkPjwMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#RedefinableElement"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_gnvBEMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Slot"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_iLKisMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StructuralFeature"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_kAVUkMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#AggregationKind"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_lMHLMMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallConcurrencyKind"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_mOz-UMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ParameterDirectionKind"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_nJ3RUMVCEeWXLLOylfwRMQ" importingNamespace="_RY31wMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ParameterEffectKind"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3M54IMU3EeWXLLOylfwRMQ" name="SimpleClassifiers">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3OInMMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::SimpleClassifiers::EnumerationLiteral;
+public import UML::SimpleClassifiers::DataType;
+public import UML::SimpleClassifiers::PrimitiveType;
+public import UML::SimpleClassifiers::Reception;
+public import UML::SimpleClassifiers::BehavioredClassifier;
+public import UML::SimpleClassifiers::Signal;
+public import UML::SimpleClassifiers::Enumeration;
+package SimpleClassifiers {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Vn6k4MU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#BehavioredClassifier"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_dbJQoMU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#DataType"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_e3n1sMU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Enumeration"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_h88A0MU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#EnumerationLiteral"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_u_GPkMU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#PrimitiveType"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_wxfaQMU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Reception"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_zxOh0MU_EeWXLLOylfwRMQ" importingNamespace="_3M54IMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Signal"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_1J2bQMU3EeWXLLOylfwRMQ" name="StructuredClassifiers">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_1LwfwMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::StructuredClassifiers::Association;
+public import UML::StructuredClassifiers::Class;
+package StructuredClassifiers {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_0DZFUMU-EeWXLLOylfwRMQ" importingNamespace="_1J2bQMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Class"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_AIhrIMU_EeWXLLOylfwRMQ" importingNamespace="_1J2bQMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Association"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_7sx8wMU3EeWXLLOylfwRMQ" name="Packages">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7t7zUMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::Packages::Package;
+package Packages {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_E1ukoMVAEeWXLLOylfwRMQ" importingNamespace="_7sx8wMU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Package"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_CkpMcMU4EeWXLLOylfwRMQ" name="CommonBehavior">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Clp5EMU4EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::CommonBehavior::OpaqueBehavior;
+public import UML::CommonBehavior::Behavior;
+public import UML::CommonBehavior::FunctionBehavior;
+public import UML::CommonBehavior::Trigger;
+public import UML::CommonBehavior::Event;
+public import UML::CommonBehavior::MessageEvent;
+public import UML::CommonBehavior::SignalEvent;
+package CommonBehavior {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_k_HtgMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Behavior"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_mYEdcMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Event"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_one7UMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#FunctionBehavior"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_rm6g4MVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#MessageEvent"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_u66oQMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#OpaqueBehavior"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_wsn2cMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#SignalEvent"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_yIYCwMVBEeWXLLOylfwRMQ" importingNamespace="_CkpMcMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Trigger"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_gEUL8MU3EeWXLLOylfwRMQ" name="Activities">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_gnoUYMU3EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::Activities::ControlNode;
+public import UML::Activities::ControlFlow;
+public import UML::Activities::ActivityFinalNode;
+public import UML::Activities::ObjectNode;
+public import UML::Activities::ActivityGroup;
+public import UML::Activities::Activity;
+public import UML::Activities::ForkNode;
+public import UML::Activities::ExecutableNode;
+public import UML::Activities::ActivityParameterNode;
+public import UML::Activities::InitialNode;
+public import UML::Activities::ObjectFlow;
+public import UML::Activities::ObjectNodeOrderingKind;
+public import UML::Activities::FlowFinalNode;
+public import UML::Activities::DecisionNode;
+public import UML::Activities::ActivityEdge;
+public import UML::Activities::ActivityNode;
+public import UML::Activities::FinalNode;
+public import UML::Activities::JoinNode;
+public import UML::Activities::MergeNode;
+package Activities {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_mF4lcMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Activity"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_oNz7QMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActivityNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_qdA9wMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActivityGroup"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_sncN8MU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActivityEdge"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_wPTFcMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActivityFinalNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_7ywhkMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActivityParameterNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_-tVcUMU6EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ControlFlow"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_ACXVkMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ControlNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_B9zHgMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#DecisionNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Dy8EMMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ExecutableNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_GhmC0MU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#FinalNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_IB-QcMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#FlowFinalNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_JfNDcMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ForkNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_KhLd0MU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#InitialNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_L_mjoMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#JoinNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Nlm4IMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#MergeNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Om3g0MU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ObjectFlow"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_PzJGsMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ObjectNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_RFSEAMU7EeWXLLOylfwRMQ" importingNamespace="_gEUL8MU3EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ObjectNodeOrderingKind"/>
+          </elementImport>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_bNYcwMU4EeWXLLOylfwRMQ" name="Actions">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_bOTp0MU4EeWXLLOylfwRMQ">
+            <body>namespace fUML_Syntax::Syntax;
+
+public import UML::Actions::InvocationAction;
+public import UML::Actions::ActionInputPin;
+public import UML::Actions::ReduceAction;
+public import UML::Actions::ReadExtentAction;
+public import UML::Actions::ReadStructuralFeatureAction;
+public import UML::Actions::AcceptEventAction;
+public import UML::Actions::ReadLinkAction;
+public import UML::Actions::ExpansionRegion;
+public import UML::Actions::LinkEndCreationData;
+public import UML::Actions::ClearAssociationAction;
+public import UML::Actions::ClearStructuralFeatureAction;
+public import UML::Actions::WriteLinkAction;
+public import UML::Actions::InputPin;
+public import UML::Actions::DestroyLinkAction;
+public import UML::Actions::LinkAction;
+public import UML::Actions::ExpansionNode;
+public import UML::Actions::StartObjectBehaviorAction;
+public import UML::Actions::CallAction;
+public import UML::Actions::Action;
+public import UML::Actions::StructuralFeatureAction;
+public import UML::Actions::CallOperationAction;
+public import UML::Actions::ValueSpecificationAction;
+public import UML::Actions::WriteStructuralFeatureAction;
+public import UML::Actions::TestIdentityAction;
+public import UML::Actions::LinkEndDestructionData;
+public import UML::Actions::ReadIsClassifiedObjectAction;
+public import UML::Actions::ReadSelfAction;
+public import UML::Actions::ExpansionKind;
+public import UML::Actions::CreateLinkAction;
+public import UML::Actions::AddStructuralFeatureValueAction;
+public import UML::Actions::Pin;
+public import UML::Actions::LinkEndData;
+public import UML::Actions::CallBehaviorAction;
+public import UML::Actions::StructuredActivityNode;
+public import UML::Actions::OutputPin;
+public import UML::Actions::Clause;
+public import UML::Actions::RemoveStructuralFeatureValueAction;
+public import UML::Actions::LoopNode;
+public import UML::Actions::ConditionalNode;
+public import UML::Actions::ReclassifyObjectAction;
+public import UML::Actions::SendSignalAction;
+package Actions {
+
+}</body>
+          </ownedComment>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_lJDasMVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ValueSpecificationAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_nT3FYMVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#WriteLinkAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_pWiu0MVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#WriteStructuralFeatureAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_qixRYMVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Enumeration" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ExpansionKind"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_ty6McMVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#AcceptEventAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_u7TX4MVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Action"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_0FCR0MVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ActionInputPin"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_1QG90MVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#AddStructuralFeatureValueAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_4zou8MVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_-GV-sMVDEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallBehaviorAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_BHCIgMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CallOperationAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_CU_JYMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Clause"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_ESTKoMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ClearAssociationAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_GH4zQMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ClearStructuralFeatureAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_HRXj0MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ConditionalNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_IT4wwMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#CreateLinkAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Jsap8MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#DestroyLinkAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_NCVc4MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ExpansionNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_PGGEYMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ExpansionRegion"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Q2cAoMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#InputPin"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_SGMYUMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#InvocationAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_S_PgMMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LinkAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_VkzNMMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LinkEndCreationData"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_YishsMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LinkEndData"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_Zw_g0MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LinkEndDestructionData"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_daTw4MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#LoopNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_e2FyYMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#OutputPin"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_gRk48MVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#Pin"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_kLyEsMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReadExtentAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_nNrIYMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReadIsClassifiedObjectAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_vv95kMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReadLinkAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_xN86gMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReadSelfAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_zzn8QMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReadStructuralFeatureAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_3uiSoMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReclassifyObjectAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_5EuCcMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#ReduceAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_7ioPUMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#RemoveStructuralFeatureValueAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_9WvRQMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#SendSignalAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_-bYlIMVEEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StartObjectBehaviorAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_AQ-NwMVFEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StructuralFeatureAction"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_C2Gc8MVFEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#StructuredActivityNode"/>
+          </elementImport>
+          <elementImport xmi:type="uml:ElementImport" xmi:id="_FsDWYMVFEeWXLLOylfwRMQ" importingNamespace="_bNYcwMU4EeWXLLOylfwRMQ">
+            <importedElement xmi:type="uml:Class" href="http://www.omg.org/spec/UML/20131001/UML.xmi#TestIdentityAction"/>
+          </elementImport>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jPM0MMnEEeWAiZQZbeZaoA" name="Constraints">
+        <packagedElement xmi:type="uml:Package" xmi:id="_XeqAoMq8EeWF7I4YWspV6w" name="CommonStructure"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_Zh3OgMq8EeWF7I4YWspV6w" name="Values"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_bgyZUMq8EeWF7I4YWspV6w" name="Classification"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ezoDEMq8EeWF7I4YWspV6w" name="StructuredClassifiers"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_kRmHoMq8EeWF7I4YWspV6w" name="Packages"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_iAdLcMq8EeWF7I4YWspV6w" name="CommonBehavior"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_nOhy0Mq8EeWF7I4YWspV6w" name="Activities"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_pq2EQMq8EeWF7I4YWspV6w" name="Actions"/>
+      </packagedElement>
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>
