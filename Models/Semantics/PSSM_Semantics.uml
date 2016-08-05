@@ -1620,16 +1620,6 @@ return this.leastCommonAncestor;
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_04TBgPiBEeS41tijFXo_Iw" name="isTraversed" method="_0lnB9NQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_xJPD4PiDEeSlpJn94rgDzA" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_DLk54PiCEeS41tijFXo_Iw" name="isTriggered" method="_0lnpANQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_F0hAIPiEEeSlpJn94rgDzA" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedParameter>
-          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_EX-bkPiCEeS41tijFXo_Iw" name="isGuarded" method="_0loQENQuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_HvNyQPiEEeSlpJn94rgDzA" direction="return">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -1650,6 +1640,22 @@ return this.leastCommonAncestor;
           <ownedOperation xmi:type="uml:Operation" xmi:id="_1DusAHWIEeSvTf7EWD7QRA" name="fire" method="_0lshgdQuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_rCqF8Fi9EeaMpZSzvy8A5Q" name="eventOccurrence">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_04TBgPiBEeS41tijFXo_Iw" name="isTraversed" method="_0lnB9NQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_xJPD4PiDEeSlpJn94rgDzA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_SDvp8FsxEeaMpZSzvy8A5Q" name="staticCheck">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DLk54PiCEeS41tijFXo_Iw" name="isTriggered" method="_0lnpANQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_F0hAIPiEEeSlpJn94rgDzA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_aaQB4FsxEeaMpZSzvy8A5Q" name="staticCheck">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_7NHs8Fi-EeaMpZSzvy8A5Q" name="isVisitorFor">
@@ -4339,14 +4345,16 @@ if(this.parent!=null){
 return contextChain;
 </body>
           </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_evimUHWKEeSvTf7EWD7QRA" name="activate" method="_0m2_INQuEeWMJphss3BZSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_75aHoPP-EeSZYezF3nFWWw" name="activateTransitions" method="_0m2_IdQuEeWMJphss3BZSg"/>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_P4IKwPP9EeSZYezF3nFWWw" name="getNode" method="_0mz70NQuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fsb9YPP-EeSZYezF3nFWWw" direction="return">
               <type xmi:type="uml:Class" href="../Syntax/UML.uml#NamedElement"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_QTM9MPP9EeSZYezF3nFWWw" name="setNode" method="_0m0i4NQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KAyHcPP-EeSZYezF3nFWWw">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#NamedElement"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ubgYEPP-EeSZYezF3nFWWw" name="getExecutionLocus" method="_0m1xBNQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fcp_gPP_EeSZYezF3nFWWw" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-Locus"/>
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_QsMsAPP9EeSZYezF3nFWWw" name="getParent" method="_0m0i5NQuEeWMJphss3BZSg">
@@ -4354,24 +4362,24 @@ return contextChain;
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-SemanticVisitor"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_RHuKYPP9EeSZYezF3nFWWw" name="setParent" method="_0m1J8NQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qTy70PP-EeSZYezF3nFWWw" name="parent">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-SemanticVisitor"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_diRwsHWEEeSvTf7EWD7QRA" name="getStateMachineExecution" method="_0m1xANQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5hPy4PP9EeSZYezF3nFWWw" direction="return">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
-            </ownedParameter>
-          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_vCEo0PP-EeSZYezF3nFWWw" name="getExecutionContext" method="_0m2YE9QuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_TzecUPfqEeS41tijFXo_Iw" direction="return">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_ubgYEPP-EeSZYezF3nFWWw" name="getExecutionLocus" method="_0m1xBNQuEeWMJphss3BZSg">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fcp_gPP_EeSZYezF3nFWWw" direction="return">
-              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-Locus"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_RHuKYPP9EeSZYezF3nFWWw" name="setParent" method="_0m1J8NQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qTy70PP-EeSZYezF3nFWWw" name="parent">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-SemanticVisitor"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QTM9MPP9EeSZYezF3nFWWw" name="setNode" method="_0m0i4NQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_KAyHcPP-EeSZYezF3nFWWw">
+              <type xmi:type="uml:Class" href="../Syntax/UML.uml#NamedElement"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_diRwsHWEEeSvTf7EWD7QRA" name="getStateMachineExecution" method="_0m1xANQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5hPy4PP9EeSZYezF3nFWWw" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_c8HvoHWEEeSvTf7EWD7QRA" name="getContextChain" method="_7EYcMNQuEeW-v_063gYgPA">
@@ -4381,8 +4389,27 @@ return contextChain;
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ulRXoHWEEeSvTf7EWD7QRA" value="*"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_evimUHWKEeSvTf7EWD7QRA" name="activate" method="_0m2_INQuEeWMJphss3BZSg"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_75aHoPP-EeSZYezF3nFWWw" name="activateTransitions" method="_0m2_IdQuEeWMJphss3BZSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_7GLwwFi5EeaMpZSzvy8A5Q" name="isVisitorFor">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_K17nIFi6EeaMpZSzvy8A5Q" name="node">
+              <type xmi:type="uml:Class" href="../Syntax/UML.uml#NamedElement"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_MdhQAFi6EeaMpZSzvy8A5Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wrHRUFswEeaMpZSzvy8A5Q" name="match">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_4AoGUFswEeaMpZSzvy8A5Q" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8j_j0FswEeaMpZSzvy8A5Q" name="triggers">
+              <type xmi:type="uml:Class" href="../Syntax/UML.uml#Trigger"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9nCVMFswEeaMpZSzvy8A5Q"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9nEKYFswEeaMpZSzvy8A5Q" value="*"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_AFf7sFsxEeaMpZSzvy8A5Q" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_-QpEwPP-EeSZYezF3nFWWw" name="getExecutionFor" visibility="protected" method="_0m3mMNQuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_F-b_IPfqEeS41tijFXo_Iw" name="behavior">
               <type xmi:type="uml:Class" href="../Syntax/UML.uml#Behavior"/>
@@ -4392,14 +4419,6 @@ return contextChain;
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_kyZloFi5EeaMpZSzvy8A5Q" name="eventOccurrence">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
-            </ownedParameter>
-          </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_7GLwwFi5EeaMpZSzvy8A5Q" name="isVisitorFor">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_K17nIFi6EeaMpZSzvy8A5Q" name="node">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#NamedElement"/>
-            </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_MdhQAFi6EeaMpZSzvy8A5Q" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
