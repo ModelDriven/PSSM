@@ -47,6 +47,9 @@
       <elementImport xmi:type="uml:ElementImport" xmi:id="_1SE6cMVIEeWXLLOylfwRMQ">
         <importedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
       </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_yBkl4G1jEea39NG5Sc27-w">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Expression"/>
+      </elementImport>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ">
         <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_zIiDwMU3EeWXLLOylfwRMQ"/>
       </packageImport>
@@ -132,6 +135,13 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w">
           <language>Natural language</language>
           <body>The OpaqueExpression must have a behavior.</body>
+        </specification>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Constraint" xmi:id="_-jRL4G1jEea39NG5Sc27-w" name="pssm_expression_only_for_else">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#Expression"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TzNUYG1kEea39NG5Sc27-w">
+          <language>Natural language</language>
+          <body>The Expression must have no operands and its symbol must be &quot;else&quot;. </body>
         </specification>
       </packagedElement>
     </packagedElement>
