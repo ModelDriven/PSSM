@@ -49,6 +49,11 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FxoNsXV-EeSvTf7EWD7QRA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FxoNsnV-EeSvTf7EWD7QRA" value="1"/>
           </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YyxQwHTaEea8LcOrDv4gRQ" name="parameterValues" association="_YypU8HTaEea8LcOrDv4gRQ">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dmSDEHTaEea8LcOrDv4gRQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmWUgHTaEea8LcOrDv4gRQ" value="*"/>
+          </ownedAttribute>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7CPHIdQuEeW-v_063gYgPA" name="executeExpressionBehavior" specification="_7K4G4HV8EeSvTf7EWD7QRA">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_7CPuMNQuEeW-v_063gYgPA" name="result" direction="return">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
@@ -83,6 +88,30 @@ return evaluation;
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7K4G43V8EeSvTf7EWD7QRA" value="*"/>
             </ownedParameter>
           </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_8FNVkHTYEea8LcOrDv4gRQ" name="initialize">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_B9ewgHTZEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DP5aoHTZEea8LcOrDv4gRQ" name="getParameterValue">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Le-U4HTZEea8LcOrDv4gRQ" name="parameter">
+              <type xmi:type="uml:Class" href="../Syntax/fUML_Syntax.uml#Syntax-Classes-Kernel-Parameter"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_PlPmsHTZEea8LcOrDv4gRQ" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DniekHTZEea8LcOrDv4gRQ" name="setParameterValue">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Umq5MHTZEea8LcOrDv4gRQ" name="parameterValue">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_YypU8HTaEea8LcOrDv4gRQ" memberEnd="_YyxQwHTaEea8LcOrDv4gRQ _Yyx30HTaEea8LcOrDv4gRQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YyrxMHTaEea8LcOrDv4gRQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YysYQHTaEea8LcOrDv4gRQ" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Yyx30HTaEea8LcOrDv4gRQ" name="sm_opaqueexpressionevaluation" type="_sb52MHVqEeS94falTMzzgw" association="_YypU8HTaEea8LcOrDv4gRQ"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_DOXNEMOyEeWpYp0WmASFoQ" name="StructuredClassifiers">
@@ -158,15 +187,15 @@ super.destroy();
               <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_-jzdgFgREeaqSKm88dX50g" name="operationsMatch">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_-jzdgVgREeaqSKm88dX50g" name="ReturnResult" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2iX78HTUEea8LcOrDv4gRQ" name="dispatch">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2iX78XTUEea8LcOrDv4gRQ" name="object">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_-jzdglgREeaqSKm88dX50g" name="ownedOperation">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2iX78nTUEea8LcOrDv4gRQ" name="operation">
               <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
             </ownedParameter>
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_-jzdg1gREeaqSKm88dX50g" name="baseOperation">
-              <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2iX783TUEea8LcOrDv4gRQ" name="OwnedParameter" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
@@ -1163,6 +1192,19 @@ return fireableTransitions;
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_aJLvcJRREeWAs5MYUhc8EQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3uMEQJ37EeWR28_9aJ_f5g"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3uSK4J37EeWR28_9aJ_f5g" value="1"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Qd4aoHWkEea8LcOrDv4gRQ" name="canPropagateExecution">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qd4aoXWkEea8LcOrDv4gRQ" name="enteringTransition" type="_vJ5akHV3EeSvTf7EWD7QRA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qd4aonWkEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qd4ao3WkEea8LcOrDv4gRQ" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Qd4apHWkEea8LcOrDv4gRQ" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qd4apXWkEea8LcOrDv4gRQ"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qd4apnWkEea8LcOrDv4gRQ" value="1"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
@@ -2225,8 +2267,16 @@ if(this.vertexTargetActivation.isEnterable(this)){
 }
 </body>
           </ownedBehavior>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_WjHFwMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0l_ccNQuEeWMJphss3BZSg"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_WjIT4MD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0l-1YNQuEeWMJphss3BZSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_WjHFwMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0l_ccNQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_i3eK0HXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_WjIT4MD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0l-1YNQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_kzcvUHXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_yFeEAMD0EeWiyPv18KZ0lg" name="InternalTransitionActivation">
           <generalization xmi:type="uml:Generalization" xmi:id="_P4qnAMD1EeWiyPv18KZ0lg" general="_vJ5akHV3EeSvTf7EWD7QRA"/>
@@ -2242,8 +2292,16 @@ return;
 return;
 </body>
           </ownedBehavior>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_UIWTgMD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0mADgNQuEeWMJphss3BZSg"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_UIXhoMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0mADgdQuEeWMJphss3BZSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UIWTgMD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0mADgNQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_m5lVYHXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_UIXhoMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0mADgdQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_nOX5oHXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_02O7cMD0EeWiyPv18KZ0lg" name="LocalTransitionActivation">
           <generalization xmi:type="uml:Generalization" xmi:id="_QiAe8MD1EeWiyPv18KZ0lg" general="_vJ5akHV3EeSvTf7EWD7QRA"/>
@@ -2328,8 +2386,16 @@ if(this.vertexTargetActivation.isEnterable(this)){
 }
 </body>
           </ownedBehavior>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_V8z6wMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0mB4sdQuEeWMJphss3BZSg"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_V81I4MD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0mB4sNQuEeWMJphss3BZSg"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_V8z6wMD1EeWiyPv18KZ0lg" name="enterTarget" visibility="protected" method="_0mB4sdQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_l3TZAHXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_V81I4MD1EeWiyPv18KZ0lg" name="exitSource" visibility="protected" method="_0mB4sNQuEeWMJphss3BZSg">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_mLaAwHXVEea8LcOrDv4gRQ" name="eventOccurrence">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            </ownedParameter>
+          </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_eF0pQMD1EeWiyPv18KZ0lg" name="getContainingState" visibility="protected" method="_0mBRoNQuEeWMJphss3BZSg">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_kqJ48MD1EeWiyPv18KZ0lg" name="StateActivation" type="_rVacUHV3EeSvTf7EWD7QRA" direction="return"/>
           </ownedOperation>
