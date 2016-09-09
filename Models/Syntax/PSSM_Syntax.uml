@@ -47,7 +47,7 @@
       <elementImport xmi:type="uml:ElementImport" xmi:id="_1SE6cMVIEeWXLLOylfwRMQ">
         <importedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
       </elementImport>
-      <elementImport xmi:type="uml:ElementImport" xmi:id="_yBkl4G1jEea39NG5Sc27-w">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_J-j_kHbdEeaSFv8wd_UowA">
         <importedElement xmi:type="uml:Class" href="UML.uml#Expression"/>
       </elementImport>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ">
