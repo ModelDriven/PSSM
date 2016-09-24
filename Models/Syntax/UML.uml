@@ -4139,7 +4139,6 @@ endif)</body>
             <body>isComposite implies not isSubmachineState</body>
           </specification>
         </ownedRule>
-        <generalization xmi:type="uml:Generalization" xmi:id="State-_generalization.1" general="RedefinableElement"/>
         <generalization xmi:type="uml:Generalization" xmi:id="State-_generalization.0" general="Namespace"/>
         <generalization xmi:type="uml:Generalization" xmi:id="State-_generalization.2" general="Vertex"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="State-connection" name="connection" type="ConnectionPointReference" aggregation="composite" subsettedProperty="Namespace-ownedMember" association="A_connection_state">
@@ -4204,17 +4203,6 @@ endif)</body>
             <body>A State with isSubmachineState=true is said to be a submachine State Such a State refers to another StateMachine(submachine).</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="State-redefinedState" name="redefinedState" type="State" subsettedProperty="RedefinableElement-redefinedElement" association="A_redefinedState_state">
-          <ownedComment xmi:type="uml:Comment" xmi:id="State-redefinedState-_ownedComment.0" annotatedElement="State-redefinedState">
-            <body>The State of which this State is a redefinition.</body>
-          </ownedComment>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="State-redefinedState-_lowerValue"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="State-redefinitionContext" name="redefinitionContext" type="Classifier" isReadOnly="true" isDerived="true" redefinedProperty="RedefinableElement-redefinitionContext" association="A_redefinitionContext_state">
-          <ownedComment xmi:type="uml:Comment" xmi:id="State-redefinitionContext-_ownedComment.0" annotatedElement="State-redefinitionContext">
-            <body>References the Classifier in which context this element may be redefined.</body>
-          </ownedComment>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="State-region" name="region" type="Region" aggregation="composite" subsettedProperty="Namespace-ownedMember" association="A_region_state">
           <ownedComment xmi:type="uml:Comment" xmi:id="State-region-_ownedComment.0" annotatedElement="State-region">
@@ -4742,6 +4730,7 @@ endif)</body>
           <body>A Vertex is an abstraction of a node in a StateMachine graph. It can be the source or destination of any number of Transitions.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="Vertex-_generalization.0" general="NamedElement"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="State-_generalization.1" general="RedefinableElement"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="Vertex-container" name="container" type="Region" subsettedProperty="NamedElement-namespace" association="A_subvertex_container">
           <ownedComment xmi:type="uml:Comment" xmi:id="Vertex-container-_ownedComment.0" annotatedElement="Vertex-container">
             <body>The Region that contains this Vertex.</body>
@@ -4761,6 +4750,17 @@ endif)</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="Vertex-outgoing-_lowerValue"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="Vertex-outgoing-_upperValue" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="State-redefinitionContext" name="redefinitionContext" type="Classifier" isReadOnly="true" isDerived="true" redefinedProperty="RedefinableElement-redefinitionContext" association="A_redefinitionContext_state">
+          <ownedComment xmi:type="uml:Comment" xmi:id="State-redefinitionContext-_ownedComment.0" annotatedElement="State-redefinitionContext">
+            <body>References the Classifier in which context this element may be redefined.</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="State-redefinedState" name="redefinedVertex" type="Vertex" subsettedProperty="RedefinableElement-redefinedElement" association="A_redefinedState_state">
+          <ownedComment xmi:type="uml:Comment" xmi:id="State-redefinedState-_ownedComment.0" annotatedElement="State-redefinedState">
+            <body>The Vertex of which this Vertex is a redefinition.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="State-redefinedState-_lowerValue"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="Vertex-containingStateMachine" name="containingStateMachine" bodyCondition="Vertex-containingStateMachine-spec" isQuery="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="Vertex-containingStateMachine-_ownedComment.0" annotatedElement="Vertex-containingStateMachine">
@@ -4941,9 +4941,9 @@ endif)</body>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_extendedStateMachine_stateMachine-stateMachine-_upperValue" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="A_redefinitionContext_state" name="A_redefinitionContext_state" isDerived="true" memberEnd="State-redefinitionContext A_redefinitionContext_state-state">
+      <packagedElement xmi:type="uml:Association" xmi:id="A_redefinitionContext_state" name="A_redefinitionContext_vertex" isDerived="true" memberEnd="State-redefinitionContext A_redefinitionContext_state-state">
         <generalization xmi:type="uml:Generalization" xmi:id="A_redefinitionContext_state-_generalization.0" general="A_redefinitionContext_redefinableElement"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="A_redefinitionContext_state-state" name="state" type="State" subsettedProperty="A_redefinitionContext_redefinableElement-redefinableElement" association="A_redefinitionContext_state">
+        <ownedEnd xmi:type="uml:Property" xmi:id="A_redefinitionContext_state-state" name="vertex" type="Vertex" subsettedProperty="A_redefinitionContext_redefinableElement-redefinableElement" association="A_redefinitionContext_state">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_redefinitionContext_state-state-_lowerValue"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_redefinitionContext_state-state-_upperValue" value="*"/>
         </ownedEnd>
@@ -4954,8 +4954,8 @@ endif)</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_stateInvariant_owningState-owningState-_lowerValue"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="A_redefinedState_state" name="A_redefinedState_state" memberEnd="State-redefinedState A_redefinedState_state-state">
-        <ownedEnd xmi:type="uml:Property" xmi:id="A_redefinedState_state-state" name="state" type="State" subsettedProperty="A_redefinedElement_redefinableElement-redefinableElement" association="A_redefinedState_state">
+      <packagedElement xmi:type="uml:Association" xmi:id="A_redefinedState_state" name="A_redefinedState_vertex" memberEnd="State-redefinedState A_redefinedState_state-state">
+        <ownedEnd xmi:type="uml:Property" xmi:id="A_redefinedState_state-state" name="vertex" type="Vertex" subsettedProperty="A_redefinedElement_redefinableElement-redefinableElement" association="A_redefinedState_state">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="A_redefinedState_state-state-_lowerValue"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="A_redefinedState_state-state-_upperValue" value="*"/>
         </ownedEnd>
