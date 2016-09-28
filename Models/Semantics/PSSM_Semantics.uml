@@ -341,7 +341,10 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_irabcXWJEeSvTf7EWD7QRA"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_irabcnWJEeSvTf7EWD7QRA" value="*"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_6Gr7Qli8EeaMpZSzvy8A5Q" name="history" type="_rVacUHV3EeSvTf7EWD7QRA" association="_6GrUMFi8EeaMpZSzvy8A5Q"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6Gr7Qli8EeaMpZSzvy8A5Q" name="history" type="_rVacUHV3EeSvTf7EWD7QRA" association="_6GrUMFi8EeaMpZSzvy8A5Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Iw7-AIKSEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IxKAcIKSEea4nKUlV2qffA" value="1"/>
+          </ownedAttribute>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0iYHwNQuEeWMJphss3BZSg" name="activate" specification="_WzhK8HWKEeSvTf7EWD7QRA">
             <language>Java</language>
             <body>// Create visitors for all vertices owned by the region
@@ -1399,6 +1402,8 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ZSMYMFjBEeaMpZSzvy8A5Q" name="leastCommonAncestor" type="_mUrtYHV3EeSvTf7EWD7QRA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_qe7J8VjBEeaMpZSzvy8A5Q" name="lastTriggeringEventOccurrence" association="_qe6i4FjBEeaMpZSzvy8A5Q">
             <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LFZ7AIKSEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LFaiEIKSEea4nKUlV2qffA" value="1"/>
           </ownedAttribute>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0llz0NQuEeWMJphss3BZSg" name="getStatus" specification="_xiXAcPiBEeS41tijFXo_Iw">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_0llz0dQuEeWMJphss3BZSg" type="_kHnqIPfzEeS41tijFXo_Iw" direction="return">
@@ -4619,7 +4624,10 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6Gr7QFi8EeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6Gr7QVi8EeaMpZSzvy8A5Q" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_6GsiUFi8EeaMpZSzvy8A5Q" name="regionactivation" type="_mUrtYHV3EeSvTf7EWD7QRA" association="_6GrUMFi8EeaMpZSzvy8A5Q"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_6GsiUFi8EeaMpZSzvy8A5Q" name="regionactivation" type="_mUrtYHV3EeSvTf7EWD7QRA" association="_6GrUMFi8EeaMpZSzvy8A5Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JXeZkIKSEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JXfnsIKSEea4nKUlV2qffA" value="1"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_qe6i4FjBEeaMpZSzvy8A5Q" memberEnd="_qe7J8VjBEeaMpZSzvy8A5Q _qe7J8ljBEeaMpZSzvy8A5Q">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qe6i4VjBEeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
