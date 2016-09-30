@@ -172,7 +172,7 @@ super.destroy();
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_w3LF4MDpEeWpevkdGfdnMA" name="destroy" visibility="public" method="_0h-fINQuEeWMJphss3BZSg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_JC02kFgREeaqSKm88dX50g" name="SM_RedefinitionBasedDispatchedStrategy">
+        <packagedElement xmi:type="uml:Class" xmi:id="_JC02kFgREeaqSKm88dX50g" name="SM_RedefinitionBasedDispatchStrategy">
           <generalization xmi:type="uml:Generalization" xmi:id="_6fEcwFgREeaqSKm88dX50g">
             <general xmi:type="uml:Class" href="PSCS_Semantics.uml#_wUwL2N2JEeGnO-TF_1T_iQ"/>
           </generalization>
@@ -1393,8 +1393,8 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
         <packagedElement xmi:type="uml:Class" xmi:id="_vJ5akHV3EeSvTf7EWD7QRA" name="TransitionActivation" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_NHWH8HWHEeSvTf7EWD7QRA" general="_yWknYHV2EeSvTf7EWD7QRA"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_iYq1APfzEeS41tijFXo_Iw" name="status" visibility="protected" type="_kHnqIPfzEeS41tijFXo_Iw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_US6R4pRMEeWAs5MYUhc8EQ" name="vertexSourceActivation" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_US5q0JRMEeWAs5MYUhc8EQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_p47YFJRMEeWAs5MYUhc8EQ" name="vertexTargetActivation" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_p47YEJRMEeWAs5MYUhc8EQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_US6R4pRMEeWAs5MYUhc8EQ" name="sourceVertexActivation" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_US5q0JRMEeWAs5MYUhc8EQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_p47YFJRMEeWAs5MYUhc8EQ" name="targetVertexActivation" type="_z0JjMHV3EeSvTf7EWD7QRA" association="_p47YEJRMEeWAs5MYUhc8EQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_4NXsYFjAEeaMpZSzvy8A5Q" name="analyticalStatus" visibility="protected" type="_kHnqIPfzEeS41tijFXo_Iw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_U2dzwFjBEeaMpZSzvy8A5Q" name="lastPropagation">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -4547,7 +4547,7 @@ return contextChain;
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B5LmQNG9EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_B5LmQtG9EeWB0O9YzCwUNg" name="deferral" type="_VpelING2EeWMvYElZ5Ee4w" association="_B5KYING9EeWB0O9YzCwUNg">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oZEzoNG9EeWB0O9YzCwUNg" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oZEzoNG9EeWB0O9YzCwUNg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oZHP4NG9EeWB0O9YzCwUNg" value="1"/>
           </ownedEnd>
         </packagedElement>
@@ -4555,17 +4555,19 @@ return contextChain;
           <generalization xmi:type="uml:Generalization" xmi:id="_0gUx8FgHEeaqSKm88dX50g">
             <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-Execution"/>
           </generalization>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WlsUwFgIEeaqSKm88dX50g" name="operation">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_XNWKoFgIEeaqSKm88dX50g" name="behavior">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Behavior"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1jaKIFgIEeaqSKm88dX50g" name="callerSuspended">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DETlsIagEea4nKUlV2qffA" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DErZIIagEea4nKUlV2qffA" value="1"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_GReC4lgJEeaqSKm88dX50g" name="callerContext" association="_GRc0wFgJEeaqSKm88dX50g">
             <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_l1-N0oagEea4nKUlV2qffA" name="operation" association="_l19mwIagEea4nKUlV2qffA">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_-i9sA4agEea4nKUlV2qffA" name="behavior" association="_-i9sAIagEea4nKUlV2qffA">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Behavior"/>
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_WGz10FgHEeaqSKm88dX50g" name="_send" visibility="protected">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_djRAUFgHEeaqSKm88dX50g" name="eventOccurrence" type="_ScFF8FgGEeaqSKm88dX50g"/>
@@ -4612,13 +4614,19 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vgaX0FgGEeaqSKm88dX50g" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vgaX0VgGEeaqSKm88dX50g" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_vgfQUFgGEeaqSKm88dX50g" name="calleventoccurrence" type="_ScFF8FgGEeaqSKm88dX50g" association="_vgYioFgGEeaqSKm88dX50g"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_vgfQUFgGEeaqSKm88dX50g" name="callEventOccurrence" type="_ScFF8FgGEeaqSKm88dX50g" association="_vgYioFgGEeaqSKm88dX50g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a7tfsIagEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a7ut0IagEea4nKUlV2qffA" value="1"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_GRc0wFgJEeaqSKm88dX50g" memberEnd="_GReC4lgJEeaqSKm88dX50g _GRep8FgJEeaqSKm88dX50g">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GReC4FgJEeaqSKm88dX50g" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GReC4VgJEeaqSKm88dX50g" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_GRep8FgJEeaqSKm88dX50g" name="calleventexecution" type="_Pz_pYFgGEeaqSKm88dX50g" association="_GRc0wFgJEeaqSKm88dX50g"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_GRep8FgJEeaqSKm88dX50g" name="callEventExecution" type="_Pz_pYFgGEeaqSKm88dX50g" association="_GRc0wFgJEeaqSKm88dX50g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KfioMIagEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KfjPQIagEea4nKUlV2qffA" value="*"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_6GrUMFi8EeaMpZSzvy8A5Q" memberEnd="_6Gr7Qli8EeaMpZSzvy8A5Q _6GsiUFi8EeaMpZSzvy8A5Q">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6Gr7QFi8EeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
@@ -4738,6 +4746,21 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
             </ownedParameter>
           </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_l19mwIagEea4nKUlV2qffA" memberEnd="_l1-N0oagEea4nKUlV2qffA _l1-N04agEea4nKUlV2qffA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l1-N0IagEea4nKUlV2qffA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l1-N0YagEea4nKUlV2qffA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_l1-N04agEea4nKUlV2qffA" name="callEventExecution" type="_Pz_pYFgGEeaqSKm88dX50g" association="_l19mwIagEea4nKUlV2qffA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5HOcEIagEea4nKUlV2qffA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5HPqMIagEea4nKUlV2qffA" value="*"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_-i9sAIagEea4nKUlV2qffA" memberEnd="_-i9sA4agEea4nKUlV2qffA _-i-TEIagEea4nKUlV2qffA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-i9sAYagEea4nKUlV2qffA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-i9sAoagEea4nKUlV2qffA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_-i-TEIagEea4nKUlV2qffA" name="callEventExecution" type="_Pz_pYFgGEeaqSKm88dX50g" association="_-i9sAIagEea4nKUlV2qffA"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_LFUAwHVxEeSfVojhNHzNrw" name="Loci">

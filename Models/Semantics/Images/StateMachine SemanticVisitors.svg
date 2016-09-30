@@ -337,13 +337,13 @@
 <path d="M626 684 L691 684 L691 699 L626 699 L626 684 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath112">
-<path d="M1031 661 L1133 661 L1133 707 L1031 707 L1031 661 Z"/>
+<path d="M971 662 L1189 662 L1189 708 L971 708 L971 662 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath113">
-<path d="M1033 670 L1133 670 L1133 685 L1033 685 L1033 670 Z"/>
+<path d="M978 671 L1183 671 L1183 686 L978 686 L978 671 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath114">
-<path d="M1047 684 L1119 684 L1119 699 L1047 699 L1047 684 Z"/>
+<path d="M1045 685 L1117 685 L1117 700 L1045 700 L1045 685 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath115">
 <path d="M-1 -1 L1458 -1 L1458 1133 L-1 1133 L-1 -1 Z"/>
@@ -442,7 +442,7 @@
 <path d="M883 1025 L1016 1025 L1016 1040 L883 1040 L883 1025 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath147">
-<path d="M829 1004 L933 1004 L933 1019 L829 1019 L829 1004 Z"/>
+<path d="M830 1004 L933 1004 L933 1019 L830 1019 L830 1004 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath148">
 <path d="M1005 1003 L1014 1003 L1014 1018 L1005 1018 L1005 1003 Z"/>
@@ -472,16 +472,16 @@
 <path d="M654 651 L669 651 L669 672 L654 672 L654 651 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath157">
-<path d="M949 725 L1082 725 L1082 740 L949 740 L949 725 Z"/>
+<path d="M949 726 L1082 726 L1082 741 L949 741 L949 726 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath158">
 <path d="M1089 758 L1098 758 L1098 773 L1089 773 L1089 758 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath159">
-<path d="M1087 725 L1107 725 L1107 740 L1087 740 L1087 725 Z"/>
+<path d="M1087 726 L1107 726 L1107 741 L1087 741 L1087 726 Z"/>
 </clipPath>
 <clipPath clipPathUnits="userSpaceOnUse" id="clipPath160">
-<path d="M1077 705 L1092 705 L1092 726 L1077 726 L1077 705 Z"/>
+<path d="M1077 706 L1092 706 L1092 727 L1077 727 L1077 706 Z"/>
 </clipPath>
 </defs>
 <g font-size="11" fill="white" stroke-linejoin="round" stroke="white" stroke-width="0" stroke-miterlimit="0">
@@ -625,10 +625,10 @@
 <rect x="608" y="670" clip-path="url(#clipPath110)" fill="white" width="100" rx="0" ry="0" height="44" stroke="none"/>
 <text x="627" font-size="10" y="695" clip-path="url(#clipPath111)" font-family="'Calibri'" stroke="none" font-weight="bold" xml:space="preserve">StateActivation</text>
 <rect x="608" y="670" clip-path="url(#clipPath110)" fill="none" width="99" rx="0" ry="0" height="43"/>
-<rect x="1032" y="662" clip-path="url(#clipPath112)" fill="silver" width="100" rx="0" ry="0" height="44" stroke="none"/>
-<text x="1034" font-size="10" y="681" clip-path="url(#clipPath113)" font-family="'Calibri'" stroke="none" font-weight="bold" xml:space="preserve">(fUML_Semantics::Se...</text>
-<text x="1048" font-size="10" y="695" clip-path="url(#clipPath114)" font-family="'Calibri'" stroke="none" font-weight="bold" xml:space="preserve">EventOccurrence</text>
-<rect x="1032" y="662" clip-path="url(#clipPath112)" fill="none" width="99" rx="0" ry="0" height="43"/>
+<rect x="972" y="663" clip-path="url(#clipPath112)" fill="silver" width="216" rx="0" ry="0" height="44" stroke="none"/>
+<text x="979" font-size="10" y="682" clip-path="url(#clipPath113)" font-family="'Calibri'" stroke="none" font-weight="bold" xml:space="preserve">(fUML_Semantics::Semantics::CommonBehavior)</text>
+<text x="1046" font-size="10" y="696" clip-path="url(#clipPath114)" font-family="'Calibri'" stroke="none" font-weight="bold" xml:space="preserve">EventOccurrence</text>
+<rect x="972" y="663" clip-path="url(#clipPath112)" fill="none" width="215" rx="0" ry="0" height="43"/>
 <line clip-path="url(#clipPath115)" fill="none" text-rendering="optimizeLegibility" x1="1047" x2="1047" y1="115" y2="49"/>
 <line clip-path="url(#clipPath115)" fill="none" text-rendering="optimizeLegibility" x1="1047" x2="943" y1="49" y2="49"/>
 <text x="1051" font-size="10" y="105" clip-path="url(#clipPath116)" text-rendering="optimizeLegibility" font-family="'Calibri'" stroke="none" xml:space="preserve"> + visitor</text>
@@ -687,7 +687,7 @@
 <polygon fill="none" clip-path="url(#clipPath139)" points=" 1236 775 1234 773 1234 771 1236 769 1237 769 1231 757 1237 769 1243 757 1237 769 1238 769 1240 771 1240 773 1238 775" stroke="black"/>
 <line clip-path="url(#clipPath115)" fill="none" x1="809" x2="923" y1="888" y2="888" stroke="black"/>
 <line clip-path="url(#clipPath115)" fill="none" x1="923" x2="1037" y1="888" y2="888" stroke="black"/>
-<text x="835" y="882" clip-path="url(#clipPath140)" fill="black" stroke="none" xml:space="preserve"> + vertexSourceActivation</text>
+<text x="835" y="882" clip-path="url(#clipPath140)" fill="black" stroke="none" xml:space="preserve"> + sourceVertexActivation</text>
 <text x="881" y="901" clip-path="url(#clipPath141)" fill="black" stroke="none" xml:space="preserve"> + outgoingTransitionActivations</text>
 <text x="837" y="900" clip-path="url(#clipPath142)" fill="black" stroke="none" xml:space="preserve"> 1</text>
 <text x="1006" y="882" clip-path="url(#clipPath143)" fill="black" stroke="none" xml:space="preserve"> *</text>
@@ -697,7 +697,7 @@
 <polygon fill="none" clip-path="url(#clipPath145)" points=" 1037 889 1035 891 1033 891 1031 889 1031 888 1019 894 1031 888 1019 882 1031 888 1031 887 1033 885 1035 885 1037 887" stroke="black"/>
 <line clip-path="url(#clipPath115)" fill="none" x1="1037" x2="809" y1="1021" y2="1021" stroke="black"/>
 <text x="884" y="1036" clip-path="url(#clipPath146)" fill="black" stroke="none" xml:space="preserve"> + incomingTransitionActivations</text>
-<text x="830" y="1015" clip-path="url(#clipPath147)" fill="black" stroke="none" xml:space="preserve"> + vertexTargetActivation</text>
+<text x="831" y="1015" clip-path="url(#clipPath147)" fill="black" stroke="none" xml:space="preserve"> + targetVertexActivation</text>
 <text x="1006" y="1014" clip-path="url(#clipPath148)" fill="black" stroke="none" xml:space="preserve"> *</text>
 <text x="831" y="1033" clip-path="url(#clipPath149)" fill="black" stroke="none" xml:space="preserve"> 1</text>
 <polygon fill="black" clip-path="url(#clipPath150)" points=" 1037 1022 1035 1024 1033 1024 1031 1022 1031 1021 1019 1027 1031 1021 1019 1015 1031 1021 1031 1020 1033 1018 1035 1018 1037 1020" stroke="none"/>
@@ -713,12 +713,13 @@
 <text x="665" y="649" clip-path="url(#clipPath155)" fill="black" stroke="none" xml:space="preserve"> 0..1</text>
 <polygon fill="black" clip-path="url(#clipPath156)" points=" 660 670 658 668 658 666 660 664 661 664 655 652 661 664 667 652 661 664 662 664 664 666 664 668 662 670" stroke="none"/>
 <polygon fill="none" clip-path="url(#clipPath156)" points=" 660 670 658 668 658 666 660 664 661 664 655 652 661 664 667 652 661 664 662 664 664 666 664 668 662 670" stroke="black"/>
-<line clip-path="url(#clipPath115)" fill="none" x1="1084" x2="1084" y1="775" y2="706" stroke="black"/>
-<text x="950" y="736" clip-path="url(#clipPath157)" fill="black" stroke="none" xml:space="preserve"> + lastTriggeringEventOccurrence</text>
+<line clip-path="url(#clipPath115)" fill="none" x1="1084" x2="1084" y1="775" y2="740" stroke="black"/>
+<line clip-path="url(#clipPath115)" fill="none" x1="1084" x2="1084" y1="740" y2="707" stroke="black"/>
+<text x="950" y="737" clip-path="url(#clipPath157)" fill="black" stroke="none" xml:space="preserve"> + lastTriggeringEventOccurrence</text>
 <text x="1090" y="769" clip-path="url(#clipPath158)" fill="black" stroke="none" xml:space="preserve"> *</text>
-<text x="1088" y="736" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve"> 0..1</text>
-<polygon fill="black" clip-path="url(#clipPath160)" points=" 1085 706 1087 708 1087 710 1085 712 1084 712 1090 724 1084 712 1078 724 1084 712 1083 712 1081 710 1081 708 1083 706" stroke="none"/>
-<polygon fill="none" clip-path="url(#clipPath160)" points=" 1085 706 1087 708 1087 710 1085 712 1084 712 1090 724 1084 712 1078 724 1084 712 1083 712 1081 710 1081 708 1083 706" stroke="black"/>
+<text x="1088" y="737" clip-path="url(#clipPath159)" fill="black" stroke="none" xml:space="preserve"> 0..1</text>
+<polygon fill="black" clip-path="url(#clipPath160)" points=" 1085 707 1087 709 1087 711 1085 713 1084 713 1090 725 1084 713 1078 725 1084 713 1083 713 1081 711 1081 709 1083 707" stroke="none"/>
+<polygon fill="none" clip-path="url(#clipPath160)" points=" 1085 707 1087 709 1087 711 1085 713 1084 713 1090 725 1084 713 1078 725 1084 713 1083 713 1081 711 1081 709 1083 707" stroke="black"/>
 </g>
 </g>
 </svg>

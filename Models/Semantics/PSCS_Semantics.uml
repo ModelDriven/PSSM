@@ -1965,251 +1965,6 @@ import fUML.Semantics.Loci.LociL1.SemanticVisitor;&#xD;
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_r1xDAOVMEeGVLZOJyKihvQ" name="CommonBehaviors">
-      <packagedElement xmi:type="uml:Class" xmi:id="_wUwL2N2JEeGnO-TF_1T_iQ" name="CS_DispatchOperationOfInterfaceStrategy">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_wUwL2d2JEeGnO-TF_1T_iQ">
-          <body>Extends fUML RedefinitionBasedDispatchStrategy to account for the fact that the invoked operation may belong to an interface, and not to one of the classifiers of the target object (NOTE: Not mandatory to have it defined as an extension of RedefinitionBasedDispatchStrategy. Could be defined as direct specialization of DispatchStrategy)</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_WaH5UOH1EeG4NZyomhkW-A">
-          <body>// Imports&#xD;
-import CompositeStructuresSyntaxAndSemantics.Syntax.Classes.Interfaces.Operation;&#xD;
-import CompositeStructuresSyntaxAndSemantics.Syntax.CommonBehaviors.Communications.Interface;&#xD;
-import fUML.Semantics.Classes.Kernel.RedefinitionBasedDispatchStrategy;&#xD;
-import fUML.Syntax.Classes.Kernel.Parameter;&#xD;
-import fUML.Syntax.Classes.Kernel.ParameterList;&#xD;
-</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_wUwL3d2JEeGnO-TF_1T_iQ">
-          <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-RedefinitionBasedDispatchStrategy"/>
-        </generalization>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wUwL6N2JEeGnO-TF_1T_iQ" name="operationsMatch" specification="_wUwL_d2JEeGnO-TF_1T_iQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL6d2JEeGnO-TF_1T_iQ" name="ownedOperation">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL6t2JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL692JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL7N2JEeGnO-TF_1T_iQ" name="baseOperation">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL7d2JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL7t2JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL792JEeGnO-TF_1T_iQ" name="result">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL8N2JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL8d2JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-          <language>Java</language>
-          <body>		// Override operationsMatch, in the case where baseOperation belongs &#xD;
-		// to an Interface.&#xD;
-		// In this case, ownedOperation matches baseOperation if it has the same name and signature&#xD;
-		// Otherwise, behaves like fUML RedefinitionBasedDispatchStrategy&#xD;
-		boolean matches = true ;&#xD;
-		if (baseOperation.namespace instanceof Interface) {&#xD;
-			matches = (baseOperation.name == ownedOperation.name) ;&#xD;
-			matches = matches &amp;&amp; (baseOperation.ownedParameter.size() == ownedOperation.ownedParameter.size()) ;&#xD;
-			ParameterList ownedOperationParameters = ownedOperation.ownedParameter ;&#xD;
-			ParameterList baseOperationParameters = baseOperation.ownedParameter ;&#xD;
-			for (int i = 0 ; matches == true &amp;&amp; i &lt; ownedOperationParameters.size() ; i++) {&#xD;
-				Parameter ownedParameter = ownedOperationParameters.getValue(i) ;&#xD;
-				Parameter baseParameter = baseOperationParameters.getValue(i) ;&#xD;
-				matches = (ownedParameter.type == baseParameter.type) ;&#xD;
-				matches = matches &amp;&amp; (ownedParameter.multiplicityElement.lower == ownedParameter.multiplicityElement.lower) ;&#xD;
-				matches = matches &amp;&amp; (ownedParameter.multiplicityElement.upper == ownedParameter.multiplicityElement.upper) ;&#xD;
-				matches = matches &amp;&amp; (ownedParameter.direction == ownedParameter.direction) ;&#xD;
-			}&#xD;
-		}&#xD;
-		else {&#xD;
-			matches = super.operationsMatch(ownedOperation, baseOperation) ;&#xD;
-		}&#xD;
-&#xD;
-		return matches ;</body>
-        </ownedBehavior>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_wUwL_d2JEeGnO-TF_1T_iQ" name="operationsMatch" visibility="public" method="_wUwL6N2JEeGnO-TF_1T_iQ">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_wUwL_t2JEeGnO-TF_1T_iQ">
-            <body>&lt;&lt;TextualRepresentation>>public operationsMatch (in ownedOperation : Operation , &#xD;
-											in baseOperation : Operation ) &#xD;
-											: Boolean {&#xD;
-	// Override operationsMatch, in the case where baseOperation belongs &#xD;
-	// to an Interface&#xD;
-	return false ;&#xD;
-}</body>
-          </ownedComment>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL_92JEeGnO-TF_1T_iQ" name="ownedOperation">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMAN2JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMAd2JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwMAt2JEeGnO-TF_1T_iQ" name="baseOperation">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMA92JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMBN2JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwMBd2JEeGnO-TF_1T_iQ" name="result" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMBt2JEeGnO-TF_1T_iQ" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMB92JEeGnO-TF_1T_iQ" value="1"/>
-          </ownedParameter>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_HC0DIOVNEeGVLZOJyKihvQ" name="CS_StructuralFeatureOfInterfaceAccessStrategy" isAbstract="true">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_VWDtAOVSEeGVLZOJyKihvQ">
-          <body>// Imports&#xD;
-import CompositeStructuresSyntaxAndSemantics.Semantics.CompositeStructures.StructuredClasses.CS_Object;&#xD;
-import fUML.Semantics.Classes.Kernel.FeatureValue;&#xD;
-import fUML.Semantics.Classes.Kernel.ValueList;&#xD;
-import fUML.Semantics.Loci.LociL1.SemanticStrategy;&#xD;
-import fUML.Syntax.Classes.Kernel.StructuralFeature;</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_fvGBYOeXEeGYZqnbU6eCYw">
-          <body>This abstract strategy class enables to deal with realization of structural features by a behaviored classifier, in the case where these structural features belong to an interface realized by this classifier. Concrete realization of this abstract class shall specify behaviors for abstract operations read and write.</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_DFVrgOVOEeGVLZOJyKihvQ">
-          <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-SemanticStrategy"/>
-        </generalization>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_V7pqMOVOEeGVLZOJyKihvQ" name="getName" specification="_du9q8OVNEeGVLZOJyKihvQ">
-          <language>Java</language>
-          <body>		// StructuralFeatureAccessStrategy are always named &quot;structuralFeature&quot;&#xD;
-		return &quot;structuralFeature&quot;;</body>
-        </ownedBehavior>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_du9q8OVNEeGVLZOJyKihvQ" name="getName" method="_V7pqMOVOEeGVLZOJyKihvQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_63F3sOVNEeGVLZOJyKihvQ" name="result" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_e8Yq4OVOEeGVLZOJyKihvQ" name="read" isAbstract="true">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_5uKn8OeWEeGYZqnbU6eCYw">
-            <body>// This abstract operation is intented to return the feature value for the given structural feature, &#xD;
-// in the context of the given object, in the case where the feature belongs to an Interface</body>
-          </ownedComment>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_l5XEEOVOEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_u-DXsOVOEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0j60AOVOEeGVLZOJyKihvQ" name="result" direction="return">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_r0tN4OVeEeGVLZOJyKihvQ" name="write" isAbstract="true">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_TASMcOeXEeGYZqnbU6eCYw">
-            <body>// This abstract operation is intented to capture the way the given structural feature is set,&#xD;
-// in the context of the given object, in the case where the feature belongs to an Interface</body>
-          </ownedComment>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5-E0OVeEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5No94OVeEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-3-qgOVeEeGVLZOJyKihvQ" name="values">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SozwsOVfEeGVLZOJyKihvQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_So4CIOVfEeGVLZOJyKihvQ" value="*"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_CRxQ0OVfEeGVLZOJyKihvQ" name="position">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedParameter>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_-BGgIOVOEeGVLZOJyKihvQ" name="CS_NameBased_StructuralFeatureOfInterfaceAccessStrategy">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_O7JfEOVSEeGVLZOJyKihvQ">
-          <body>// Imports&#xD;
-import CompositeStructuresSyntaxAndSemantics.Semantics.CompositeStructures.StructuredClasses.CS_Object;&#xD;
-import fUML.Semantics.Classes.Kernel.FeatureValue;&#xD;
-import fUML.Semantics.Classes.Kernel.FeatureValueList;&#xD;
-import fUML.Semantics.Classes.Kernel.ValueList;&#xD;
-import fUML.Syntax.Classes.Kernel.StructuralFeature;</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="_70Mq4OeXEeGYZqnbU6eCYw">
-          <body>This class provides a realization of semantic strategy CS_StructuralFeatureOfInterfaceAccessStrategy. This realization makes the hypothesis that, for a given behaviored classifier to actually realize an interface, it shall have structural features which exactly match structural features of the realized interface. Realizing features shall have same name, type and multiplicity as structural features of the interface.</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_PKNWIOVPEeGVLZOJyKihvQ" general="_HC0DIOVNEeGVLZOJyKihvQ"/>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oFfvAOVPEeGVLZOJyKihvQ" name="read" specification="_Qc5tEOVPEeGVLZOJyKihvQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0KCe8OVPEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_1XkpEOVPEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_2vWUUOVPEeGVLZOJyKihvQ" name="result" direction="return">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
-          </ownedParameter>
-          <language>Java</language>
-          <body>		// returns the a copy of the first feature value of cs_Object where the name of the corresponding feature&#xD;
-		// matches the name of the feature given as a parameter&#xD;
-		// Otherwise, returns an empty feature value&#xD;
-		FeatureValueList featureValues = cs_Object.featureValues ;&#xD;
-		FeatureValue matchingFeatureValue = null ;&#xD;
-		for (int i = 0 ; i &lt; featureValues.size() &amp;&amp; matchingFeatureValue == null ; i++) {&#xD;
-			FeatureValue featureValue = featureValues.getValue(i) ; &#xD;
-			if (featureValue.feature.name.equals(feature.name)) {&#xD;
-				matchingFeatureValue = featureValue ;&#xD;
-			}&#xD;
-		}&#xD;
-		if (matchingFeatureValue != null) {&#xD;
-			matchingFeatureValue = matchingFeatureValue.copy() ;&#xD;
-			matchingFeatureValue.feature = feature ;&#xD;
-		}&#xD;
-		else {&#xD;
-			matchingFeatureValue = new FeatureValue() ;&#xD;
-			matchingFeatureValue.feature = feature ;&#xD;
-			matchingFeatureValue.values = new ValueList() ;&#xD;
-			matchingFeatureValue.position = 0 ;&#xD;
-		}&#xD;
-		&#xD;
-		return matchingFeatureValue ;&#xD;
-</body>
-        </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nOZUoOVfEeGVLZOJyKihvQ" name="write" specification="_OssgcOVfEeGVLZOJyKihvQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_qgQG8OVfEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_sCcScOVfEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_tRccMOVfEeGVLZOJyKihvQ" name="values">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pJmAOVfEeGVLZOJyKihvQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pSv8OVfEeGVLZOJyKihvQ" value="*"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_vIYvsOVfEeGVLZOJyKihvQ" name="position">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedParameter>
-          <language>Java</language>
-          <body>	// Retrieves the first feature value of cs_Object where the name of the corresponding feature&#xD;
-	// matches the name of the feature given as a parameter&#xD;
-	// Then updates the values for this feature value&#xD;
-	FeatureValueList featureValues = cs_Object.featureValues ;&#xD;
-	FeatureValue matchingFeatureValue = null ;&#xD;
-	for (int i = 0 ; i &lt; featureValues.size() &amp;&amp; matchingFeatureValue == null ; i++) {&#xD;
-		FeatureValue featureValue = featureValues.getValue(i) ; &#xD;
-		if (featureValue.feature.name.equals(feature.name)) {&#xD;
-			matchingFeatureValue = featureValue ;&#xD;
-		}&#xD;
-	}&#xD;
-	if (matchingFeatureValue != null) {&#xD;
-		cs_Object.setFeatureValue(matchingFeatureValue.feature, values, position) ;&#xD;
-	}&#xD;
-</body>
-        </ownedBehavior>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_Qc5tEOVPEeGVLZOJyKihvQ" name="read" method="_oFfvAOVPEeGVLZOJyKihvQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VDQ0MOVPEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yhf1oOVPEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_dC7ZcOVPEeGVLZOJyKihvQ" name="result" direction="return">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
-          </ownedParameter>
-        </ownedOperation>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_OssgcOVfEeGVLZOJyKihvQ" name="write" method="_nOZUoOVfEeGVLZOJyKihvQ">
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgceVfEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgcuVfEeGVLZOJyKihvQ" name="feature">
-            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ossgc-VfEeGVLZOJyKihvQ" name="values">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U82P4OVfEeGVLZOJyKihvQ"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U856QOVfEeGVLZOJyKihvQ" value="*"/>
-          </ownedParameter>
-          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgdOVfEeGVLZOJyKihvQ" name="position">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </ownedParameter>
-        </ownedOperation>
-      </packagedElement>
-    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ddeK4OYUEeGYZqnbU6eCYw" name="Values">
       <packagedElement xmi:type="uml:Class" xmi:id="_YflXwOYYEeGYZqnbU6eCYw" name="CS_InstanceValueEvaluation">
         <ownedComment xmi:type="uml:Comment" xmi:id="_FlTI8OYhEeGYZqnbU6eCYw">
@@ -4550,6 +4305,249 @@ return newValue;</body>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UMcWYBFAEeKT3tsL4v_Daw" name="ToEnvironment"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_VYG4QBFAEeKT3tsL4v_Daw" name="ToInternal"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XO-TQBFAEeKT3tsL4v_Daw" name="None"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wUwL2N2JEeGnO-TF_1T_iQ" name="CS_DispatchOperationOfInterfaceStrategy">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_wUwL2d2JEeGnO-TF_1T_iQ">
+          <body>Extends fUML RedefinitionBasedDispatchStrategy to account for the fact that the invoked operation may belong to an interface, and not to one of the classifiers of the target object (NOTE: Not mandatory to have it defined as an extension of RedefinitionBasedDispatchStrategy. Could be defined as direct specialization of DispatchStrategy)</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_WaH5UOH1EeG4NZyomhkW-A">
+          <body>// Imports&#xD;
+import CompositeStructuresSyntaxAndSemantics.Syntax.Classes.Interfaces.Operation;&#xD;
+import CompositeStructuresSyntaxAndSemantics.Syntax.CommonBehaviors.Communications.Interface;&#xD;
+import fUML.Semantics.Classes.Kernel.RedefinitionBasedDispatchStrategy;&#xD;
+import fUML.Syntax.Classes.Kernel.Parameter;&#xD;
+import fUML.Syntax.Classes.Kernel.ParameterList;&#xD;
+</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_wUwL3d2JEeGnO-TF_1T_iQ">
+          <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-RedefinitionBasedDispatchStrategy"/>
+        </generalization>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wUwL6N2JEeGnO-TF_1T_iQ" name="operationsMatch" specification="_wUwL_d2JEeGnO-TF_1T_iQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL6d2JEeGnO-TF_1T_iQ" name="ownedOperation">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL6t2JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL692JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL7N2JEeGnO-TF_1T_iQ" name="baseOperation">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL7d2JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL7t2JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL792JEeGnO-TF_1T_iQ" name="result">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwL8N2JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwL8d2JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+          <language>Java</language>
+          <body>		// Override operationsMatch, in the case where baseOperation belongs &#xD;
+		// to an Interface.&#xD;
+		// In this case, ownedOperation matches baseOperation if it has the same name and signature&#xD;
+		// Otherwise, behaves like fUML RedefinitionBasedDispatchStrategy&#xD;
+		boolean matches = true ;&#xD;
+		if (baseOperation.namespace instanceof Interface) {&#xD;
+			matches = (baseOperation.name == ownedOperation.name) ;&#xD;
+			matches = matches &amp;&amp; (baseOperation.ownedParameter.size() == ownedOperation.ownedParameter.size()) ;&#xD;
+			ParameterList ownedOperationParameters = ownedOperation.ownedParameter ;&#xD;
+			ParameterList baseOperationParameters = baseOperation.ownedParameter ;&#xD;
+			for (int i = 0 ; matches == true &amp;&amp; i &lt; ownedOperationParameters.size() ; i++) {&#xD;
+				Parameter ownedParameter = ownedOperationParameters.getValue(i) ;&#xD;
+				Parameter baseParameter = baseOperationParameters.getValue(i) ;&#xD;
+				matches = (ownedParameter.type == baseParameter.type) ;&#xD;
+				matches = matches &amp;&amp; (ownedParameter.multiplicityElement.lower == ownedParameter.multiplicityElement.lower) ;&#xD;
+				matches = matches &amp;&amp; (ownedParameter.multiplicityElement.upper == ownedParameter.multiplicityElement.upper) ;&#xD;
+				matches = matches &amp;&amp; (ownedParameter.direction == ownedParameter.direction) ;&#xD;
+			}&#xD;
+		}&#xD;
+		else {&#xD;
+			matches = super.operationsMatch(ownedOperation, baseOperation) ;&#xD;
+		}&#xD;
+&#xD;
+		return matches ;</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_wUwL_d2JEeGnO-TF_1T_iQ" name="operationsMatch" visibility="public" method="_wUwL6N2JEeGnO-TF_1T_iQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_wUwL_t2JEeGnO-TF_1T_iQ">
+            <body>&lt;&lt;TextualRepresentation>>public operationsMatch (in ownedOperation : Operation , &#xD;
+											in baseOperation : Operation ) &#xD;
+											: Boolean {&#xD;
+	// Override operationsMatch, in the case where baseOperation belongs &#xD;
+	// to an Interface&#xD;
+	return false ;&#xD;
+}</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwL_92JEeGnO-TF_1T_iQ" name="ownedOperation">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMAN2JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMAd2JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwMAt2JEeGnO-TF_1T_iQ" name="baseOperation">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#Operation"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMA92JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMBN2JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_wUwMBd2JEeGnO-TF_1T_iQ" name="result" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wUwMBt2JEeGnO-TF_1T_iQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wUwMB92JEeGnO-TF_1T_iQ" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_HC0DIOVNEeGVLZOJyKihvQ" name="CS_StructuralFeatureOfInterfaceAccessStrategy" isAbstract="true">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_VWDtAOVSEeGVLZOJyKihvQ">
+          <body>// Imports&#xD;
+import CompositeStructuresSyntaxAndSemantics.Semantics.CompositeStructures.StructuredClasses.CS_Object;&#xD;
+import fUML.Semantics.Classes.Kernel.FeatureValue;&#xD;
+import fUML.Semantics.Classes.Kernel.ValueList;&#xD;
+import fUML.Semantics.Loci.LociL1.SemanticStrategy;&#xD;
+import fUML.Syntax.Classes.Kernel.StructuralFeature;</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_fvGBYOeXEeGYZqnbU6eCYw">
+          <body>This abstract strategy class enables to deal with realization of structural features by a behaviored classifier, in the case where these structural features belong to an interface realized by this classifier. Concrete realization of this abstract class shall specify behaviors for abstract operations read and write.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_DFVrgOVOEeGVLZOJyKihvQ">
+          <general xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Loci-LociL1-SemanticStrategy"/>
+        </generalization>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_V7pqMOVOEeGVLZOJyKihvQ" name="getName" specification="_du9q8OVNEeGVLZOJyKihvQ">
+          <language>Java</language>
+          <body>		// StructuralFeatureAccessStrategy are always named &quot;structuralFeature&quot;&#xD;
+		return &quot;structuralFeature&quot;;</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_du9q8OVNEeGVLZOJyKihvQ" name="getName" method="_V7pqMOVOEeGVLZOJyKihvQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_63F3sOVNEeGVLZOJyKihvQ" name="result" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_e8Yq4OVOEeGVLZOJyKihvQ" name="read" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_5uKn8OeWEeGYZqnbU6eCYw">
+            <body>// This abstract operation is intented to return the feature value for the given structural feature, &#xD;
+// in the context of the given object, in the case where the feature belongs to an Interface</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_l5XEEOVOEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_u-DXsOVOEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0j60AOVOEeGVLZOJyKihvQ" name="result" direction="return">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_r0tN4OVeEeGVLZOJyKihvQ" name="write" isAbstract="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TASMcOeXEeGYZqnbU6eCYw">
+            <body>// This abstract operation is intented to capture the way the given structural feature is set,&#xD;
+// in the context of the given object, in the case where the feature belongs to an Interface</body>
+          </ownedComment>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_z5-E0OVeEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_5No94OVeEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_-3-qgOVeEeGVLZOJyKihvQ" name="values">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SozwsOVfEeGVLZOJyKihvQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_So4CIOVfEeGVLZOJyKihvQ" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_CRxQ0OVfEeGVLZOJyKihvQ" name="position">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-BGgIOVOEeGVLZOJyKihvQ" name="CS_NameBased_StructuralFeatureOfInterfaceAccessStrategy">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_O7JfEOVSEeGVLZOJyKihvQ">
+          <body>// Imports&#xD;
+import CompositeStructuresSyntaxAndSemantics.Semantics.CompositeStructures.StructuredClasses.CS_Object;&#xD;
+import fUML.Semantics.Classes.Kernel.FeatureValue;&#xD;
+import fUML.Semantics.Classes.Kernel.FeatureValueList;&#xD;
+import fUML.Semantics.Classes.Kernel.ValueList;&#xD;
+import fUML.Syntax.Classes.Kernel.StructuralFeature;</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_70Mq4OeXEeGYZqnbU6eCYw">
+          <body>This class provides a realization of semantic strategy CS_StructuralFeatureOfInterfaceAccessStrategy. This realization makes the hypothesis that, for a given behaviored classifier to actually realize an interface, it shall have structural features which exactly match structural features of the realized interface. Realizing features shall have same name, type and multiplicity as structural features of the interface.</body>
+        </ownedComment>
+        <generalization xmi:type="uml:Generalization" xmi:id="_PKNWIOVPEeGVLZOJyKihvQ" general="_HC0DIOVNEeGVLZOJyKihvQ"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oFfvAOVPEeGVLZOJyKihvQ" name="read" specification="_Qc5tEOVPEeGVLZOJyKihvQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_0KCe8OVPEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_1XkpEOVPEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_2vWUUOVPEeGVLZOJyKihvQ" name="result" direction="return">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
+          </ownedParameter>
+          <language>Java</language>
+          <body>		// returns the a copy of the first feature value of cs_Object where the name of the corresponding feature&#xD;
+		// matches the name of the feature given as a parameter&#xD;
+		// Otherwise, returns an empty feature value&#xD;
+		FeatureValueList featureValues = cs_Object.featureValues ;&#xD;
+		FeatureValue matchingFeatureValue = null ;&#xD;
+		for (int i = 0 ; i &lt; featureValues.size() &amp;&amp; matchingFeatureValue == null ; i++) {&#xD;
+			FeatureValue featureValue = featureValues.getValue(i) ; &#xD;
+			if (featureValue.feature.name.equals(feature.name)) {&#xD;
+				matchingFeatureValue = featureValue ;&#xD;
+			}&#xD;
+		}&#xD;
+		if (matchingFeatureValue != null) {&#xD;
+			matchingFeatureValue = matchingFeatureValue.copy() ;&#xD;
+			matchingFeatureValue.feature = feature ;&#xD;
+		}&#xD;
+		else {&#xD;
+			matchingFeatureValue = new FeatureValue() ;&#xD;
+			matchingFeatureValue.feature = feature ;&#xD;
+			matchingFeatureValue.values = new ValueList() ;&#xD;
+			matchingFeatureValue.position = 0 ;&#xD;
+		}&#xD;
+		&#xD;
+		return matchingFeatureValue ;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nOZUoOVfEeGVLZOJyKihvQ" name="write" specification="_OssgcOVfEeGVLZOJyKihvQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_qgQG8OVfEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_sCcScOVfEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_tRccMOVfEeGVLZOJyKihvQ" name="values">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pJmAOVfEeGVLZOJyKihvQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pSv8OVfEeGVLZOJyKihvQ" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_vIYvsOVfEeGVLZOJyKihvQ" name="position">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <language>Java</language>
+          <body>	// Retrieves the first feature value of cs_Object where the name of the corresponding feature&#xD;
+	// matches the name of the feature given as a parameter&#xD;
+	// Then updates the values for this feature value&#xD;
+	FeatureValueList featureValues = cs_Object.featureValues ;&#xD;
+	FeatureValue matchingFeatureValue = null ;&#xD;
+	for (int i = 0 ; i &lt; featureValues.size() &amp;&amp; matchingFeatureValue == null ; i++) {&#xD;
+		FeatureValue featureValue = featureValues.getValue(i) ; &#xD;
+		if (featureValue.feature.name.equals(feature.name)) {&#xD;
+			matchingFeatureValue = featureValue ;&#xD;
+		}&#xD;
+	}&#xD;
+	if (matchingFeatureValue != null) {&#xD;
+		cs_Object.setFeatureValue(matchingFeatureValue.feature, values, position) ;&#xD;
+	}&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Qc5tEOVPEeGVLZOJyKihvQ" name="read" method="_oFfvAOVPEeGVLZOJyKihvQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_VDQ0MOVPEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yhf1oOVPEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_dC7ZcOVPEeGVLZOJyKihvQ" name="result" direction="return">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-FeatureValue"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_OssgcOVfEeGVLZOJyKihvQ" name="write" method="_nOZUoOVfEeGVLZOJyKihvQ">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgceVfEeGVLZOJyKihvQ" name="cs_Object" type="_wUwzPd2JEeGnO-TF_1T_iQ"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgcuVfEeGVLZOJyKihvQ" name="feature">
+            <type xmi:type="uml:Class" href="../Syntax/UML.uml#StructuralFeature"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ossgc-VfEeGVLZOJyKihvQ" name="values">
+            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Value"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U82P4OVfEeGVLZOJyKihvQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U856QOVfEeGVLZOJyKihvQ" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_OssgdOVfEeGVLZOJyKihvQ" name="position">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
     </packagedElement>
   </packagedElement>
