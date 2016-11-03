@@ -4767,7 +4767,7 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
         <packageImport xmi:type="uml:PackageImport" xmi:id="_97AFkMN7EeWpYp0WmASFoQ">
           <importedPackage xmi:type="uml:Package" href="PSCS_Semantics.uml#_3NM98N-9EeGnO-TF_1T_iQ"/>
         </packageImport>
-        <packageImport xmi:type="uml:PackageImport" xmi:id="_eZDr0M5-EeWF7I4YWspV6w" importedPackage="_LFUAwHVxEeSfVojhNHzNrw"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_eZDr0M5-EeWF7I4YWspV6w" importedPackage="_wylrkKGrEeaNOd-NdwGecA"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_tTknkHV2EeSvTf7EWD7QRA" name="SM_ExecutionFactory">
           <generalization xmi:type="uml:Generalization" xmi:id="__s09MHV-EeSvTf7EWD7QRA">
             <general xmi:type="uml:Class" href="PSCS_Semantics.uml#_ScbvYN--EeGnO-TF_1T_iQ"/>
@@ -4879,6 +4879,27 @@ return object;
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
             </ownedParameter>
             <redefinedOperation xmi:type="uml:Operation" href="fUML_Semantics.uml#Semantics-Loci-LociL1-Locus-instantiate.1"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_wylrkKGrEeaNOd-NdwGecA" name="Actions">
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_6HovYKGrEeaNOd-NdwGecA" importedPackage="_2wgcEHV2EeSvTf7EWD7QRA"/>
+        <packageImport xmi:type="uml:PackageImport" xmi:id="_ZebzIKGsEeaNOd-NdwGecA">
+          <importedPackage xmi:type="uml:Package" href="PSCS_Semantics.uml#_RDIo4N-4EeGnO-TF_1T_iQ"/>
+        </packageImport>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iEd_YKGtEeaNOd-NdwGecA" name="SM_ReadSelfActionActivation">
+          <generalization xmi:type="uml:Generalization" xmi:id="_BD_LkKGuEeaNOd-NdwGecA">
+            <general xmi:type="uml:Class" href="PSCS_Semantics.uml#_eItOUOYWEeGYZqnbU6eCYw"/>
+          </generalization>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_1NKSEKGuEeaNOd-NdwGecA" name="getExecutionContext" specification="_FKu-gKGuEeaNOd-NdwGecA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_dNKnUKGvEeaNOd-NdwGecA" name="result" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+            </ownedParameter>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_FKu-gKGuEeaNOd-NdwGecA" name="getExecutionContext" method="_1NKSEKGuEeaNOd-NdwGecA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_UNz8IKGuEeaNOd-NdwGecA" name="result" direction="return">
+              <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-Classes-Kernel-Object"/>
+            </ownedParameter>
           </ownedOperation>
         </packagedElement>
       </packagedElement>
