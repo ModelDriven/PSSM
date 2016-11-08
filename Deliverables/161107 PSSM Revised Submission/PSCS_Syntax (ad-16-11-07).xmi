@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131101"
+         xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+   <uml:Model xmi:type="uml:Model" xmi:id="_0"
+              xmi:uuid="73ac8703-32a3-44f8-9229-2b8d0725daee"
+              name="PSCS_Syntax"
+              URI="http://www.omg.org/spec/PSCS/20161101">
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_4S5AsKWPEeaQmNKlc2VWaw"
+                     xmi:uuid="be56f64b-93da-4c52-8e70-2ee234420f3a">
+         <importedPackage href="http://www.omg.org/spec/UML/20161101/UML.xmi#_0"/>
+      </packageImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_ew9-QKWSEeaQmNKlc2VWaw"
+                     xmi:uuid="d8d40058-949f-4607-854f-11be3522529e">
+          <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_0"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-1YdUKWPEeaQmNKlc2VWaw"
+                       xmi:uuid="928644ec-22b0-4ad2-8324-3e5a9b0f1ae5"
+                       name="Syntax">
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_1ucp0KWWEeaQmNKlc2VWaw"
+                        xmi:uuid="45beacbf-8016-445c-9ca7-202e1c6d6bdc">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_RY31wMU4EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_6EW6IKWWEeaQmNKlc2VWaw"
+                        xmi:uuid="d0ef61ef-b47d-4f04-bbbd-1c8616f9b3ff">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_7sx8wMU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_775qkKWWEeaQmNKlc2VWaw"
+                        xmi:uuid="c7b34de4-ad32-4b6a-825d-25add14705d6">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_CkpMcMU4EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_-tMtgKWWEeaQmNKlc2VWaw"
+                        xmi:uuid="6c84975c-270c-47fe-9857-93b13a22f38b">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_gEUL8MU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_Br3eEKWXEeaQmNKlc2VWaw"
+                        xmi:uuid="c87b4cce-610f-42bf-a5d3-b7d9c318b7ae">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_bNYcwMU4EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_EWkJwKWXEeaQmNKlc2VWaw"
+                        xmi:uuid="6347ed13-1947-4fd9-9633-bb27c9f2f147"
+                        importedPackage="_RI7QsKWREeaQmNKlc2VWaw"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_JN9WgKWXEeaQmNKlc2VWaw"
+                        xmi:uuid="93d65d2f-e8c6-493c-899e-0c33285d6a32"
+                        importedPackage="_-PqrsKWQEeaQmNKlc2VWaw"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_MczREKWXEeaQmNKlc2VWaw"
+                        xmi:uuid="e06db1b3-93cc-497a-868f-3bfde3af5b84"
+                        importedPackage="_f0POkKWREeaQmNKlc2VWaw"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_GR2KsKWXEeaQmNKlc2VWaw"
+                        xmi:uuid="79d5655c-f0a7-48dd-8b2f-5f63fd8c85d0"
+                        importedPackage="_D-ZJEKWREeaQmNKlc2VWaw"/>
+         <packagedElement xmi:type="uml:Package" xmi:id="_RI7QsKWREeaQmNKlc2VWaw"
+                          xmi:uuid="ab7ab7ac-5658-49a7-82f5-ef5962821b75"
+                          name="CommonStructure">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_LnVlgKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="3113f7a2-62b7-402c-a5b3-e7d27ba02a71">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Abstraction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Myl3sKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="22678296-47c3-4d55-b4cd-7c7feafc5ef5">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Dependency"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_PBZ4oKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="69962e4d-abbb-4a6a-82c3-bebce54bbb92">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#NamedElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Qiw9sKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="7441f0aa-9c83-40c6-ba3d-e5b162d41deb">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Namespace"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_SmB18KWTEeaQmNKlc2VWaw"
+                           xmi:uuid="aa3fd07c-515b-4b43-85a0-cce71f54058b">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#PackageableElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Tr8VIKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="fae09e7d-6223-459f-9b02-9ca91f70d5ab">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Realization"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_XHt4cKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="719a50e9-d93c-4153-98bf-1484647e29df">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Usage"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_8QFHoKWSEeaQmNKlc2VWaw"
+                           xmi:uuid="3c71cf82-dcc3-4e06-aba3-3fd78c3edb0c"
+                           importedPackage="_RI7QsKWREeaQmNKlc2VWaw"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_D-ZJEKWREeaQmNKlc2VWaw"
+                          xmi:uuid="7288117d-aae3-463f-a92b-1bf8d56d37cb"
+                          name="Values">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_wnzngKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="9bcdf501-e300-4d58-a189-2cab8fd7669e">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OpaqueExpression"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_uD6HYKWTEeaQmNKlc2VWaw"
+                           xmi:uuid="05130128-d8b1-471b-be52-2bd529195310">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_zIiDwMU3EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_-PqrsKWQEeaQmNKlc2VWaw"
+                          xmi:uuid="0d8fe2c0-138a-4319-bb1a-28b329837570"
+                          name="SimpleClassifiers">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_wgpaIKWUEeaQmNKlc2VWaw"
+                           xmi:uuid="1b3ae184-2ca4-4edf-bf7a-f0cbbf7758ab">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#BehavioredClassifier"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_x3t6wKWUEeaQmNKlc2VWaw"
+                           xmi:uuid="e9d6e501-c35f-4537-bf2d-18bf4598c21c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Interface"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_0S3ukKWUEeaQmNKlc2VWaw"
+                           xmi:uuid="29c2a8e9-1afc-4f0d-84fc-d2a235e9fe1a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InterfaceRealization"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_mjWqkKWUEeaQmNKlc2VWaw"
+                           xmi:uuid="17ea3979-1ed8-442b-9dcc-a7180a6eb16c">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_3M54IMU3EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_f0POkKWREeaQmNKlc2VWaw"
+                          xmi:uuid="8e7ae7a7-57dd-4f74-85ef-470f5ac041b3"
+                          name="StructuredClassifiers">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_6SFCgKWVEeaQmNKlc2VWaw"
+                           xmi:uuid="2e63a147-a967-42aa-afe8-6cb77154792a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ConnectableElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_7Vx7MKWVEeaQmNKlc2VWaw"
+                           xmi:uuid="0b9999dc-2269-4ed0-9cb4-dad18489ec35">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Connector"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_8hAYMKWVEeaQmNKlc2VWaw"
+                           xmi:uuid="f14360ca-1fb6-451c-82a2-5b96127dd930">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ConnectorEnd"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_-qB6MKWVEeaQmNKlc2VWaw"
+                           xmi:uuid="561930a5-53aa-4029-9cb6-e2dab711769a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#EncapsulatedClassifier"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_AAdhoKWWEeaQmNKlc2VWaw"
+                           xmi:uuid="763f4fc4-a7a0-4fa9-a399-be65e55d6b54">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Port"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_BaugMKWWEeaQmNKlc2VWaw"
+                           xmi:uuid="ac4ecf0f-7ef3-48ab-970b-3369fa4037e4">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StructuredClassifier"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_EOnkIKWWEeaQmNKlc2VWaw"
+                           xmi:uuid="ddec0fd9-dcc2-44db-aca4-049d38f41148">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ConnectorKind"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_fzJFkKWVEeaQmNKlc2VWaw"
+                           xmi:uuid="1ebbe3a0-df78-41c7-96e8-21d3cc75fe85">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_1J2bQMU3EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_BlTnQKWQEeaQmNKlc2VWaw"
+                       xmi:uuid="b39e776a-24fe-4601-bff5-3e565ef28328"
+                       name="Constraints">
+         <packagedElement xmi:type="uml:Package" xmi:id="_APH90KWYEeaQmNKlc2VWaw"
+                          xmi:uuid="b2bbfa94-46ea-41c7-9303-0042df01f5f8"
+                          name="StructuredClassifiers">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJAwKWYEeaQmNKlc2VWaw"
+                       xmi:uuid="85a347c3-4a37-4714-aa54-4b88241d14c3"
+                       name="pscs_connector_is_typed">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_FJJAwaWYEeaQmNKlc2VWaw"
+                              xmi:uuid="285d3145-ec6c-429b-87f0-7fa37eba4947"
+                              name="spec">
+                  <body>A Connector must be typed by an association</body>
+                  <body>self.type-&gt;notEmpty()</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_fSUwIKWYEeaQmNKlc2VWaw"
+                       xmi:uuid="3a8afde0-5516-4823-81dd-c204a14e517a"
+                       name="pscs_port_behavior_port_belongs_to_an_active_class">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_fSUwIaWYEeaQmNKlc2VWaw"
+                              xmi:uuid="d7c36572-c36a-4a54-b314-c33b970bb3a3"
+                              name="spec">
+                  <body>A behavior port can only belong to an active class.</body>
+                  <body>encapsulatedClassifier-&gt;notEmpty() and encapsulatedClassifier.oclIsKindOf(Class) and encapsulatedClassifier.isActive</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+      </packagedElement>
+   </uml:Model>
+</xmi:XMI>

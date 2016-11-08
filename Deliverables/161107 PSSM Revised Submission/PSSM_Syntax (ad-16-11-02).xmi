@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131101"
+         xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+   <uml:Model xmi:type="uml:Model" xmi:id="_0"
+              xmi:uuid="6439b791-6e2d-4830-9936-33c8025e6eef"
+              name="PSSM_Syntax"
+              URI="http://www.omg.org/spec/PSSM/20161101">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_iC3AEMnIEeWAiZQZbeZaoA"
+                     xmi:uuid="d73f2c27-0df1-4a33-88c5-fe5832812ee8">
+         <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#_0"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_jh3UsMnIEeWAiZQZbeZaoA"
+                     xmi:uuid="b1df238a-64de-48ce-a61a-68efb6de2f0c">
+          <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_0"/>
+      </elementImport>
+     <packagedElement xmi:type="uml:Package" xmi:id="_4P0jwMnDEeWAiZQZbeZaoA"
+                       xmi:uuid="b71f89e5-58e5-496b-a165-8a6d39573bd5"
+                       name="Syntax">
+         <elementImport xmi:type="uml:ElementImport" xmi:id="_NsdJMMVKEeWXLLOylfwRMQ"
+                        xmi:uuid="ea5af55b-aa95-497a-9a23-9706507d16dc">
+            <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Constraint"/>
+         </elementImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_FD-3gMVKEeWXLLOylfwRMQ"
+                        xmi:uuid="b99a5e9d-60a2-48d4-94a4-486e01389427">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_-47vsMU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_GKJgQMVIEeWXLLOylfwRMQ"
+                        xmi:uuid="1a259cdc-203f-4700-8ed7-e30c65ea5b2a">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_RY31wMU4EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_UGdqIMVIEeWXLLOylfwRMQ"
+                        xmi:uuid="4e3264fa-4973-4fce-95fb-6a13b617adc5">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_gEUL8MU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_VzjeEMVIEeWXLLOylfwRMQ"
+                        xmi:uuid="b72f21c4-b4b9-41d1-9017-05e7ec7a3dfe">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_7sx8wMU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_a0VeEMVNEeWXLLOylfwRMQ"
+                        xmi:uuid="03e118bb-16fc-4296-94c8-8fb62d446f9d">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_bNYcwMU4EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_kOcF4MaeEeWmIYomuH94TA"
+                        xmi:uuid="026e5777-3008-4c60-bdf6-3ace74355467"
+                        importedPackage="_Q_2pEMVJEeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_fHvJwMVJEeWXLLOylfwRMQ"
+                        xmi:uuid="2f44074b-20e7-4b31-91fb-906a2c45ccb5"
+                        importedPackage="_MULkIMVJEeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_bybQQMVIEeWXLLOylfwRMQ"
+                        xmi:uuid="5fbab8d0-f61c-4260-a973-59ed9a2e4cb7"
+                        importedPackage="_coJpQMVGEeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_hG9E8MVIEeWXLLOylfwRMQ"
+                        xmi:uuid="e0809fdb-7622-416f-b7c9-f102d4745ef2"
+                        importedPackage="_YR7acMVHEeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_3KCPQMqmEeWF7I4YWspV6w"
+                        xmi:uuid="ec3fadee-ce09-442e-89e1-e0315e73ddc9">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_1J2bQMU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_7Ne2kMqmEeWF7I4YWspV6w"
+                        xmi:uuid="01fc3bc3-bde4-46fc-ba31-ef140e1f3a48">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_3M54IMU3EeWXLLOylfwRMQ"/>
+         </packageImport>
+         <packagedElement xmi:type="uml:Package" xmi:id="_MULkIMVJEeWXLLOylfwRMQ"
+                          xmi:uuid="cb2ea427-4d55-4bb2-a307-d3f6ec29569f"
+                          name="CommonStructure">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_pomscMwYEeWF7I4YWspV6w"
+                           xmi:uuid="953fee58-9ad9-471f-a53f-421ce46da43c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Constraint"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_lq0oQMwYEeWF7I4YWspV6w"
+                           xmi:uuid="c9f3e66d-3e9c-4f4a-8191-617b06329177">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_-47vsMU3EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_coJpQMVGEeWXLLOylfwRMQ"
+                          xmi:uuid="2cbd37b9-1bcb-4d9e-9f02-5ec50476797f"
+                          name="Values">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_1SE6cMVIEeWXLLOylfwRMQ"
+                           xmi:uuid="be8a98ae-e4fa-44be-80fd-92acaffe1468">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OpaqueExpression"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_J-j_kHbdEeaSFv8wd_UowA"
+                           xmi:uuid="15538f2c-b63d-471f-9ca7-cc5f588b7571">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Expression"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ"
+                           xmi:uuid="87ac0b60-9b5a-44d5-bf71-eab30beb351e">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_zIiDwMU3EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_YR7acMVHEeWXLLOylfwRMQ"
+                          xmi:uuid="fd1459e1-e497-4e2d-a7ef-7f12534c3842"
+                          name="CommonBehavior">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_sw4twMVOEeWXLLOylfwRMQ"
+                           xmi:uuid="9f709118-e196-475e-b60d-65b9e3400489">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallEvent"/>
+            </elementImport>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_kdR40MVOEeWXLLOylfwRMQ"
+                           xmi:uuid="ba719c3e-031e-401c-90f8-5098c98ca416">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_CkpMcMU4EeWXLLOylfwRMQ"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_Q_2pEMVJEeWXLLOylfwRMQ"
+                          xmi:uuid="8c9d1568-3029-4a58-900a-6b67ac591576"
+                          name="StateMachines">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_AvCeQMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="ae98c11c-c867-469f-a6ae-d53c8401b80f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#FinalState"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_DQ_doMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="72c845a5-3bf3-41dc-b37f-aa8afab2e4d8">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ProtocolConformance"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Ex_WUMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="00bba3b1-767d-437f-9d08-7daaff34a20c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ProtocolStateMachine"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_HzKoUMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="b251415c-9f62-4e95-825b-a5addc9777c0">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ProtocolTransition"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_KKu8oMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="a48d1109-380e-4e38-a5a6-79e3e38b47fc">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Pseudostate"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_LcmNIMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="94518894-263c-4688-aa7c-4ccd13e8defb">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Region"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_M-v8YMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="a6319fc2-de1f-463f-93be-a9db2c3e06a7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#State"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_ORsyAMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="aefd0d9e-0467-4a68-a187-131c4ea60d67">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StateMachine"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_aA8AUMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="617634bc-0e9f-4cef-9a34-72ab596a6525">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Transition"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_kleWEMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="92b0004a-6057-4d69-a6c9-94abf8e7f81a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Vertex"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_m3Uc4MVPEeWXLLOylfwRMQ"
+                           xmi:uuid="42b09817-b393-40df-b5f1-f2aee5593b8f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#PseudostateKind"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_pNqpMMVPEeWXLLOylfwRMQ"
+                           xmi:uuid="4bc19548-bb67-47ff-b1c2-735012642d4e">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#TransitionKind"/>
+            </elementImport>
+         </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_hj5BkMnHEeWAiZQZbeZaoA"
+                       xmi:uuid="99046d3f-6b3b-4fc3-bf62-af9bd5c96adc"
+                       name="Constraints">
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_1DWDAMq7EeWF7I4YWspV6w"
+                        xmi:uuid="5f7afd1d-70c0-42b9-894a-ffbb595c3997"
+                        importedPackage="_MI8tgcnIEeWAiZQZbeZaoA"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_2oh4IMq7EeWF7I4YWspV6w"
+                        xmi:uuid="dbd76d60-8284-42d0-9297-180b2aaf1436"
+                        importedPackage="_Cpr9wMnIEeWAiZQZbeZaoA"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_4ALAgMq7EeWF7I4YWspV6w"
+                        xmi:uuid="6303c5d4-3630-48d6-8198-6d7eaf1292ca"
+                        importedPackage="_qu9HQMqpEeWF7I4YWspV6w"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_7cCDYMq7EeWF7I4YWspV6w"
+                        xmi:uuid="c559b6ee-05df-4f78-8045-a42b83d1eb71"
+                        importedPackage="_R8j1cMnJEeWAiZQZbeZaoA"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_813kIMq7EeWF7I4YWspV6w"
+                        xmi:uuid="908a7245-9716-4680-99b5-ebb60c4f4b78"
+                        importedPackage="_apctEMnJEeWAiZQZbeZaoA"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_CYCWwMq9EeWF7I4YWspV6w"
+                        xmi:uuid="a313ab0e-ce08-43f2-8d10-02863d292d67">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_ezoDEMq8EeWF7I4YWspV6w"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_Gi2KUMq9EeWF7I4YWspV6w"
+                        xmi:uuid="b082a7ec-93f7-4657-93ba-4a7a193c017d">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_nOhy0Mq8EeWF7I4YWspV6w"/>
+         </packageImport>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_ILI90Mq9EeWF7I4YWspV6w"
+                        xmi:uuid="2e95eee6-3b47-4b94-b628-982889f6e5cd">
+            <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_pq2EQMq8EeWF7I4YWspV6w"/>
+         </packageImport>
+         <packagedElement xmi:type="uml:Package" xmi:id="_MI8tgcnIEeWAiZQZbeZaoA"
+                          xmi:uuid="7eea6de2-856d-4a2f-beab-0a2376ea4f2d"
+                          name="CommonStructure">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_7azGcMnNEeWAiZQZbeZaoA"
+                       xmi:uuid="e3df46bd-062d-434d-af41-f1296998e463"
+                       name="pssm_constraint_is_guard">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_gGfLQMnOEeWAiZQZbeZaoA"
+                              xmi:uuid="5e56e841-515a-4904-9b9f-7fad45f2e57a">
+                  <body>A Constraint must be owned as a guard by a Transition and its constrainedElements must be empty.</body>
+                  <body>self.owner.oclIsKindOf(UML::StateMachines::Transition) and 
+self.constrainedElement-&gt;isEmpty()</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_pM8wwKWZEeaQmNKlc2VWaw"
+                           xmi:uuid="fe44d2f5-4dda-4aa2-a9f5-b3bd160aa6e4">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_XeqAoMq8EeWF7I4YWspV6w"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_Cpr9wMnIEeWAiZQZbeZaoA"
+                          xmi:uuid="dde9cd96-9475-41c3-8fe5-ee21e91a9389"
+                          name="Values">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_-jRL4G1jEea39NG5Sc27-w"
+                       xmi:uuid="3bfb2d3a-084c-4559-950a-627238c20573"
+                       name="pssm_expression_only_for_else">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_TzNUYG1kEea39NG5Sc27-w"
+                              xmi:uuid="70373d51-96bc-40ae-80c9-3575c9e8c11b">
+                  <body>The Expression must have no operands and its symbol must be "else". </body>
+                  <body>self.symbol = 'else' and self.operand-&gt;isEmpty()</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w"
+                       xmi:uuid="b5de3dbc-c0fb-4e61-a499-014f1a41a765"
+                       name="pssm_opaque_expression_has_behavior">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w"
+                              xmi:uuid="02bdee2f-1de6-4cd0-836a-d2eadc7d2981">
+                  <body>The OpaqueExpression must have a behavior.</body>
+                  <body>self.behavior &lt;&gt; null
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_qu9HQMqpEeWF7I4YWspV6w"
+                          xmi:uuid="94b55b78-789b-4c17-ae0b-47716c153ac5"
+                          name="Classification">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_RsYvwMqrEeWF7I4YWspV6w"
+                          xmi:uuid="b22cea49-a6f6-4434-9008-7e75deacde26"
+                          body="This replaces fUML constraint fuml_operation_zero_or_one_method.">
+               <annotatedElement xmi:idref="_S7rp4MqqEeWF7I4YWspV6w"/>
+            </ownedComment>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_RDQXcKWaEeaQmNKlc2VWaw"
+                           xmi:uuid="ae76b85e-d884-4088-b2bf-33e050186b8e">
+               <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_7-MRkKU-EeaXKupuv1rSBA"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_SVNHgKWaEeaQmNKlc2VWaw"
+                           xmi:uuid="a17008f7-c150-41d7-8c87-21e68dd9b5ec">
+               <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_Bnjt0KU_EeaXKupuv1rSBA"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_TsBJcKWaEeaQmNKlc2VWaw"
+                           xmi:uuid="a944df60-9be7-4ad3-a2e7-626398c04db5">
+               <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_bie-wKU_EeaXKupuv1rSBA"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Vg3yQKWaEeaQmNKlc2VWaw"
+                           xmi:uuid="c9b17dbb-b79f-47e6-8c2f-74847e29e0fe">
+               <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_uV0h8KU_EeaXKupuv1rSBA"/>
+            </elementImport>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_S7rp4MqqEeWF7I4YWspV6w"
+                       xmi:uuid="f9cdca85-8306-4059-9b3e-e364fe286cfd"
+                       name="pssm_operation_has_at_most_one_method">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRFhMMqqEeWF7I4YWspV6w"
+                              xmi:uuid="1dee19a1-3c98-489a-8efd-97702c717538">
+                  <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active Class.</body>
+                  <body>if self.isAbstract then self.method-&gt;isEmpty()
+else 
+	self.method-&gt;size() &lt;= 1 and
+	((self.class = null or not self.class.isActive) implies
+		self.method-&gt;size() = 1)
+endif
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_R8j1cMnJEeWAiZQZbeZaoA"
+                          xmi:uuid="9cd0b459-4dd2-4f10-923a-c925e44f17a5"
+                          name="CommonBehavior">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_AQVagMqpEeWF7I4YWspV6w"
+                       xmi:uuid="348d4ca6-108e-438e-8905-4555ffa57856"
+                       name="pssm_call_event_operation_has_no_method">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_T5J0MMqpEeWF7I4YWspV6w"
+                              xmi:uuid="9d885a4d-7fa4-45e1-9672-31bf9477b725">
+                  <body>The operation of the CallEvent must not have any methods.</body>
+                  <body>self.operation.method-&gt;isEmpty()
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <packageImport xmi:type="uml:PackageImport" xmi:id="_i668kKWaEeaQmNKlc2VWaw"
+                           xmi:uuid="0aac3d8a-cc5b-447e-bbb9-8e12a038ea7e">
+               <importedPackage href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_iAdLcMq8EeWF7I4YWspV6w"/>
+            </packageImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_apctEMnJEeWAiZQZbeZaoA"
+                          xmi:uuid="eee15517-e4f8-4883-8d2b-04557b28ade5"
+                          name="StateMachines">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w"
+                       xmi:uuid="f45645a1-3d70-442d-8bc1-7845672ae391"
+                       name="pssm_transition_signal_event_receptions">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_dduWIct3EeWF7I4YWspV6w"
+                              xmi:uuid="05c76bd5-1a8d-49d9-8b48-8451dcdab525">
+                  <body>The Signals of any SignalEvents on the triggers of a Transition must have matching Receptions that are owned or inherited by the context of the containing StateMachine of the Transition.</body>
+                  <body>let stateMachine = self.containingStateMachine() in
+let context_ = 
+	if stateMachine._'context' = null then stateMachine 
+	else stateMachine._'context' endif in
+context_.allFeatures()-&gt;select(oclIsKindOf(Reception)).
+oclAsType(Reception).signal-&gt;includesAll(
+	self.trigger-&gt;select(oclIsKindOf(SignalEvent)).
+		oclAsType(SignalEvent).signal
+)
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_lYhisKUyEeaXKupuv1rSBA"
+                       xmi:uuid="3bc11b13-a1ad-4eda-881c-aa6483849a98"
+                       name="pssm_state_helper_operations">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_X9XIoKUzEeaXKupuv1rSBA"
+                              xmi:uuid="c5241c27-a914-496a-97f2-69129810ad6a">
+                  <body>conformsToAll(signature : OrderedSet(Parameter), triggers : Collection(Trigger) : Boolean
+conforms(signature1 : OrderedSet(Parameter), signature2 : OrderedSet(Parameter) : Boolean</body>
+                  <body>-- A signature (set of Parameters) conforms to a collection of Triggers if one 
+-- of the following is true: the signature is empty; all the Triggers are for 
+-- SignalEvents and the signature has exactly one Parameter of direction "in", 
+-- has multiplicity upper bound of 1 and is either untyped or has a type that is
+-- a Signal that conforms to all the Signals of the Triggers; or all theTriggers 
+-- are for CallEvents and the signature conforms to or input-conforms to all the 
+-- signatures of the Operations of the CallEvents. (A signature input-conforms 
+-- to another if the first signature conforms to the signature containing only 
+-- the "in" Parameters from the second signature).
+conformsToAll(signature: OrderedSet(Parameter), triggers : Collection(Trigger)) : Boolean =
+	signature-&gt;isEmpty() or
+	triggers.event-&gt;forAll(oclIsKindOf(SignalEvent)) and
+		signature-&gt;size() = 1 and
+		(let parameter = signature-&gt;at(1) in
+			parameter.direction = ParameterDirectionKind::_'in' and
+			parameter.is(1,1) and
+			(parameter.type = null or 
+			triggers.event.oclAsType(SignalEvent).signal-&gt;forAll(s |
+				parameter.type.conformsTo(s)
+			))) or
+	triggers.event-&gt;forAll(oclIsKindOf(CallEvent)) and
+		triggers.event.oclAsType(CallEvent).operation-&gt;forAll(operation |
+			conforms(signature, operation.ownedParameter) or 
+			conforms(signature, operation.ownedParameter-&gt;select(
+				direction = ParameterDirectionKind::_'in'
+			)))
+	
+-- One signature conforms to another if the first signature has the same number 
+-- of Parameters as the second signature, and each Parameter of the first
+-- signature has the same direction, ordering and uniqueness as the corresponding 
+-- Parameter (in order) from the second signature and a type and multiplicity 
+-- that are compatible with those of the corresponding Parameter (depending on 
+-- the Parameter direction). 
+conforms(signature1 : OrderedSet(Parameter), signature2 : OrderedSet(Parameter)) : Boolean =
+	signature1-&gt;size() = signature2-&gt;size() and
+	Sequence{1..signature1-&gt;size()} -&gt; forAll(i |
+		let parameter1 = signature1-&gt;at(i) in
+		let parameter2 = signature2-&gt;at(i) in
+		
+		parameter1.direction = parameter2.direction and
+		parameter1.isOrdered = parameter2.isOrdered and
+		parameter1.isUnique = parameter2.isUnique and
+		(parameter2.direction = ParameterDirectionKind::_'in' implies
+			 parameter2.type = null or
+			  parameter2.type &lt;&gt; null and
+			  	parameter2.type.conformsTo(parameter1.type) and
+		     parameter2.compatibleWith(parameter1)) and
+		(parameter1.direction = ParameterDirectionKind::out or
+		parameter1.direction = ParameterDirectionKind::return implies
+			 parameter1.type = null or
+			 parameter1.type &lt;&gt; null and 
+			 	parameter1.type.conformsTo(parameter2.type) and
+			parameter1.compatibleWith(parameter2)) and
+		(parameter1.direction = ParameterDirectionKind::inout implies
+             parameter1.type = parameter2.type and
+             parameter2.compatibleWith(parameter1) and
+		     parameter1.compatibleWith(parameter2))
+	)
+</body>
+                  <language/>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_SNpToMq0EeWF7I4YWspV6w"
+                       xmi:uuid="eecf1051-bea9-44f6-8074-6d635c3b1405"
+                       name="pssm_state_has_no_submachine">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1zTYMq0EeWF7I4YWspV6w"
+                              xmi:uuid="89b2c8e3-3355-436d-8eec-fbc5519a39e8">
+                  <body>A State must not have a submachine.</body>
+                  <body>not self.isSubmachineState</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_eJHAEMq0EeWF7I4YWspV6w"
+                       xmi:uuid="31272cfe-c4b1-4707-b8f9-f267406ed0b0"
+                       name="pssm_state_has_no_invariant">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLNw4Mq0EeWF7I4YWspV6w"
+                              xmi:uuid="7d715410-1271-46bc-9e19-a165c52740b5">
+                  <body>A State must not have a stateInvariant.</body>
+                  <body>self.stateInvariant = null
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Whi9QMtuEeWF7I4YWspV6w"
+                       xmi:uuid="4dc661af-40f7-40d9-b2e7-e910eb72b4bc"
+                       name="pssm_state_behavior_parameters">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Yp1MMtuEeWF7I4YWspV6w"
+                              xmi:uuid="d2d3f1c0-300a-42b2-9905-f1da2903a938">
+                  <body>The entry and doActivity Behaviors of a State must conform to all the Triggers of Transitions that might cause the State to be entered. The exit Behavior of a State must conform to all the Triggers of Transitions that might cause the State to be exited. The effect and guard Behaviors of an outgoing Transition of a State must conform to all the Triggers of the Transition. (Note that only Transitions outgoing from a State may have Triggers.)</body>
+                  <body>-- Collect this State and all containing States.
+let allStates = self-&gt;asSet()-&gt;closure(container.state) in
+
+-- Get all the incoming Transitions of the collected States, including
+-- Transitions incoming to entryPoint Pseudostates owned by the States and
+-- all segments of compound Transitions.
+let allIncoming = allStates.incoming-&gt;union(
+		allStates.connectionPoint-&gt;select(kind = PseudostateKind::entryPoint).incoming
+	)-&gt;asSet()-&gt;closure(
+		if source.oclIsKindOf(Pseudostate) then source.incoming
+		else Set{} endif
+	) in
+	
+-- Get all the outgoing Transitions of the collected States, including
+-- Transitions outgoing from exitPoint Pseudostates owned by the States and
+-- all segments of compound Transitions.
+let allOutgoing = allStates.outgoing-&gt;union(
+		allStates.connectionPoint-&gt;select(kind = PseudostateKind::exitPoint).outgoing
+	)-&gt;asSet()-&gt;closure(
+		if target.oclIsKindOf(Pseudostate) then target.outgoing
+		else Set{} endif
+	) in
+
+-- Check the conformance of the various State Behaviors. (Note that 
+-- doActivity Behaviors are separately required to have only "in" Parameters.)
+(self.entry &lt;&gt; null implies 
+	conformsToAll(self.entry.ownedParameter, allIncoming.trigger)) and
+(self.doActivity &lt;&gt; null implies 
+	conformsToAll(self.doActivity.ownedParameter, allIncoming.trigger)) and
+(self.exit &lt;&gt; null implies 
+	conformsToAll(self.exit.ownedParameter, allOutgoing.trigger)) and
+
+-- Check the conformance of the effect and guard Behaviors on outgoing 
+-- Transitions. (Note that the behavior on an OpaqueExpression is
+-- separately required to have only "in" Parameters, other than a single
+-- return parameter.)
+allOutgoing-&gt;forAll(transition | 
+	(transition.effect &lt;&gt; null implies 
+		conformsToAll(transition.effect.ownedParameter, allOutgoing.trigger)) and
+	(transition.guard &lt;&gt; null and 
+     transition.guard.specification.oclIsKindOf(OpaqueExpression) implies 
+	     let behavior = transition.guard.specification.
+	     	oclAsType(OpaqueExpression).behavior in
+	     behavior &lt;&gt; null implies
+	     conformsToAll(
+			behavior.ownedParameter-&gt;
+				reject(direction = ParameterDirectionKind::return), 
+			allOutgoing.trigger
+	))
+)
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_ZAtrMMtqEeWF7I4YWspV6w"
+                       xmi:uuid="4a58123f-bc6e-4a15-8dfa-43f2ede275d1"
+                       name="pssm_state_machine_context">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_spC8sMtqEeWF7I4YWspV6w"
+                              xmi:uuid="a8b5f04b-0c10-4915-a240-bee694cdd96c">
+                  <body>A StateMachine may not be a method and, if it has a context, it must be a classifierBehavior for that context.</body>
+                  <body>self.specification = null and
+self._'context' &lt;&gt; null implies self._'context'.classifierBehavior = self
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_eVRDIMtsEeWF7I4YWspV6w"
+                       xmi:uuid="2feae004-4cd0-490d-b21a-0c6b72a9c6e3"
+                       name="pssm_transition_call_event_operations">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_-GJa0MtsEeWF7I4YWspV6w"
+                              xmi:uuid="3ec4c80e-0262-4ef8-b0ca-efb959cc314b">
+                  <body>The Operations of any CallEvents on the triggers of a Transition must be owned or inherited by the context of the containing StateMachine of the Transition.</body>
+                  <body>let stateMachine = self.containingStateMachine() in
+let context_ = 
+	if stateMachine._'context' = null then stateMachine 
+	else stateMachine._'context' endif in
+context_.allFeatures()-&gt;includesAll(
+	self.trigger-&gt;select(oclIsKindOf(CallEvent)).
+		oclAsType(CallEvent).operation
+)
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_r0dooMtrEeWF7I4YWspV6w"
+                       xmi:uuid="da11cffa-00b7-42c9-8ee7-eb435576e1c2"
+                       name="pssm_transition_triggers">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_VUBsIMtsEeWF7I4YWspV6w"
+                              xmi:uuid="a2dc5fa2-5dd1-4c75-a308-735e45f3a933">
+                  <body>The triggers of a Transition must all be for CallEvents or SignalEvents.</body>
+                  <body>self.trigger.event-&gt;forAll(
+	oclIsKindOf(CallEvent) or
+	oclIsKindOf(SignalEvent)
+)
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w"
+                       xmi:uuid="e2050723-72a3-441b-a4d2-8923863e7a9e"
+                       name="pssm_state_machine_extends_at_most_one">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w"
+                              xmi:uuid="80f75918-c1df-4231-a639-e2fe4196ab61">
+                  <body>A StateMachine must not have more than one extendedStateMachine.</body>
+                  <body>self.extendedStateMachine-&gt;size() &lt;= 1
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_edrJQKVaEeaQmNKlc2VWaw"
+                       xmi:uuid="e45000b6-2b98-4f69-8f22-de50c8d6b616"
+                       name="pssm_state_do_activity_parameters">
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_rij74KVaEeaQmNKlc2VWaw"
+                              xmi:uuid="1ad4de21-3ffc-4573-8bda-dde3f98bd691">
+                  <body>A doActivity Behavior of a State can only have "in" Parameters.</body>
+                  <body>self.doActivity &lt;&gt; null implies 
+	self.doActivity.ownedParameter-&gt;forAll(direction = ParameterDirectionKind::_'in')
+</body>
+                  <language>Natural language</language>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+      </packagedElement>
+   </uml:Model>
+</xmi:XMI>

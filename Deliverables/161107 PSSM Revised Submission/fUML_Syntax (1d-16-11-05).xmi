@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131101"
+         xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+   <uml:Model xmi:type="uml:Model" xmi:id="_0"
+              xmi:uuid="4d1c2e0c-3893-42a2-a829-483c7d9ee1f9"
+              name="fUML_Syntax"
+              URI="http://www.omg.org/spec/FUML/20161101">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_dGikgMU9EeWXLLOylfwRMQ"
+                     xmi:uuid="a98be7af-904c-497a-a621-aaa1673723d1">
+         <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#_0"/>
+      </elementImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="_a-ZboMnEEeWAiZQZbeZaoA"
+                       xmi:uuid="1f6146ff-4cff-42b9-ae34-da5f5a318683"
+                       name="Syntax">
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_O8abAMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="2aedb98e-e3ad-4c02-95e4-e83bb458a67f"
+                        importedPackage="_-47vsMU3EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_ZrBSwMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="e6595c9f-566a-4a75-a820-c12c75cb2583"
+                        importedPackage="_RY31wMU4EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_h4j78MnFEeWAiZQZbeZaoA"
+                        xmi:uuid="1cd94341-cbb3-45a2-bf5e-c2c4456f5f25"
+                        importedPackage="_1J2bQMU3EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_jiLlIMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="f3940de1-e403-4584-80c5-72ba9498514a"
+                        importedPackage="_7sx8wMU3EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_5iXe0MnFEeWAiZQZbeZaoA"
+                        xmi:uuid="46ddb829-610e-4cca-8634-ab32e186c368"
+                        importedPackage="_gEUL8MU3EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="__CffgMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="55ce842b-0823-4774-8eb2-9bd415c65938"
+                        importedPackage="_CkpMcMU4EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_AiwYYMnGEeWAiZQZbeZaoA"
+                        xmi:uuid="64ccde1f-359a-44b1-95ae-636f264f7e4a"
+                        importedPackage="_bNYcwMU4EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_grvjgMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="447e70e3-1866-4e14-85fd-922928d9a55d"
+                        importedPackage="_3M54IMU3EeWXLLOylfwRMQ"/>
+         <packageImport xmi:type="uml:PackageImport" xmi:id="_Sb5ZoMnFEeWAiZQZbeZaoA"
+                        xmi:uuid="8d41d7d6-7aae-48cd-996e-bd8d2b375e79"
+                        importedPackage="_zIiDwMU3EeWXLLOylfwRMQ"/>
+         <packagedElement xmi:type="uml:Package" xmi:id="_-47vsMU3EeWXLLOylfwRMQ"
+                          xmi:uuid="8e7e7152-87fa-4651-b581-88b042fce676"
+                          name="CommonStructure">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_gWP6YMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="2a06d1ce-de36-459c-bf8e-a3c7924e90a1">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Comment"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_tgixcMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="dfd237a2-d3b0-479f-a2a7-ec6784d5108d">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#DirectedRelationship"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_xWuY0MVAEeWXLLOylfwRMQ"
+                           xmi:uuid="3ec36c6b-1c3b-45b7-8bc5-09acb48b6a9d">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Element"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_ytCEcMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="71c1c670-97be-4fbd-b6c8-ca4d1cf28d8e">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ElementImport"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_zwPN4MVAEeWXLLOylfwRMQ"
+                           xmi:uuid="ff324c46-ae62-44e9-a523-6807396edf9c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#MultiplicityElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_1jJV8MVAEeWXLLOylfwRMQ"
+                           xmi:uuid="13043f0d-bc34-46c8-99c0-4c6aa0f89f67">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#NamedElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_22S_4MVAEeWXLLOylfwRMQ"
+                           xmi:uuid="52d58251-ec2f-49a6-93c8-0aec74ef3629">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Namespace"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_4pv6gMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="c7159be9-04ce-4961-bdd6-ad33da06390e">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#PackageableElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_7HdTEMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="363bab56-617c-4bc7-9fa7-6e299f284642">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#PackageImport"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_-eXkgMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="5d50dd70-5270-4daf-84aa-0dd3b6a750f1">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Relationship"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="__gqvAMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="a6ec304b-afa2-4dfb-a33a-6870f5b616a1">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Type"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_A9J7IMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="6f5dd8fc-383a-4212-9c62-a9b3c207d86f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#TypedElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_DRbq4MVBEeWXLLOylfwRMQ"
+                           xmi:uuid="ac12dfec-7df1-4285-9b1a-ad5f93390d55">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#VisibilityKind"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_zIiDwMU3EeWXLLOylfwRMQ"
+                          xmi:uuid="4743a1c7-9af9-49d8-9f24-74c959e05b59"
+                          name="Values">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_y1KCgMU8EeWXLLOylfwRMQ"
+                           xmi:uuid="ecfd61c8-32f3-42c0-b3ea-3ea823333975">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralBoolean"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_0fs4wMU8EeWXLLOylfwRMQ"
+                           xmi:uuid="fc4c0450-2fc6-49ff-828c-84e9b599d5be">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralInteger"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_4Bp8kMU8EeWXLLOylfwRMQ"
+                           xmi:uuid="988e9110-c111-4d0f-b806-679a63ccb2f7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralNull"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_5-y-sMU8EeWXLLOylfwRMQ"
+                           xmi:uuid="2b371225-8e12-4e73-8adf-cfdf135e4ca8">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralReal"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_GyON4MU9EeWXLLOylfwRMQ"
+                           xmi:uuid="35e4a940-974e-4009-ac5f-b02c6ca77f74">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralSpecification"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_J0N_QMU9EeWXLLOylfwRMQ"
+                           xmi:uuid="96cfa0a4-4883-447d-bd58-e0d4fcd85353">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralString"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_L9agYMU9EeWXLLOylfwRMQ"
+                           xmi:uuid="445d3eee-d094-446e-b0f1-1e43f9f29cfa">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LiteralUnlimitedNatural"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_O4qwkMU9EeWXLLOylfwRMQ"
+                           xmi:uuid="94eb14ef-846d-4397-b97e-c98849a54a8a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ValueSpecification"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_RY31wMU4EeWXLLOylfwRMQ"
+                          xmi:uuid="f84e07d2-e626-440c-8892-52efc42c4aa0"
+                          name="Classification">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_NMdUIMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="4d7c1cd2-a4e0-4fd6-92ea-06d3ad9d2fd9">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#BehavioralFeature"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_O80egMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="7106fecf-051a-471d-a19c-d40863ab9257">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Classifier"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_RnWyIMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="582365bf-9c31-4df9-80cd-ea71f9bafd38">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Feature"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_SlfOUMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="956c870a-9ba5-44f7-8945-43d2389955ec">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Generalization"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Vgg1AMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="c7d04228-5db0-4a7a-a239-3dc76d65e8a4">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InstanceSpecification"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_aSYokMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="945edfcc-7f4b-484b-8b6c-096533ef74b3">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InstanceValue"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_bjz0MMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="2ecc2be5-657d-4611-a7df-11c8f4988869">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Operation"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_cvXBUMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="60d1b8fe-13b5-4803-943f-b8492f67b5fa">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Parameter"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_eCZWgMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="bddf6133-c2ff-4049-b44e-65d4af29a5bc">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Property"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_fkPjwMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="00e29511-35d9-45fb-bb54-b16b5c0bdb40">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#RedefinableElement"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_gnvBEMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="0843b7f4-ccdf-4c19-83b2-a8dc4385b210">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Slot"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_iLKisMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="4b6b321e-e0a3-4db7-bd83-849b356f48ca">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StructuralFeature"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_kAVUkMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="44008093-2b13-426e-81c6-4db317bc4182">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#AggregationKind"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_lMHLMMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="4b38321b-b959-421f-acce-9e1316fa78ea">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallConcurrencyKind"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_mOz-UMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="1e7650bf-6fd1-440f-9957-3cbe2a6e66fc">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ParameterDirectionKind"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_nJ3RUMVCEeWXLLOylfwRMQ"
+                           xmi:uuid="e17c1b7c-2a59-4a5b-809e-45940c3482ba">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ParameterEffectKind"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_3M54IMU3EeWXLLOylfwRMQ"
+                          xmi:uuid="dc928b24-7372-4626-abeb-7a98611bd3d4"
+                          name="SimpleClassifiers">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Vn6k4MU_EeWXLLOylfwRMQ"
+                           xmi:uuid="162ce476-bb4b-49c0-b31c-286856dfd02d">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#BehavioredClassifier"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_dbJQoMU_EeWXLLOylfwRMQ"
+                           xmi:uuid="f2360687-6542-4144-85fb-0f4665eefc92">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_e3n1sMU_EeWXLLOylfwRMQ"
+                           xmi:uuid="807037ef-305d-4f80-8a23-cc9bc265f7ac">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Enumeration"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_h88A0MU_EeWXLLOylfwRMQ"
+                           xmi:uuid="eab9f75c-31bd-4e3d-8eb4-43c18da46f9b">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#EnumerationLiteral"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_u_GPkMU_EeWXLLOylfwRMQ"
+                           xmi:uuid="da5df54a-5b64-4f70-8c12-765cc2cdfc29">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#PrimitiveType"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_wxfaQMU_EeWXLLOylfwRMQ"
+                           xmi:uuid="5d03d49b-2040-4983-991e-651800ae9390">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Reception"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_zxOh0MU_EeWXLLOylfwRMQ"
+                           xmi:uuid="bfd0dce9-e916-4f3c-a97f-db265bfd8ccc">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Signal"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_1J2bQMU3EeWXLLOylfwRMQ"
+                          xmi:uuid="6049b5e7-0255-4d07-8c8e-14788aef97e5"
+                          name="StructuredClassifiers">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_0DZFUMU-EeWXLLOylfwRMQ"
+                           xmi:uuid="e965181b-9868-4ed9-ad80-371714c35e05">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_AIhrIMU_EeWXLLOylfwRMQ"
+                           xmi:uuid="3b83adf9-6703-4e32-81c4-dbfd4a4b7cb2">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_7sx8wMU3EeWXLLOylfwRMQ"
+                          xmi:uuid="ff6b1d61-b465-44ff-b425-cc45aaa3d07f"
+                          name="Packages">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_E1ukoMVAEeWXLLOylfwRMQ"
+                           xmi:uuid="bf5fc008-001d-44eb-859e-5adc608f72d2">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_CkpMcMU4EeWXLLOylfwRMQ"
+                          xmi:uuid="812696d4-0cec-49f1-9d48-f5e6759b0054"
+                          name="CommonBehavior">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_k_HtgMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="e08abdaf-4b7f-4e35-a8e6-b4d9c11ff56b">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Behavior"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_mYEdcMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="81fe2a60-b864-4e6c-a194-eee44bf0dc3c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Event"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_one7UMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="c2326c0b-7c33-4838-8c3e-a392cc1199ea">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#FunctionBehavior"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_rm6g4MVBEeWXLLOylfwRMQ"
+                           xmi:uuid="5caac8b5-7f4b-4c69-8311-69285355edba">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#MessageEvent"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_u66oQMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="9591bdcf-e70c-4640-9dfb-414299033620">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OpaqueBehavior"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_wsn2cMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="547cc4d2-5d41-40b9-bfd3-dd7fbaf6148f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#SignalEvent"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_yIYCwMVBEeWXLLOylfwRMQ"
+                           xmi:uuid="43196f46-d578-4c0f-a8d5-f79810f42e8b">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Trigger"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_gEUL8MU3EeWXLLOylfwRMQ"
+                          xmi:uuid="c6873f37-2838-4ede-b4ba-ce7bad0ca275"
+                          name="Activities">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_mF4lcMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="3b484bb9-40f4-4089-a519-9fbc6a8e5b81">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Activity"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_oNz7QMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="62cb5b93-c7b8-4a5d-98db-00fdbae4a616">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_qdA9wMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="b51a7f45-dccc-4f8b-a23c-c1c1b70dccfa">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityGroup"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_sncN8MU6EeWXLLOylfwRMQ"
+                           xmi:uuid="2e953b67-ab0f-4c07-9f29-fd346849e104">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityEdge"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_wPTFcMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="73fa1a02-9440-4aa3-b4b1-74451a3d8e95">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityFinalNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_7ywhkMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="578c82c9-545a-4522-bd29-74871907b58f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityParameterNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_-tVcUMU6EeWXLLOylfwRMQ"
+                           xmi:uuid="e70d505c-4514-4b64-8032-7e2cb236f1bf">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ControlFlow"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_ACXVkMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="a0910675-3c1b-4b30-af94-d9bd355fe067">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ControlNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_B9zHgMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="f015a8d2-b626-4d16-8a06-298ad33d3f42">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#DecisionNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Dy8EMMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="8254fbf7-63fb-4a0d-86ba-087e4a5be7a0">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExecutableNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_GhmC0MU7EeWXLLOylfwRMQ"
+                           xmi:uuid="d750ae4d-9cdf-4a7c-b129-108ec302539a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#FinalNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_IB-QcMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="3aa247b4-f79e-45b1-99ba-34f67f655d74">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#FlowFinalNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_JfNDcMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="9822892e-0c17-4a8a-a1a8-1f0ee0114571">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ForkNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_KhLd0MU7EeWXLLOylfwRMQ"
+                           xmi:uuid="dbca2844-5cdd-429e-adf5-e6754f0a5c8f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InitialNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_L_mjoMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="9f9c0de7-2c47-4154-bc4f-92e521d285e1">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#JoinNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Nlm4IMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="e3c10c06-86e9-4ed1-ab4f-b43cc7f09be3">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#MergeNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Om3g0MU7EeWXLLOylfwRMQ"
+                           xmi:uuid="2c372144-c3f9-4b40-958e-72a3f101ac8c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ObjectFlow"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_PzJGsMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="cbda1be1-7392-4294-b720-927272ffd918">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ObjectNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_RFSEAMU7EeWXLLOylfwRMQ"
+                           xmi:uuid="384b9608-2bc8-49a7-b58c-41ce9e3d9c99">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ObjectNodeOrderingKind"/>
+            </elementImport>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_bNYcwMU4EeWXLLOylfwRMQ"
+                          xmi:uuid="3e2bf796-3adb-4d1d-85ea-efa550f8ba8b"
+                          name="Actions">
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_lJDasMVDEeWXLLOylfwRMQ"
+                           xmi:uuid="b072c27c-f0e4-46e1-908f-b1f771d36d95">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ValueSpecificationAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_nT3FYMVDEeWXLLOylfwRMQ"
+                           xmi:uuid="2c08490d-c9e8-43cf-9c52-5ed9dd911c89">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#WriteLinkAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_pWiu0MVDEeWXLLOylfwRMQ"
+                           xmi:uuid="aeee26ae-a57c-4a94-b164-1e721e357c59">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#WriteStructuralFeatureAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_qixRYMVDEeWXLLOylfwRMQ"
+                           xmi:uuid="4cbc7a2d-ef0f-4cae-9827-f23cdc831998">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionKind"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_ty6McMVDEeWXLLOylfwRMQ"
+                           xmi:uuid="82a7a14a-6c3c-4b92-8a8d-7a8828a063d6">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#AcceptEventAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_u7TX4MVDEeWXLLOylfwRMQ"
+                           xmi:uuid="77c48826-fbd8-40ec-9dd0-b1dc15e8fd04">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Action"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_0FCR0MVDEeWXLLOylfwRMQ"
+                           xmi:uuid="063b25ef-f6d0-430a-9912-5af4595688b7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActionInputPin"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_1QG90MVDEeWXLLOylfwRMQ"
+                           xmi:uuid="2097cec9-eea5-4084-b9a0-2ddba846701a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#AddStructuralFeatureValueAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_4zou8MVDEeWXLLOylfwRMQ"
+                           xmi:uuid="99e96944-e9e5-4614-bb3d-de708beabdf1">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_-GV-sMVDEeWXLLOylfwRMQ"
+                           xmi:uuid="d891cbc9-c109-432d-bb3e-c5b98928e501">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallBehaviorAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_BHCIgMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="77f51659-9735-4780-85a8-d7ad6337c287">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallOperationAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_CU_JYMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="c57a8f3e-f85c-427d-85ca-e5835523b497">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Clause"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_ESTKoMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="bc42eca1-94de-419d-ae49-ae879a5e304d">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ClearAssociationAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_GH4zQMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="7ec437ba-89bb-450f-8b96-83db02682ea7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ClearStructuralFeatureAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_HRXj0MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="5b36204c-7206-4f73-809b-b4ec841b507d">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ConditionalNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_IT4wwMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="d6699571-804b-4dc3-a23a-50d92a405412">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CreateLinkAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Jsap8MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="f129e17e-6b50-4514-b96b-69a914a6dfcf">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#DestroyLinkAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_NCVc4MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="934f3f9b-8fad-4226-a89e-117cd8052532">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_PGGEYMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="b2353343-9a46-45ca-944e-7324c763041b">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionRegion"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Q2cAoMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="c90fd820-e723-4c15-9cc5-78f2c57b8c66">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InputPin"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_SGMYUMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="7efeb138-34d3-4d4a-b1cf-bef8966e26a8">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InvocationAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_S_PgMMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="e36ac7d8-3bbb-4f43-8a5a-b3161fa125f3">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LinkAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_VkzNMMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="35adb2d5-c8a3-482d-97e7-90642b15ed14">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LinkEndCreationData"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_YishsMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="1b74c334-5236-4848-a2d7-7e175728429c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LinkEndData"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_Zw_g0MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="131f723c-d8c0-4a1e-8425-45787862a6f2">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LinkEndDestructionData"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_daTw4MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="ac68541f-aad9-4caa-bfb1-0c25b5413655">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LoopNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_e2FyYMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="5d845dc3-628a-414d-88fc-ec33d0042d93">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OutputPin"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_gRk48MVEEeWXLLOylfwRMQ"
+                           xmi:uuid="4db1fcc3-ebc1-4c75-ab2a-64e74ca6f27c">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Pin"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_kLyEsMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="389d771a-614e-47ae-a0de-9ffd49f690f8">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReadExtentAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_nNrIYMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="081fc76b-d6f9-4ed7-b454-b7a19bac6e26">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReadIsClassifiedObjectAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_vv95kMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="fc9ba646-1788-4933-aedc-7f1e138b0af7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReadLinkAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_xN86gMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="84c80dad-bdc8-4dbf-8cbe-cf61e3dc492a">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReadSelfAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_zzn8QMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="6c196d7e-7304-4fe4-939a-195da2fbbdab">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReadStructuralFeatureAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_3uiSoMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="51bc7271-359f-40da-b56a-5bd858eb4809">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReclassifyObjectAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_5EuCcMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="6ea557f0-3404-4f0f-970e-6168fa06b3a7">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ReduceAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_7ioPUMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="3c530fa4-2dd9-438c-b1ff-3b03da54d786">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#RemoveStructuralFeatureValueAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_9WvRQMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="f3144671-b89e-48e2-89dd-8e9cb959a4b4">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#SendSignalAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_-bYlIMVEEeWXLLOylfwRMQ"
+                           xmi:uuid="7c2666c5-8b70-4aaa-9a5b-cabf0e66afa6">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StartObjectBehaviorAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_AQ-NwMVFEeWXLLOylfwRMQ"
+                           xmi:uuid="9cca9d36-7fbb-4c96-b6ff-8e62890aa76f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StructuralFeatureAction"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_C2Gc8MVFEeWXLLOylfwRMQ"
+                           xmi:uuid="e74c0fbc-655c-4f4c-83ce-3a418194843f">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#StructuredActivityNode"/>
+            </elementImport>
+            <elementImport xmi:type="uml:ElementImport" xmi:id="_FsDWYMVFEeWXLLOylfwRMQ"
+                           xmi:uuid="769e5cb3-a000-40be-90ff-4ad65221cba5">
+               <importedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#TestIdentityAction"/>
+            </elementImport>
+         </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jPM0MMnEEeWAiZQZbeZaoA"
+                       xmi:uuid="b3c79f24-ac08-4260-8456-2884d7d4012a"
+                       name="Constraints">
+         <packagedElement xmi:type="uml:Package" xmi:id="_XeqAoMq8EeWF7I4YWspV6w"
+                          xmi:uuid="510794e7-37b6-458a-ad90-91da68444a8a"
+                          name="CommonStructure">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_PFddYKU_EeaXKupuv1rSBA"
+                       xmi:uuid="477a82c8-7284-4354-adbd-9997e85a80f7"
+                       name="fuml_multiplicity_element_required_lower_and_upper">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#MultiplicityElement"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_PFddYaU_EeaXKupuv1rSBA"
+                             xmi:uuid="79fab6b5-76b7-4b8e-8ced-9774cf1fafad"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_PFddYqU_EeaXKupuv1rSBA"
+                              xmi:uuid="ecb5f891-534f-4c4d-b0e7-bd27d15182bd">
+                  <body>self.upperValue-&gt;notEmpty() and
+self.upperValue-&gt;asSequence()-&gt;first().oclIsKindOf(LiteralUnlimitedNatural) and
+self.lowerValue-&gt;notEmpty() and
+self.lowerValue-&gt;asSequence()-&gt;first().oclIsKindOf(LiteralInteger) </body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_bgyZUMq8EeWF7I4YWspV6w"
+                          xmi:uuid="ae3f3f05-bb01-4b96-a72a-951db0304295"
+                          name="Classification">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_7-MRkKU-EeaXKupuv1rSBA"
+                       xmi:uuid="2540c072-c424-4ccc-908f-49e0b00e1c21"
+                       name="fuml_behavioral_feature_sequentiality">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#BehavioralFeature"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_7-MRkaU-EeaXKupuv1rSBA"
+                             xmi:uuid="f7eefb64-82b0-4175-a6d7-2cf2e4b1f2ec"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_7-MRkqU-EeaXKupuv1rSBA"
+                              xmi:uuid="2282e9c1-6b64-489d-bb78-330b30e641a6">
+                  <body>self.concurrency = CallConcurrencyKind::sequential</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Bnjt0KU_EeaXKupuv1rSBA"
+                       xmi:uuid="67e7c710-7f6e-42c5-880a-370aa6161ae9"
+                       name="fuml_instance_specification_possible_classifiers">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#InstanceSpecification"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_Bnjt0aU_EeaXKupuv1rSBA"
+                             xmi:uuid="fef3588c-2381-4d4d-aba0-2441c32d36ce"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Bnjt0qU_EeaXKupuv1rSBA"
+                              xmi:uuid="f6132c1a-7d08-490a-bb56-67d002298124">
+                  <body>self.classifier-&gt;forAll(oclIsKindOf(Class)) or
+self.classifier-&gt;size() = 1 and self.classifier-&gt;forAll(oclIsKindOf(DataType))
+</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Vb73QKU_EeaXKupuv1rSBA"
+                       xmi:uuid="48388d8e-0f05-44bc-b939-d06974c7f561"
+                       name="fuml_operation_zero_or_one_method">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Operation"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_Vb73QaU_EeaXKupuv1rSBA"
+                             xmi:uuid="f2670812-21a1-47e7-833b-cfbe5518aabd"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vb73QqU_EeaXKupuv1rSBA"
+                              xmi:uuid="fa03acba-973c-42bd-b29c-9f8412995c26">
+                  <body>(self.isAbstract and self.method-&gt;isEmpty()) xor (not self.isAbstract and self.method-&gt;size() = 1)</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_bie-wKU_EeaXKupuv1rSBA"
+                       xmi:uuid="54f0df66-40b6-4778-b9ee-92d52dc44b31"
+                       name="fuml_property_no_derivation">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Property"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_bie-waU_EeaXKupuv1rSBA"
+                             xmi:uuid="ddd3a69b-1914-4ab2-94c8-a610c59e9dc6"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_bie-wqU_EeaXKupuv1rSBA"
+                              xmi:uuid="8d960362-e9ed-46ea-9d34-d9edccbb991f">
+                  <body>not self.isDerived and not self.isDerivedUnion</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_uV0h8KU_EeaXKupuv1rSBA"
+                       xmi:uuid="a91ee69f-0b74-493f-8c9d-bbb121f948b7"
+                       name="fuml_feature_non_static">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Feature"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_uV0h8aU_EeaXKupuv1rSBA"
+                             xmi:uuid="fdbd2f8a-be09-4318-a172-219165e822e2"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_uV0h8qU_EeaXKupuv1rSBA"
+                              xmi:uuid="2efadc51-82c9-44d7-93dd-0aece4dfbc92">
+                  <body>not self.isStatic</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_QxiPkKU9EeaXKupuv1rSBA"
+                          xmi:uuid="32728a06-2b82-4fd9-a771-57358577c5da"
+                          name="SimpleClassifiers">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_cfOQoKU7EeaXKupuv1rSBA"
+                       xmi:uuid="4882d652-ca5e-404d-b47c-562ecb902413"
+                       name="fuml_behaviored_classifier_allowed_owned_behaviors">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#BehavioredClassifier"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_cfOQoaU7EeaXKupuv1rSBA"
+                             xmi:uuid="c9e2010a-0f76-4824-95a8-bdcd5ca96c65"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_cfOQoqU7EeaXKupuv1rSBA"
+                              xmi:uuid="d0b52116-5305-4a36-a88a-b5e9405bfda9">
+                  <body>self.ownedBehavior-&gt;forAll(b:Behavior|b = self.classifierBehavior xor self.allFeatures()-&gt;includes(b.specification))</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_hNOl8KU9EeaXKupuv1rSBA"
+                       xmi:uuid="f6496d63-6884-49d5-b5e9-9103f40fb105"
+                       name="fuml_reception_no_method">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Reception"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_hNOl8aU9EeaXKupuv1rSBA"
+                             xmi:uuid="36de80e5-a15f-408d-9ebd-5706557b42da"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_hNOl8qU9EeaXKupuv1rSBA"
+                              xmi:uuid="8a5f92ad-eca7-4d08-8d16-82dd1cf3bf13">
+                  <body>self.method-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_mRxd4KU9EeaXKupuv1rSBA"
+                       xmi:uuid="cd516ba4-0cc8-498f-9296-acfa9c94386b"
+                       name="fuml_reception_not_abstract">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Reception"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_mRxd4aU9EeaXKupuv1rSBA"
+                             xmi:uuid="e7cbf8e2-012a-4ad7-98f4-e05be0ef10d7"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_mRxd4qU9EeaXKupuv1rSBA"
+                              xmi:uuid="43f06a0a-b79f-4771-a4ea-1329fe3c07e4">
+                  <body>not self.isAbstract</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_ezoDEMq8EeWF7I4YWspV6w"
+                          xmi:uuid="357648c2-b6dd-4aa5-8a1e-4a07afe66b1c"
+                          name="StructuredClassifiers">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_g92bQKU_EeaXKupuv1rSBA"
+                       xmi:uuid="9eb9897b-b12d-47c7-a387-882ce58d2256"
+                       name="fuml_class_active_class_classifier_behavior">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_g92bQaU_EeaXKupuv1rSBA"
+                             xmi:uuid="b5a1e58c-4291-4109-a612-bf9d8ef7db89"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_g92bQqU_EeaXKupuv1rSBA"
+                              xmi:uuid="b3b4fc63-e19f-4320-8512-0ad842fab32c">
+                  <body>self.classifierBehavior-&gt;notEmpty() implies self.isActive
+</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_g93CUKU_EeaXKupuv1rSBA"
+                       xmi:uuid="fbbb7087-78ad-40ad-8866-2715117a6ef6"
+                       name="fuml_class_active_class_specialization">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_g93CUaU_EeaXKupuv1rSBA"
+                             xmi:uuid="4adef483-c79a-46a5-b09f-3c70d45cd7da"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_g93CUqU_EeaXKupuv1rSBA"
+                              xmi:uuid="cc10e7f2-fb8a-4351-944c-4631f99b2127">
+                  <body>self.parents()-&gt;exist(isActive) implies self.isActive</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_g93CU6U_EeaXKupuv1rSBA"
+                       xmi:uuid="35d8d716-45ca-4f07-95c2-a0e23aaba052"
+                       name="fuml_class_abstract_class">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_g93CVKU_EeaXKupuv1rSBA"
+                             xmi:uuid="193c077b-6298-41e2-b335-4dbd06238f75"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_g93CVaU_EeaXKupuv1rSBA"
+                              xmi:uuid="5b7fc947-11ef-48e5-95f3-67c8ccb7f8c6">
+                  <body>self.member-&gt;select(oclIsKindOf(BehavioralFeature))-&gt;exists(isAbstract) implies self.isAbstract</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_zdQV0KU_EeaXKupuv1rSBA"
+                       xmi:uuid="ce2c8189-1678-4b74-8dfe-69b3ee238230"
+                       name="fuml_association_owns_memberEnds">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_zdQV0aU_EeaXKupuv1rSBA"
+                             xmi:uuid="145feb75-61fc-4ad5-881a-94a848de2856"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_zdQV0qU_EeaXKupuv1rSBA"
+                              xmi:uuid="32d7e28c-1320-4dad-8717-8a3926055c26">
+                  <body>self.memberEnd-&gt;symmetricDifference(self.ownedEnd)-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_zdQ84KU_EeaXKupuv1rSBA"
+                       xmi:uuid="6eb22b30-3435-4be6-9c2d-4122b1dfa1a3"
+                       name="fuml_association_no_derivation">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_zdQ84aU_EeaXKupuv1rSBA"
+                             xmi:uuid="ecd54c82-42dc-487b-a89b-78133559715d"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_zdQ84qU_EeaXKupuv1rSBA"
+                              xmi:uuid="2ace1db8-3f63-4a92-acf0-f47a69707f36">
+                  <body>not self.isDerived</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_iAdLcMq8EeWF7I4YWspV6w"
+                          xmi:uuid="2ffa87ad-2441-4e93-9a39-4a0adf088577"
+                          name="CommonBehavior">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_TGZgEKU7EeaXKupuv1rSBA"
+                       xmi:uuid="1a99368c-fdb0-4828-9d2d-49eefea6369b"
+                       name="fuml_opaque_behavior_empty_body_and_language">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OpaqueBehavior"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_TGZgEaU7EeaXKupuv1rSBA"
+                             xmi:uuid="44b016d7-0f18-4c9e-9886-b4c98bac4350"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_TGZgEqU7EeaXKupuv1rSBA"
+                              xmi:uuid="0dfab14d-256f-489d-a5fa-d2913f98260c">
+                  <body>self.language-&gt;isEmpty() and self.body-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Y_xHMKU7EeaXKupuv1rSBA"
+                       xmi:uuid="cf0bba0e-4c69-467f-94a7-f9f1cb72d58d"
+                       name="fuml_opaque_behavior_inactive">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#OpaqueBehavior"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_Y_xHMaU7EeaXKupuv1rSBA"
+                             xmi:uuid="7395ba87-d6b0-40d7-a9b9-ced11d2a2bdc"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_xHMqU7EeaXKupuv1rSBA"
+                              xmi:uuid="bbb27a75-5ab3-48f3-96bf-8894df01a4d7">
+                  <body>not self.isActive</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_XRhKwKU9EeaXKupuv1rSBA"
+                       xmi:uuid="df1df9f7-3e2b-424b-8963-22a7c4ceb730"
+                       name="fuml_behavior_reentrant">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Behavior"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_XRhKwaU9EeaXKupuv1rSBA"
+                             xmi:uuid="425e4f79-390e-4cb8-9773-942c0e32d9bc"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_XRhKwqU9EeaXKupuv1rSBA"
+                              xmi:uuid="d11a4532-4738-482f-aa29-b7e005ae54a9">
+                  <body>self.isReentrant</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_nOhy0Mq8EeWF7I4YWspV6w"
+                          xmi:uuid="e5bf85a6-c427-4ca9-897e-292e32115c60"
+                          name="Activities">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Ii9u0KVBEeaXKupuv1rSBA"
+                       xmi:uuid="ed3627f1-69e0-41a2-9237-62feb5b64701"
+                       name="fuml_activity_edge_allowed_guards">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ActivityEdge"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_Ii9u0aVBEeaXKupuv1rSBA"
+                             xmi:uuid="4a868de7-95f9-4f46-b103-610c14e46d87"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ii9u0qVBEeaXKupuv1rSBA"
+                              xmi:uuid="fbeb8c32-a6a1-4d4f-b244-52e1ed422f72">
+                  <body>self.guard-&gt;notEmpty() implies self.source.oclIsKindOf(DecisionNode)</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_OIcJkKVBEeaXKupuv1rSBA"
+                       xmi:uuid="0db5ecd8-96b5-4498-9cde-9e18330b53ed"
+                       name="fuml_activity_no_classifier_behavior">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#Activity"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_OIcJkaVBEeaXKupuv1rSBA"
+                             xmi:uuid="49a6e0ea-be90-4c9c-97d7-50c4b140e61a"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_OIcJkqVBEeaXKupuv1rSBA"
+                              xmi:uuid="a53d2c57-a722-4331-8944-400429ccaeaf">
+                  <body>self.classifierBehavior-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Package" xmi:id="_pq2EQMq8EeWF7I4YWspV6w"
+                          xmi:uuid="bf087e50-89e6-421f-92e3-e131553a0e75"
+                          name="Actions">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Zr_sUKVBEeaXKupuv1rSBA"
+                       xmi:uuid="63464148-719b-495f-a827-26d52b84bfb5"
+                       name="fuml_loop_node_no_setup_part">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#LoopNode"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_Zr_sUaVBEeaXKupuv1rSBA"
+                             xmi:uuid="978745da-ab55-4013-ae5c-5d7d00fc344d"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zr_sUqVBEeaXKupuv1rSBA"
+                              xmi:uuid="b4ecd951-52b1-445f-b6e2-948c96b005e7">
+                  <body>self.setupPart-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_hJ2lAKVBEeaXKupuv1rSBA"
+                       xmi:uuid="a8b06ab6-85e3-4fca-90e4-24d34b54e72e"
+                       name="fuml_expansion_node_no_crossing_edges">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionNode"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_hJ3MEKVBEeaXKupuv1rSBA"
+                             xmi:uuid="95a33057-0b8e-42b5-a9fa-44588bb68a87"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_hJ3MEaVBEeaXKupuv1rSBA"
+                              xmi:uuid="8bcd2e38-d251-4782-bf4f-0b10cbfa6501">
+                  <body>self.edge-&gt;forAll(self.node-&gt;includes(source) and self.node-&gt;includes(target))</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_hJ3MEqVBEeaXKupuv1rSBA"
+                       xmi:uuid="51fc1395-1e67-45d8-b474-decb2afd74a4"
+                       name="fuml_expansion_node_mode_cannot_be_stream">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionNode"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_hJ3ME6VBEeaXKupuv1rSBA"
+                             xmi:uuid="1e7d2cbe-1d15-4d16-afe7-36d2a8f447be"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_hJ3MFKVBEeaXKupuv1rSBA"
+                              xmi:uuid="e16e8f6a-fcf2-4c1e-86b2-531a7a22c0b0">
+                  <body>self.mode &lt;&gt; ExpansionKind::stream</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_hJ3MFaVBEeaXKupuv1rSBA"
+                       xmi:uuid="af187f9e-ba87-400c-bc79-f1ecdef00509"
+                       name="fuml_expansion_node_no_output_pins">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#ExpansionNode"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_hJ3MFqVBEeaXKupuv1rSBA"
+                             xmi:uuid="12021035-6783-4278-a342-32fa54f8d180"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_hJ3MF6VBEeaXKupuv1rSBA"
+                              xmi:uuid="8a35e013-4515-45cc-a4ee-86f22295d13b">
+                  <body>self.output-&gt;isEmpty()</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_o1Bg8KVBEeaXKupuv1rSBA"
+                       xmi:uuid="3489d4c9-14f9-42eb-888a-0ce8c6c601d3"
+                       name="fuml_send_signal_action_target_signal_reception">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#SendSignalAction"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_o1Bg8aVBEeaXKupuv1rSBA"
+                             xmi:uuid="abea4c93-4fdf-44f8-8b8c-f9794daa9194"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_o1Bg8qVBEeaXKupuv1rSBA"
+                              xmi:uuid="69331521-7a54-4f9d-a898-a1fd5e1538db">
+                  <body>self.target.type.oclAsType(Classifier).allFeatures()-&gt;select(oclIsKindOf(Reception))-&gt;exists(f:Feature|self.signal.conformsTo(f.oclAsType(Reception).signal))
+</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_xjJHoKVBEeaXKupuv1rSBA"
+                       xmi:uuid="c5e40b69-f327-4310-a75e-29426acaa0e0"
+                       name="fuml_call_behavior_action_is_synchronous">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallBehaviorAction"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_xjJHoaVBEeaXKupuv1rSBA"
+                             xmi:uuid="3ae9cef6-f0a0-4278-8ec2-d33936ec9d0d"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_xjJHoqVBEeaXKupuv1rSBA"
+                              xmi:uuid="c35c7c91-e0a0-483d-abdc-7ecb43c5ecfa">
+                  <body>self.isSynchronous</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_xjJHo6VBEeaXKupuv1rSBA"
+                       xmi:uuid="115996e6-d6e9-4d96-9911-242ab43ea1c5"
+                       name="fuml_call_behavior_action_inactive_behavior">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallBehaviorAction"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_xjJHpKVBEeaXKupuv1rSBA"
+                             xmi:uuid="9f850beb-36ab-438b-9b43-a60165dd7d86"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_xjJHpaVBEeaXKupuv1rSBA"
+                              xmi:uuid="78e9ad6e-9c19-4d9f-bc82-54ca438e9965">
+                  <body>not self.behavior.isActive</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_xjJHpqVBEeaXKupuv1rSBA"
+                       xmi:uuid="c346a793-3c0b-438b-bf2c-8a457f4b171d"
+                       name="fuml_call_behavior_action_proper_context">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallBehaviorAction"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_xjJHp6VBEeaXKupuv1rSBA"
+                             xmi:uuid="3f8a79eb-f8b1-493b-a292-d89424985278"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_xjJHqKVBEeaXKupuv1rSBA"
+                              xmi:uuid="bb62d763-05ef-442d-959f-de8a12e35aef">
+                  <body>self.behavior.context-&gt;notEmpty() implies
+  self.context-&gt;union(self.context.allParents())-&gt;includes(self.behavior.context)
+</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_76umgKVBEeaXKupuv1rSBA"
+                       xmi:uuid="1057c5e9-770d-4b3c-8b5a-1784564afc5d"
+                       name="fuml_call_operation_action_is_synchronous">
+               <constrainedElement href="http://www.omg.org/spec/UML/20161101/UML.xmi#CallOperationAction"/>
+               <ownedComment xmi:type="uml:Comment" xmi:id="_76umgaVBEeaXKupuv1rSBA"
+                             xmi:uuid="bd4ee858-7192-42e6-81f2-9a9dc8076065"/>
+               <specification xmi:type="uml:OpaqueExpression" xmi:id="_76umgqVBEeaXKupuv1rSBA"
+                              xmi:uuid="340d5803-0432-45e5-845e-9d86d31c88ed">
+                  <body>self.isSynchronous</body>
+                  <language>OCL</language>
+               </specification>
+            </ownedRule>
+         </packagedElement>
+      </packagedElement>
+   </uml:Model>
+</xmi:XMI>

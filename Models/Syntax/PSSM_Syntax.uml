@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_q6BcIMU1EeWXLLOylfwRMQ" name="PSSM_Syntax">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_q6BcIMU1EeWXLLOylfwRMQ" name="PSSM_Syntax" URI="http://www.omg.org/spec/PSSM/20161101">
   <elementImport xmi:type="uml:ElementImport" xmi:id="_iC3AEMnIEeWAiZQZbeZaoA">
     <importedElement xmi:type="uml:Package" href="UML.uml#_0"/>
   </elementImport>
