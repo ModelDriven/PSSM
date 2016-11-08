@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Q8VREKWPEeaQmNKlc2VWaw" name="PSCS_Syntax">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_4S5AsKWPEeaQmNKlc2VWaw">
+    <importedPackage xmi:type="uml:Package" href="UML.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ew9-QKWSEeaQmNKlc2VWaw">
+    <importedPackage xmi:type="uml:Model" href="fUML_Syntax.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_GR2KsKWXEeaQmNKlc2VWaw" importedPackage="_D-ZJEKWREeaQmNKlc2VWaw"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-1YdUKWPEeaQmNKlc2VWaw" name="Syntax">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_1ucp0KWWEeaQmNKlc2VWaw">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_RY31wMU4EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_6EW6IKWWEeaQmNKlc2VWaw">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_7sx8wMU3EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_775qkKWWEeaQmNKlc2VWaw">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_CkpMcMU4EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-tMtgKWWEeaQmNKlc2VWaw">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_gEUL8MU3EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Br3eEKWXEeaQmNKlc2VWaw">
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_EWkJwKWXEeaQmNKlc2VWaw" importedPackage="_RI7QsKWREeaQmNKlc2VWaw"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_JN9WgKWXEeaQmNKlc2VWaw" importedPackage="_-PqrsKWQEeaQmNKlc2VWaw"/>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_MczREKWXEeaQmNKlc2VWaw" importedPackage="_f0POkKWREeaQmNKlc2VWaw"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_RI7QsKWREeaQmNKlc2VWaw" name="CommonStructure">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_LnVlgKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Abstraction"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Myl3sKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Dependency"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_PBZ4oKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#NamedElement"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Qiw9sKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Namespace"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_SmB18KWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#PackageableElement"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Tr8VIKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Realization"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_XHt4cKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Usage"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_8QFHoKWSEeaQmNKlc2VWaw" importedPackage="_RI7QsKWREeaQmNKlc2VWaw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_D-ZJEKWREeaQmNKlc2VWaw" name="Values">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_wnzngKWTEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_uD6HYKWTEeaQmNKlc2VWaw">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_zIiDwMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-PqrsKWQEeaQmNKlc2VWaw" name="SimpleClassifiers">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_wgpaIKWUEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#BehavioredClassifier"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_x3t6wKWUEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Interface"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_0S3ukKWUEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#InterfaceRealization"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_mjWqkKWUEeaQmNKlc2VWaw">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_3M54IMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f0POkKWREeaQmNKlc2VWaw" name="StructuredClassifiers">
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_6SFCgKWVEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#ConnectableElement"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_7Vx7MKWVEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Connector"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_8hAYMKWVEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#ConnectorEnd"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_-qB6MKWVEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#EncapsulatedClassifier"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_AAdhoKWWEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#Port"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_BaugMKWWEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Class" href="UML.uml#StructuredClassifier"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_EOnkIKWWEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Enumeration" href="UML.uml#ConnectorKind"/>
+      </elementImport>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_fzJFkKWVEeaQmNKlc2VWaw">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
+      </packageImport>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BlTnQKWQEeaQmNKlc2VWaw" name="Constraints">
+    <packagedElement xmi:type="uml:Package" xmi:id="_APH90KWYEeaQmNKlc2VWaw" name="StructuredClassifiers">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJAwKWYEeaQmNKlc2VWaw" name="pscs_connector_is_typed">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_FJJAwaWYEeaQmNKlc2VWaw" name="spec">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>A Connector must be typed by an association</body>
+          <body>self.type->notEmpty()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_fSUwIKWYEeaQmNKlc2VWaw" name="pscs_port_behavior_port_belongs_to_an_active_class">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#Port"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fSUwIaWYEeaQmNKlc2VWaw" name="spec">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>A behavior port can only belong to an active class.</body>
+          <body>encapsulatedClassifier->notEmpty() and encapsulatedClassifier.oclIsKindOf(Class) and encapsulatedClassifier.isActive</body>
+        </specification>
+      </ownedRule>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

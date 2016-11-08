@@ -4,8 +4,6 @@
     <elementImport xmi:type="uml:ElementImport" xmi:id="_dGikgMU9EeWXLLOylfwRMQ" alias="">
       <importedElement xmi:type="uml:Package" href="UML.uml#_0"/>
     </elementImport>
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_Sb5ZoMnFEeWAiZQZbeZaoA" importedPackage="_zIiDwMU3EeWXLLOylfwRMQ"/>
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_grvjgMnFEeWAiZQZbeZaoA" importedPackage="_3M54IMU3EeWXLLOylfwRMQ"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_a-ZboMnEEeWAiZQZbeZaoA" name="Syntax">
       <packageImport xmi:type="uml:PackageImport" xmi:id="_O8abAMnFEeWAiZQZbeZaoA" importedPackage="_-47vsMU3EeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_ZrBSwMnFEeWAiZQZbeZaoA" importedPackage="_RY31wMU4EeWXLLOylfwRMQ"/>
@@ -14,6 +12,8 @@
       <packageImport xmi:type="uml:PackageImport" xmi:id="_5iXe0MnFEeWAiZQZbeZaoA" importedPackage="_gEUL8MU3EeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="__CffgMnFEeWAiZQZbeZaoA" importedPackage="_CkpMcMU4EeWXLLOylfwRMQ"/>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_AiwYYMnGEeWAiZQZbeZaoA" importedPackage="_bNYcwMU4EeWXLLOylfwRMQ"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_grvjgMnFEeWAiZQZbeZaoA" importedPackage="_3M54IMU3EeWXLLOylfwRMQ"/>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_Sb5ZoMnFEeWAiZQZbeZaoA" importedPackage="_zIiDwMU3EeWXLLOylfwRMQ"/>
       <packagedElement xmi:type="uml:Package" xmi:id="_-47vsMU3EeWXLLOylfwRMQ" name="CommonStructure">
         <ownedComment xmi:type="uml:Comment" xmi:id="_-6G0YMU3EeWXLLOylfwRMQ">
           <body>namespace fUML_Syntax::Syntax;
