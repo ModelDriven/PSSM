@@ -14,7 +14,7 @@
       <importedPackage xmi:type="uml:Model" href="../Syntax/PSSM_Syntax.uml#_q6BcIMU1EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_fR9fMM59EeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Model" href="../Syntax/fUML_Syntax_UML_2.5.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Model" href="../Syntax/fUML_Syntax.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_VU1pcHVpEeSRWcPi04czfg" name="Semantics">
       <packageImport xmi:type="uml:PackageImport" xmi:id="_XgRdQNLrEeWrx8x7RhrVAQ" importedPackage="_1LSecMOyEeWpYp0WmASFoQ"/>
@@ -95,7 +95,7 @@ return evaluation;
           </ownedOperation>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_DP5aoHTZEea8LcOrDv4gRQ" name="getParameterValue">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_Le-U4HTZEea8LcOrDv4gRQ" name="parameter">
-              <type xmi:type="uml:Class" href="../Syntax/fUML_Syntax.uml#Syntax-Classes-Kernel-Parameter"/>
+              <type xmi:type="uml:Class" href="../Syntax/UML.uml#Parameter"/>
             </ownedParameter>
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_PlPmsHTZEea8LcOrDv4gRQ" direction="return">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-BasicBehaviors-ParameterValue"/>
@@ -116,7 +116,7 @@ return evaluation;
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_DOXNEMOyEeWpYp0WmASFoQ" name="StructuredClassifiers">
         <packageImport xmi:type="uml:PackageImport" xmi:id="_6BEXYM6DEeWF7I4YWspV6w">
-          <importedPackage xmi:type="uml:Package" href="../Syntax/fUML_Syntax_UML_2.5.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
+          <importedPackage xmi:type="uml:Package" href="../Syntax/fUML_Syntax.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
         </packageImport>
         <packageImport xmi:type="uml:PackageImport" xmi:id="_55Bj8M6qEeWF7I4YWspV6w" importedPackage="_4bWFIMNeEeWpYp0WmASFoQ"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_jl2UoJRFEeWAs5MYUhc8EQ" name="SM_Object">
@@ -302,17 +302,23 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_sPZFEFpNEeaMpZSzvy8A5Q" memberEnd="_sPZsIFpNEeaMpZSzvy8A5Q _sPZsIVpNEeaMpZSzvy8A5Q">
+        <packagedElement xmi:type="uml:Association" xmi:id="_sPZFEFpNEeaMpZSzvy8A5Q" name="A_wrappedExecution_eventTriggeredExecution" memberEnd="_sPZsIFpNEeaMpZSzvy8A5Q _sPZsIVpNEeaMpZSzvy8A5Q">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sPZFEVpNEeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sPZFElpNEeaMpZSzvy8A5Q" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_sPZsIVpNEeaMpZSzvy8A5Q" name="eventtriggeredexecution" type="_TLuMQFpNEeaMpZSzvy8A5Q" association="_sPZFEFpNEeaMpZSzvy8A5Q"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_sPZsIVpNEeaMpZSzvy8A5Q" name="eventTriggeredExecution" type="_TLuMQFpNEeaMpZSzvy8A5Q" association="_sPZFEFpNEeaMpZSzvy8A5Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PzJwYKVsEeaQmNKlc2VWaw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PzK-gKVsEeaQmNKlc2VWaw" value="1"/>
+          </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_1BnvsFpNEeaMpZSzvy8A5Q" memberEnd="_1Bnvs1pNEeaMpZSzvy8A5Q _1BnvtFpNEeaMpZSzvy8A5Q">
+        <packagedElement xmi:type="uml:Association" xmi:id="_1BnvsFpNEeaMpZSzvy8A5Q" name="A_triggeringEventOccurrence_eventTriggeredExecution" memberEnd="_1Bnvs1pNEeaMpZSzvy8A5Q _1BnvtFpNEeaMpZSzvy8A5Q">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1BnvsVpNEeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1BnvslpNEeaMpZSzvy8A5Q" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_1BnvtFpNEeaMpZSzvy8A5Q" name="eventtriggeredexecution" type="_TLuMQFpNEeaMpZSzvy8A5Q" association="_1BnvsFpNEeaMpZSzvy8A5Q"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_1BnvtFpNEeaMpZSzvy8A5Q" name="eventTriggeredExecution" type="_TLuMQFpNEeaMpZSzvy8A5Q" association="_1BnvsFpNEeaMpZSzvy8A5Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F3ZR4KVsEeaQmNKlc2VWaw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F3Z48KVsEeaQmNKlc2VWaw" value="1"/>
+          </ownedEnd>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_2wgcEHV2EeSvTf7EWD7QRA" name="StateMachines">
@@ -603,9 +609,6 @@ this.transitionActivations.clear();
           <ownedAttribute xmi:type="uml:Property" xmi:id="_BRoQscDrEeWpevkdGfdnMA" name="doActivityContextObject" type="_EF92AMDqEeWpevkdGfdnMA" association="_BRefsMDrEeWpevkdGfdnMA">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nwiQgMNlEeWpYp0WmASFoQ"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nwl64MNlEeWpYp0WmASFoQ" value="1"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_OWl-oNG8EeWB0O9YzCwUNg" association="_OWjiYNG8EeWB0O9YzCwUNg">
-            <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
           </ownedAttribute>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0lK9ENQuEeWMJphss3BZSg" name="hasCompleted" specification="_on9GIJRREeWAs5MYUhc8EQ">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_0lK9EdQuEeWMJphss3BZSg" direction="return">
@@ -4536,12 +4539,6 @@ return contextChain;
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pn-2wNG9EeWB0O9YzCwUNg" value="*"/>
           </ownedEnd>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_OWjiYNG8EeWB0O9YzCwUNg" memberEnd="_OWkJctG8EeWB0O9YzCwUNg _OWl-oNG8EeWB0O9YzCwUNg">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OWkJcNG8EeWB0O9YzCwUNg" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OWkJcdG8EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_OWkJctG8EeWB0O9YzCwUNg" name="stateactivation" type="_rVacUHV3EeSvTf7EWD7QRA" association="_OWjiYNG8EeWB0O9YzCwUNg"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_B5KYING9EeWB0O9YzCwUNg" name="A_deferredEventOccurrence_deferral" memberEnd="_B5LmQdG9EeWB0O9YzCwUNg _B5LmQtG9EeWB0O9YzCwUNg">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B5K_MNG9EeWB0O9YzCwUNg" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B5LmQNG9EeWB0O9YzCwUNg" key="nature" value="UML_Nature"/>
@@ -4652,11 +4649,14 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
           </generalization>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_p3hgkFliEeaMpZSzvy8A5Q" name="dispatchNextEvent"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Association" xmi:id="_nVY_YFmAEeaMpZSzvy8A5Q" memberEnd="_nVZmclmAEeaMpZSzvy8A5Q _nVZmc1mAEeaMpZSzvy8A5Q">
+        <packagedElement xmi:type="uml:Association" xmi:id="_nVY_YFmAEeaMpZSzvy8A5Q" name="A_fireableTransitions_pseudostateActivation" memberEnd="_nVZmclmAEeaMpZSzvy8A5Q _nVZmc1mAEeaMpZSzvy8A5Q">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nVZmcFmAEeaMpZSzvy8A5Q" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nVZmcVmAEeaMpZSzvy8A5Q" key="nature" value="UML_Nature"/>
           </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_nVZmc1mAEeaMpZSzvy8A5Q" name="pseudostateactivation" type="_htW88HV3EeSvTf7EWD7QRA" association="_nVY_YFmAEeaMpZSzvy8A5Q"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_nVZmc1mAEeaMpZSzvy8A5Q" name="pseudostateActivation" type="_htW88HV3EeSvTf7EWD7QRA" association="_nVY_YFmAEeaMpZSzvy8A5Q">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JxJnIKVrEeaQmNKlc2VWaw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JxK1QKVrEeaQmNKlc2VWaw" value="1"/>
+          </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_UsmC0FmBEeaMpZSzvy8A5Q" name="HistoryPseudostateActivation" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_oFcmgFmEEeaMpZSzvy8A5Q" general="_htW88HV3EeSvTf7EWD7QRA"/>
@@ -4692,10 +4692,6 @@ The parameteValues for any output (in-out, out or return) parameters of the beha
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_ZjPosFmBEeaMpZSzvy8A5Q" name="ConditionalPseudostateActivation" isAbstract="true">
           <generalization xmi:type="uml:Generalization" xmi:id="_pvWjkFmEEeaMpZSzvy8A5Q" general="_htW88HV3EeSvTf7EWD7QRA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VXvUwFmFEeaMpZSzvy8A5Q" name="ELSE_OPERATOR">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-            <defaultValue xmi:type="uml:LiteralString" xmi:id="_cdOJsFmFEeaMpZSzvy8A5Q" name="else" value="else"/>
-          </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_QPkhEFmFEeaMpZSzvy8A5Q" name="evaluateAllGuards">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_QPkhEVmFEeaMpZSzvy8A5Q" name="eventOccurrence">
               <type xmi:type="uml:Class" href="fUML_Semantics.uml#Semantics-CommonBehaviors-Communications-EventOccurrence"/>
