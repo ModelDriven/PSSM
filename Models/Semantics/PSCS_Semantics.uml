@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rP7eQNyJEeGru4CffneBug" name="PSCS_Semantics">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_rP7eQNyJEeGru4CffneBug" name="PSCS_Semantics" URI="http://www.omg.org/spec/PSCS/20161101">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_lN4w0KWyEeaAK-tyVbE2OA">
+    <importedPackage xmi:type="uml:Package" href="../Syntax/UML.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mnN7QKWyEeaAK-tyVbE2OA">
+    <importedPackage xmi:type="uml:Model" href="fUML_Semantics.uml#_0"/>
+  </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_W_JVwNzCEeGru4CffneBug" name="Semantics">
     <packagedElement xmi:type="uml:Package" xmi:id="_RDIo4N-4EeGnO-TF_1T_iQ" name="Actions">
       <packagedElement xmi:type="uml:Class" xmi:id="_wUwMCN2JEeGnO-TF_1T_iQ" name="CS_AddStructuralFeatureValueActionActivation">

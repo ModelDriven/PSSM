@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131101"
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20161101"
          xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
-   <uml:Model xmi:type="uml:Model" xmi:id="_0"
+   <uml:Model xmi:type="uml:Model" xmi:id="fUML_Syntax"
               xmi:uuid="4d1c2e0c-3893-42a2-a829-483c7d9ee1f9"
               name="fUML_Syntax"
               URI="http://www.omg.org/spec/FUML/20161101">

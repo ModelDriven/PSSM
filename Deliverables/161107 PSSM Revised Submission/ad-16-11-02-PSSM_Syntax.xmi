@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131101"
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20161101"
          xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
-   <uml:Model xmi:type="uml:Model" xmi:id="_0"
+   <uml:Model xmi:type="uml:Model" xmi:id="PSSM_Syntax"
               xmi:uuid="6439b791-6e2d-4830-9936-33c8025e6eef"
               name="PSSM_Syntax"
               URI="http://www.omg.org/spec/PSSM/20161101">
@@ -11,7 +11,7 @@
       </elementImport>
       <elementImport xmi:type="uml:ElementImport" xmi:id="_jh3UsMnIEeWAiZQZbeZaoA"
                      xmi:uuid="b1df238a-64de-48ce-a61a-68efb6de2f0c">
-          <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#_0"/>
+          <importedElement href="http://www.omg.org/spec/FUML/20161101/fUML_Syntax.xmi#fUML_Syntax"/>
       </elementImport>
      <packagedElement xmi:type="uml:Package" xmi:id="_4P0jwMnDEeWAiZQZbeZaoA"
                        xmi:uuid="b71f89e5-58e5-496b-a165-8a6d39573bd5"
