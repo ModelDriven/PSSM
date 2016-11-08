@@ -127,6 +127,9 @@
 self.constrainedElement->isEmpty()</body>
         </specification>
       </ownedRule>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_pM8wwKWZEeaQmNKlc2VWaw">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_XeqAoMq8EeWF7I4YWspV6w"/>
+      </packageImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Cpr9wMnIEeWAiZQZbeZaoA" name="Values" visibility="public">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_-jRL4G1jEea39NG5Sc27-w" name="pssm_expression_only_for_else">
@@ -168,6 +171,18 @@ endif
 </body>
         </specification>
       </ownedRule>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_RDQXcKWaEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Constraint" href="fUML_Syntax.uml#_7-MRkKU-EeaXKupuv1rSBA"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_SVNHgKWaEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Constraint" href="fUML_Syntax.uml#_Bnjt0KU_EeaXKupuv1rSBA"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_TsBJcKWaEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Constraint" href="fUML_Syntax.uml#_bie-wKU_EeaXKupuv1rSBA"/>
+      </elementImport>
+      <elementImport xmi:type="uml:ElementImport" xmi:id="_Vg3yQKWaEeaQmNKlc2VWaw">
+        <importedElement xmi:type="uml:Constraint" href="fUML_Syntax.uml#_uV0h8KU_EeaXKupuv1rSBA"/>
+      </elementImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R8j1cMnJEeWAiZQZbeZaoA" name="CommonBehavior">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_AQVagMqpEeWF7I4YWspV6w" name="pssm_call_event_operation_has_no_method">
@@ -180,6 +195,9 @@ endif
 </body>
         </specification>
       </ownedRule>
+      <packageImport xmi:type="uml:PackageImport" xmi:id="_i668kKWaEeaQmNKlc2VWaw">
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_iAdLcMq8EeWF7I4YWspV6w"/>
+      </packageImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_apctEMnJEeWAiZQZbeZaoA" name="StateMachines">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w" name="pssm_transition_signal_event_receptions">
