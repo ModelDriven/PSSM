@@ -39,127 +39,12 @@ context CallEvent inv pssm_call_event_operation_has_no_method:
 
 -- StateMachines
 
-
 -- A StateMachine may not be a method and, if it has a context, it must be a 
 -- classifierBehavior for that context.
 context StateMachine inv pssm_state_machine_context:
 	self.specification = null and
 	self._'context' <> null implies self._'context'.classifierBehavior = self
 	
--- A State must not have a submachine.
-context State inv pssm_state_has_no_submachine:
-	not self.isSubmachineState
-
--- A State must not have a stateInvariant.
-context State inv pssm_state_has_no_invariant:
-	self.stateInvariant = null
-	
--- A doActivity Behavior of a State can only have "in" Parameters.
-context State inv pssm_state_doActivity_parameters:
-	self.doActivity <> null implies 
-		self.doActivity.ownedParameter->forAll(direction = ParameterDirectionKind::_'in')
-	
-context Behavior
--- A Behavior conforms to a set of Triggers if the Behavior has no Parameters,
--- or, all the Triggers are for SignalEvents and the Behavior has exactly one 
--- Parameter of direction "in", multiplicity upper bound of 1 and is either 
--- untyped or has a type that is a Signal that conforms to all the Signals of  
--- the Triggers, or all theTriggers are for CallEvents and the Behavior has a  
--- signature that conforms to or input-conforms to all the signatures of the 
--- Operations of the CallEvents. A Behavior conforms to an Operation if the 
--- signature of the Behavior conforms to the signature of the Operation. A 
--- Behavior input-conforms to an Operation if the signature of the Behavior 
--- conforms to the signature containing only the Parameters of direction "in" 
--- the signature of the Operation.
-	def: conformsToAll(triggers : Collection(Trigger)) : Boolean =
-		self.ownedParameter->isEmpty() or
-		triggers.event->forAll(oclIsKindOf(SignalEvent)) and
-			self.ownedParameter->size() = 1 and
-			(let parameter = self.ownedParameter->at(1) in
-				parameter.direction = ParameterDirectionKind::_'in' and
-				parameter.is(1,1) and
-				(parameter.type = null or 
-				triggers.event.oclAsType(SignalEvent).signal->forAll(s |
-					parameter.type.conformsTo(s)
-				))) or
-		triggers.event->forAll(oclIsKindOf(CallEvent)) and
-			triggers.event.oclAsType(CallEvent).operation->forAll(operation |
-				self.conformsTo(operation.ownedParameter) or 
-				self.conformsTo(operation.ownedParameter->select(
-					direction = ParameterDirectionKind::_'in'
-				)))
-	
--- A Behavior conforms to a signature (set of Parameters) if the Behavior has  
--- the same number of Parameters as the signature, and each Parameter of the 
--- Behavior has the same direction, ordering and uniqueness as the corresponding 
--- Parameter (in order) from the signature and type and multiplicity that are 
--- compatible with those of the corresponding Parameter (depending on the 
--- Parameter direction). 
-	def: conformsTo(parameters : OrderedSet(Parameter)) : Boolean =
-		self.ownedParameter->size() = parameters->size() and
-		Sequence{1..parameters->size()} -> forAll(i |
-			let parameter = parameters->at(i) in
-			let matchingParameter = self.ownedParameter->at(i) in
-			
-			matchingParameter.direction = parameter.direction and
-			matchingParameter.isOrdered = parameter.isOrdered and
-			matchingParameter.isUnique = parameter.isUnique and
-			(parameter.direction = ParameterDirectionKind::_'in' implies
-				 parameter.type = null or
-				  parameter.type <> null and
-				  	parameter.type.conformsTo(matchingParameter.type) and
-			     parameter.compatibleWith(matchingParameter)) and
-			(matchingParameter.direction = ParameterDirectionKind::out or
-			matchingParameter.direction = ParameterDirectionKind::return implies
-				matchingParameter.type = null or
-				 matchingParameter.type <> null and 
-				 	matchingParameter.type.conformsTo(parameter.type) and
-				matchingParameter.compatibleWith(parameter)) and
-			(matchingParameter.direction = ParameterDirectionKind::inout implies
-                 matchingParameter.type = parameter.type and
-                 parameter.compatibleWith(matchingParameter) and
-			     matchingParameter.compatibleWith(parameter))
-		)
-
--- The entry and doActivity Behaviors of a State must conform to all the
--- Triggers of Transitions that might cause the State to be entered (but a
--- doActivity Behavior may only have "in" parameters. The exit Behavior of a
--- State must conform to all the Triggers of Transitions that might cause the
--- State to be exited.
-context State inv pssm_state_behavior_parameters:
-	-- Collect this State and all containing States.
-	let allStates = self->asSet()->closure(container.state) in
-	
-	-- Get all the incoming Transitions of the collected States, including
-	-- Transitions incoming to entryPoint Pseudostates owned by the States.
-	let allIncoming = allStates.incoming->union(
-			allStates.connectionPoint->select(kind = PseudostateKind::entryPoint).incoming
-		)->asSet() in
-	
-	-- Get all the Triggers for all relevant incoming Transitions, accounting
-	-- also for compound Transitions.
-	let incomingTriggers = allIncoming->closure(
-			if source.oclIsKindOf(Pseudostate) then source.incoming
-			else Set{} endif
-		).trigger in
-		
-	-- Get all the outgoing Transitions of the collected States, including
-	-- Transitions outgoing from exitPoint Pseudostates owned by the States.
-	let allOutgoing = allStates.outgoing->union(
-			allStates.connectionPoint->select(kind = PseudostateKind::exitPoint).outgoing
-		)->asSet() in
-	
-	-- Get all the Triggers for all relevant outgoing Transitions. (Note that
-	-- the Triggers for a compound Transition are always on the initial
-	-- outgoing segment.)
-	let outgoingTriggers = allOutgoing.trigger in
-	
-	-- Check the conformance of the various Behaviors. (Note that doActivity
-	-- Behaviors are separately required to have only "in" Parameters.
-	(self.entry <> null implies self.entry.conformsToAll(incomingTriggers)) and
-	(self.doActivity <> null implies self.doActivity.conformsToAll(incomingTriggers)) and
-	(self.exit <> null implies self.entry.conformsToAll(outgoingTriggers))
-
 -- The triggers of a Transition must all be for CallEvents or SignalEvents.
 context Transition inv pssm_transition_triggers:
 	self.trigger.event->forAll(
@@ -193,16 +78,140 @@ context Transition inv pssm_transition_signal_event_receptions:
 			oclAsType(SignalEvent).signal
 	)
 
--- If all triggers of a Transition are for SignalEvents, then an effect Behavior 
--- of the Transition may have exactly one Parameter of mode "in", multiplicity 
--- upper bound of 1 and a type that is a Signal that conforms to all the Signals 
--- of the Transition triggers. If all the triggers are for CallEvents, such that 
--- the signatures of the Operations of the CallEvents are consistent, then an 
--- effect Behavior may have a signature that conforms to or input-conforms to 
--- all the signatures of the Operations of the CallEvents. Otherwise, an effect 
--- Behavior must have no Parameters.
-context Transition inv pssm_transition_behavior_parameters:
-	self.effect <> null implies self.effect.conformsToAll(self.trigger)
+-- A State must not have a submachine.
+context State inv pssm_state_has_no_submachine:
+	not self.isSubmachineState
+
+-- A State must not have a stateInvariant.
+context State inv pssm_state_has_no_invariant:
+	self.stateInvariant = null
+	
+-- A doActivity Behavior of a State can only have "in" Parameters.
+context State inv pssm_state_do_activity_parameters:
+	self.doActivity <> null implies 
+		self.doActivity.ownedParameter->forAll(direction = ParameterDirectionKind::_'in')
+	
+context State
+
+-- A signature (set of Parameters) conforms to a collection of Triggers if one 
+-- of the following is true: the signature is empty; all the Triggers are for 
+-- SignalEvents and the signature has exactly one Parameter of direction "in", 
+-- has multiplicity upper bound of 1 and is either untyped or has a type that is
+-- a Signal that conforms to all the Signals of the Triggers; or all theTriggers 
+-- are for CallEvents and the signature conforms to or input-conforms to all the 
+-- signatures of the Operations of the CallEvents. (A signature input-conforms 
+-- to another if the first signature conforms to the signature containing only 
+-- the "in" Parameters from the second signature).
+def: conformsToAll(signature: OrderedSet(Parameter), triggers : Collection(Trigger)) : Boolean =
+	signature->isEmpty() or
+	triggers.event->forAll(oclIsKindOf(SignalEvent)) and
+		signature->size() = 1 and
+		(let parameter = signature->at(1) in
+			parameter.direction = ParameterDirectionKind::_'in' and
+			parameter.is(1,1) and
+			(parameter.type = null or 
+			triggers.event.oclAsType(SignalEvent).signal->forAll(s |
+				parameter.type.conformsTo(s)
+			))) or
+	triggers.event->forAll(oclIsKindOf(CallEvent)) and
+		triggers.event.oclAsType(CallEvent).operation->forAll(operation |
+			conforms(signature, operation.ownedParameter) or 
+			conforms(signature, operation.ownedParameter->select(
+				direction = ParameterDirectionKind::_'in'
+			)))
+	
+-- One signature conforms to another if the first signature has the same number 
+-- of Parameters as the second signature, and each Parameter of the first
+-- signature has the same direction, ordering and uniqueness as the corresponding 
+-- Parameter (in order) from the second signature and a type and multiplicity 
+-- that are compatible with those of the corresponding Parameter (depending on 
+-- the Parameter direction). 
+def: conforms(signature1 : OrderedSet(Parameter), signature2 : OrderedSet(Parameter)) : Boolean =
+	signature1->size() = signature2->size() and
+	Sequence{1..signature1->size()} -> forAll(i |
+		let parameter1 = signature1->at(i) in
+		let parameter2 = signature2->at(i) in
+		
+		parameter1.direction = parameter2.direction and
+		parameter1.isOrdered = parameter2.isOrdered and
+		parameter1.isUnique = parameter2.isUnique and
+		(parameter2.direction = ParameterDirectionKind::_'in' implies
+			 parameter2.type = null or
+			  parameter2.type <> null and
+			  	parameter2.type.conformsTo(parameter1.type) and
+		     parameter2.compatibleWith(parameter1)) and
+		(parameter1.direction = ParameterDirectionKind::out or
+		parameter1.direction = ParameterDirectionKind::return implies
+			 parameter1.type = null or
+			 parameter1.type <> null and 
+			 	parameter1.type.conformsTo(parameter2.type) and
+			parameter1.compatibleWith(parameter2)) and
+		(parameter1.direction = ParameterDirectionKind::inout implies
+             parameter1.type = parameter2.type and
+             parameter2.compatibleWith(parameter1) and
+		     parameter1.compatibleWith(parameter2))
+	)
+
+-- The entry and doActivity Behaviors of a State must conform to all the
+-- Triggers of Transitions that might cause the State to be entered. The exit 
+-- Behavior of a State must conform to all the Triggers of Transitions that 
+-- might cause the State to be exited. The effect and guard Behaviors of an 
+-- outgoing Transition of a State must conform to all the Triggers of the 
+-- Transition. (Note that only Transitions outgoing from a State may have 
+-- triggers.)
+context State inv pssm_state_behavior_parameters:
+	-- Collect this State and all containing States.
+	let allStates = self->asSet()->closure(container.state) in
+	
+	-- Get all the incoming Transitions of the collected States, including
+	-- Transitions incoming to entryPoint Pseudostates owned by the States and
+	-- all segments of compound Transitions.
+	let allIncoming = allStates.incoming->union(
+			allStates.connectionPoint->select(kind = PseudostateKind::entryPoint).incoming
+		)->asSet()->closure(
+			if source.oclIsKindOf(Pseudostate) then source.incoming
+			else Set{} endif
+		) in
+		
+	-- Get all the outgoing Transitions of the collected States, including
+	-- Transitions outgoing from exitPoint Pseudostates owned by the States and
+	-- all segments of compound Transitions.
+	let allOutgoing = allStates.outgoing->union(
+			allStates.connectionPoint->select(kind = PseudostateKind::exitPoint).outgoing
+		)->asSet()->closure(
+			if target.oclIsKindOf(Pseudostate) then target.outgoing
+			else Set{} endif
+		) in
+	
+	-- Check the conformance of the various State Behaviors. (Note that 
+	-- doActivity Behaviors are separately required to have only "in" Parameters.)
+	(self.entry <> null implies 
+		conformsToAll(self.entry.ownedParameter, allIncoming.trigger)) and
+	(self.doActivity <> null implies 
+		conformsToAll(self.doActivity.ownedParameter, allIncoming.trigger)) and
+	(self.exit <> null implies 
+		conformsToAll(self.exit.ownedParameter, allOutgoing.trigger)) and
+	
+	-- Check the conformance of the effect and guard Behaviors on outgoing 
+	-- Transitions. (Note that the behavior on an OpaqueExpression is
+	-- separately required to have only "in" Parameters, other than a single
+	-- return parameter.)
+	allOutgoing->forAll(transition | 
+		(transition.effect <> null implies 
+			conformsToAll(transition.effect.ownedParameter, allOutgoing.trigger)) and
+		(transition.guard <> null and 
+	     transition.guard.specification.oclIsKindOf(OpaqueExpression) implies 
+		     let behavior = transition.guard.specification.
+		     	oclAsType(OpaqueExpression).behavior in
+		     behavior <> null implies
+		     conformsToAll(
+				behavior.ownedParameter->
+					reject(direction = ParameterDirectionKind::return), 
+				allOutgoing.trigger
+		))
+	)
+	
+-- StateMachine Redefinition
 
 -- A StateMachine must not have more than one extendedStateMachine.
 context StateMachine inv pssm_state_machine_extends_at_most_one:

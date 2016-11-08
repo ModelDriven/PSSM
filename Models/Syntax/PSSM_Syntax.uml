@@ -4,43 +4,43 @@
     <importedElement xmi:type="uml:Package" href="UML.uml#_0"/>
   </elementImport>
   <elementImport xmi:type="uml:ElementImport" xmi:id="_jh3UsMnIEeWAiZQZbeZaoA">
-    <importedElement xmi:type="uml:Model" href="fUML_Syntax_UML_2.5.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
+    <importedElement xmi:type="uml:Model" href="fUML_Syntax.uml#_IRDyIMU3EeWXLLOylfwRMQ"/>
   </elementImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_4P0jwMnDEeWAiZQZbeZaoA" name="Syntax">
     <elementImport xmi:type="uml:ElementImport" xmi:id="_NsdJMMVKEeWXLLOylfwRMQ">
       <importedElement xmi:type="uml:Class" href="UML.uml#Constraint"/>
     </elementImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_FD-3gMVKEeWXLLOylfwRMQ">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_GKJgQMVIEeWXLLOylfwRMQ">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_RY31wMU4EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_RY31wMU4EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_UGdqIMVIEeWXLLOylfwRMQ">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_gEUL8MU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_gEUL8MU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_VzjeEMVIEeWXLLOylfwRMQ">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_7sx8wMU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_7sx8wMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_a0VeEMVNEeWXLLOylfwRMQ">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_bNYcwMU4EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_kOcF4MaeEeWmIYomuH94TA" importedPackage="_Q_2pEMVJEeWXLLOylfwRMQ"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_fHvJwMVJEeWXLLOylfwRMQ" importedPackage="_MULkIMVJEeWXLLOylfwRMQ"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_bybQQMVIEeWXLLOylfwRMQ" importedPackage="_coJpQMVGEeWXLLOylfwRMQ"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_hG9E8MVIEeWXLLOylfwRMQ" importedPackage="_YR7acMVHEeWXLLOylfwRMQ"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_3KCPQMqmEeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_1J2bQMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_7Ne2kMqmEeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_3M54IMU3EeWXLLOylfwRMQ"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_3M54IMU3EeWXLLOylfwRMQ"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_MULkIMVJEeWXLLOylfwRMQ" name="CommonStructure">
       <elementImport xmi:type="uml:ElementImport" xmi:id="_pomscMwYEeWF7I4YWspV6w">
         <importedElement xmi:type="uml:Class" href="UML.uml#Constraint"/>
       </elementImport>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_lq0oQMwYEeWF7I4YWspV6w">
-        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_-47vsMU3EeWXLLOylfwRMQ"/>
       </packageImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_coJpQMVGEeWXLLOylfwRMQ" name="Values">
@@ -51,7 +51,7 @@
         <importedElement xmi:type="uml:Class" href="UML.uml#Expression"/>
       </elementImport>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_ubW6QMVIEeWXLLOylfwRMQ">
-        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_zIiDwMU3EeWXLLOylfwRMQ"/>
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_zIiDwMU3EeWXLLOylfwRMQ"/>
       </packageImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_YR7acMVHEeWXLLOylfwRMQ" name="CommonBehavior" URI="">
@@ -59,7 +59,7 @@
         <importedElement xmi:type="uml:Class" href="UML.uml#CallEvent"/>
       </elementImport>
       <packageImport xmi:type="uml:PackageImport" xmi:id="_kdR40MVOEeWXLLOylfwRMQ">
-        <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_CkpMcMU4EeWXLLOylfwRMQ"/>
+        <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_CkpMcMU4EeWXLLOylfwRMQ"/>
       </packageImport>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Q_2pEMVJEeWXLLOylfwRMQ" name="StateMachines">
@@ -108,16 +108,13 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_7cCDYMq7EeWF7I4YWspV6w" importedPackage="_R8j1cMnJEeWAiZQZbeZaoA"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_813kIMq7EeWF7I4YWspV6w" importedPackage="_apctEMnJEeWAiZQZbeZaoA"/>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_CYCWwMq9EeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_ezoDEMq8EeWF7I4YWspV6w"/>
-    </packageImport>
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_E1hs4Mq9EeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_kRmHoMq8EeWF7I4YWspV6w"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_ezoDEMq8EeWF7I4YWspV6w"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_Gi2KUMq9EeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_nOhy0Mq8EeWF7I4YWspV6w"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_nOhy0Mq8EeWF7I4YWspV6w"/>
     </packageImport>
     <packageImport xmi:type="uml:PackageImport" xmi:id="_ILI90Mq9EeWF7I4YWspV6w">
-      <importedPackage xmi:type="uml:Package" href="fUML_Syntax_UML_2.5.uml#_pq2EQMq8EeWF7I4YWspV6w"/>
+      <importedPackage xmi:type="uml:Package" href="fUML_Syntax.uml#_pq2EQMq8EeWF7I4YWspV6w"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_MI8tgcnIEeWAiZQZbeZaoA" name="CommonStructure" visibility="public">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_7azGcMnNEeWAiZQZbeZaoA" name="pssm_constraint_is_guard">
@@ -126,117 +123,291 @@
           <language>Natural language</language>
           <language>OCL</language>
           <body>A Constraint must be owned as a guard by a Transition and its constrainedElements must be empty.</body>
-          <body>self.owner.oclIsKindOf(UML::StateMachines::Transition) and self.constrainedElement->isEmpty()</body>
+          <body>self.owner.oclIsKindOf(UML::StateMachines::Transition) and 
+self.constrainedElement->isEmpty()</body>
         </specification>
       </ownedRule>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Cpr9wMnIEeWAiZQZbeZaoA" name="Values" visibility="public">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w" name="pssm_opaque_expression_has_behavior" constrainedElement="_Cpr9wMnIEeWAiZQZbeZaoA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>The OpaqueExpression must have a behavior.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_-jRL4G1jEea39NG5Sc27-w" name="pssm_expression_only_for_else">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_-jRL4G1jEea39NG5Sc27-w" name="pssm_expression_only_for_else">
         <constrainedElement xmi:type="uml:Class" href="UML.uml#Expression"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_TzNUYG1kEea39NG5Sc27-w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>The Expression must have no operands and its symbol must be &quot;else&quot;. </body>
+          <body>self.symbol = 'else' and self.operand->isEmpty()</body>
         </specification>
-      </packagedElement>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_DwRo8MqlEeWF7I4YWspV6w" name="pssm_opaque_expression_has_behavior">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#OpaqueExpression"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Q28kQMqlEeWF7I4YWspV6w">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>The OpaqueExpression must have a behavior.</body>
+          <body>self.behavior &lt;> null
+</body>
+        </specification>
+      </ownedRule>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_qu9HQMqpEeWF7I4YWspV6w" name="Classification">
       <ownedComment xmi:type="uml:Comment" xmi:id="_RsYvwMqrEeWF7I4YWspV6w" annotatedElement="_S7rp4MqqEeWF7I4YWspV6w">
-        <body>This replaces fUML constraint zero_or_one_method on Operation.</body>
+        <body>This replaces fUML constraint fuml_operation_zero_or_one_method.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_S7rp4MqqEeWF7I4YWspV6w" name="pssm_operation_has_at_most_one_method">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_S7rp4MqqEeWF7I4YWspV6w" name="pssm_operation_has_at_most_one_method">
         <constrainedElement xmi:type="uml:Class" href="UML.uml#Operation"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRFhMMqqEeWF7I4YWspV6w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>If an Operation is abstract, it must have no method. Otherwise it must not have more than one method and it must have exactly one method unless owned by an active Class.</body>
+          <body>if self.isAbstract then self.method->isEmpty()
+else 
+	self.method->size() &lt;= 1 and
+	((self.class = null or not self.class.isActive) implies
+		self.method->size() = 1)
+endif
+</body>
         </specification>
-      </packagedElement>
+      </ownedRule>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_R8j1cMnJEeWAiZQZbeZaoA" name="CommonBehavior">
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_AQVagMqpEeWF7I4YWspV6w" name="pssm_call_event_operation_has_no_method">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_AQVagMqpEeWF7I4YWspV6w" name="pssm_call_event_operation_has_no_method">
         <constrainedElement xmi:type="uml:Class" href="UML.uml#CallEvent"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_T5J0MMqpEeWF7I4YWspV6w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>The operation of the CallEvent must not have any methods.</body>
+          <body>self.operation.method->isEmpty()
+</body>
         </specification>
-      </packagedElement>
+      </ownedRule>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_apctEMnJEeWAiZQZbeZaoA" name="StateMachines">
-      <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w" name="Of_pssm_transition_signal_event_receptions">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_dduWIMt3EeWF7I4YWspV6w" name="pssm_transition_signal_event_receptions">
         <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_dduWIct3EeWF7I4YWspV6w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>The Signals of any SignalEvents on the triggers of a Transition must have matching Receptions that are owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          <body>let stateMachine = self.containingStateMachine() in
+let context_ = 
+	if stateMachine._'context' = null then stateMachine 
+	else stateMachine._'context' endif in
+context_.allFeatures()->select(oclIsKindOf(Reception)).
+oclAsType(Reception).signal->includesAll(
+	self.trigger->select(oclIsKindOf(SignalEvent)).
+		oclAsType(SignalEvent).signal
+)
+</body>
         </specification>
       </ownedRule>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_SNpToMq0EeWF7I4YWspV6w" name="pssm_state_has_no_submachine">
-        <constrainedElement xmi:type="uml:Package" href="#_apctEMnJEeWAiZQZbeZaoA"/>
-        <constrainedElement xmi:type="uml:Property" href="UML.uml#State-isSimple"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_lYhisKUyEeaXKupuv1rSBA" name="pssm_state_helper_operations">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X9XIoKUzEeaXKupuv1rSBA">
+          <language></language>
+          <language>OCL</language>
+          <body>conformsToAll(signature : OrderedSet(Parameter), triggers : Collection(Trigger) : Boolean
+conforms(signature1 : OrderedSet(Parameter), signature2 : OrderedSet(Parameter) : Boolean</body>
+          <body>-- A signature (set of Parameters) conforms to a collection of Triggers if one 
+-- of the following is true: the signature is empty; all the Triggers are for 
+-- SignalEvents and the signature has exactly one Parameter of direction &quot;in&quot;, 
+-- has multiplicity upper bound of 1 and is either untyped or has a type that is
+-- a Signal that conforms to all the Signals of the Triggers; or all theTriggers 
+-- are for CallEvents and the signature conforms to or input-conforms to all the 
+-- signatures of the Operations of the CallEvents. (A signature input-conforms 
+-- to another if the first signature conforms to the signature containing only 
+-- the &quot;in&quot; Parameters from the second signature).
+conformsToAll(signature: OrderedSet(Parameter), triggers : Collection(Trigger)) : Boolean =
+	signature->isEmpty() or
+	triggers.event->forAll(oclIsKindOf(SignalEvent)) and
+		signature->size() = 1 and
+		(let parameter = signature->at(1) in
+			parameter.direction = ParameterDirectionKind::_'in' and
+			parameter.is(1,1) and
+			(parameter.type = null or 
+			triggers.event.oclAsType(SignalEvent).signal->forAll(s |
+				parameter.type.conformsTo(s)
+			))) or
+	triggers.event->forAll(oclIsKindOf(CallEvent)) and
+		triggers.event.oclAsType(CallEvent).operation->forAll(operation |
+			conforms(signature, operation.ownedParameter) or 
+			conforms(signature, operation.ownedParameter->select(
+				direction = ParameterDirectionKind::_'in'
+			)))
+	
+-- One signature conforms to another if the first signature has the same number 
+-- of Parameters as the second signature, and each Parameter of the first
+-- signature has the same direction, ordering and uniqueness as the corresponding 
+-- Parameter (in order) from the second signature and a type and multiplicity 
+-- that are compatible with those of the corresponding Parameter (depending on 
+-- the Parameter direction). 
+conforms(signature1 : OrderedSet(Parameter), signature2 : OrderedSet(Parameter)) : Boolean =
+	signature1->size() = signature2->size() and
+	Sequence{1..signature1->size()} -> forAll(i |
+		let parameter1 = signature1->at(i) in
+		let parameter2 = signature2->at(i) in
+		
+		parameter1.direction = parameter2.direction and
+		parameter1.isOrdered = parameter2.isOrdered and
+		parameter1.isUnique = parameter2.isUnique and
+		(parameter2.direction = ParameterDirectionKind::_'in' implies
+			 parameter2.type = null or
+			  parameter2.type &lt;> null and
+			  	parameter2.type.conformsTo(parameter1.type) and
+		     parameter2.compatibleWith(parameter1)) and
+		(parameter1.direction = ParameterDirectionKind::out or
+		parameter1.direction = ParameterDirectionKind::return implies
+			 parameter1.type = null or
+			 parameter1.type &lt;> null and 
+			 	parameter1.type.conformsTo(parameter2.type) and
+			parameter1.compatibleWith(parameter2)) and
+		(parameter1.direction = ParameterDirectionKind::inout implies
+             parameter1.type = parameter2.type and
+             parameter2.compatibleWith(parameter1) and
+		     parameter1.compatibleWith(parameter2))
+	)
+</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_SNpToMq0EeWF7I4YWspV6w" name="pssm_state_has_no_submachine">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1zTYMq0EeWF7I4YWspV6w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>A State must not have a submachine.</body>
+          <body>not self.isSubmachineState</body>
         </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_eJHAEMq0EeWF7I4YWspV6w" name="pssm_state_has_no_invariant" constrainedElement="_apctEMnJEeWAiZQZbeZaoA">
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_eJHAEMq0EeWF7I4YWspV6w" name="pssm_state_has_no_invariant">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_lLNw4Mq0EeWF7I4YWspV6w">
           <language>Natural language</language>
+          <language>OCL</language>
           <body>A State must not have a stateInvariant.</body>
+          <body>self.stateInvariant = null
+</body>
         </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w" name="pssm_state_machine_extends_at_most_one">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>A StateMachine must not have more than one extendedStateMachine.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_ZAtrMMtqEeWF7I4YWspV6w" name="pssm_state_machine_context">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_spC8sMtqEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>A StateMachine may not be a method and, if it has a context, it must be a classifierBehavior for that context.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_r0dooMtrEeWF7I4YWspV6w" name="pssm_transition_triggers">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VUBsIMtsEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>The triggers of a Transition must all be for CallEvents or SignalEvents.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_eVRDIMtsEeWF7I4YWspV6w" name="pssm_transition_call_event_operations">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-GJa0MtsEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>The Operations of any CallEvents on the triggers of a Transition must be owned or inherited by the context of the containing StateMachine of the Transition.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_FtgNwMttEeWF7I4YWspV6w" name="pssm_transition_behavior_parameters">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Be2mkMtuEeWF7I4YWspV6w">
-          <language>Natural language</language>
-          <body>If all triggers of a Transition are for SignalEvents, then an effect Behavior of the Transition may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the Transition triggers. If all the triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an effect Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an effect Behavior must have no Parameters.</body>
-        </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_Whi9QMtuEeWF7I4YWspV6w" name="pssm_state_behavior_parameters">
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_Whi9QMtuEeWF7I4YWspV6w" name="pssm_state_behavior_parameters">
         <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Yp1MMtuEeWF7I4YWspV6w">
           <language>Natural language</language>
-          <body>If all the relevant Triggers of an entry, doActivity or effect Behavior are for SignalEvents, then the Behavior may have exactly one Parameter of mode “in”, multiplicity upper bound of 1 and a type that is a Signal that conforms to all the Signals of the relevant Triggers. If all the relevant Triggers are for CallEvents, such that the signatures of the Operations of the CallEvents are consistent, then an entry or exit behavior Behavior may have a signature that conforms to or input-conforms to all the signatures of the Operations of the CallEvents and a doActivity Behavior may have a signature that input-conforms to all the signatures of the Operations of the CallEvents. Otherwise, an entry, doActivity or exit Behavior must have no Parameters.</body>
+          <language>OCL</language>
+          <body>The entry and doActivity Behaviors of a State must conform to all the Triggers of Transitions that might cause the State to be entered. The exit Behavior of a State must conform to all the Triggers of Transitions that might cause the State to be exited. The effect and guard Behaviors of an outgoing Transition of a State must conform to all the Triggers of the Transition. (Note that only Transitions outgoing from a State may have Triggers.)</body>
+          <body>-- Collect this State and all containing States.
+let allStates = self->asSet()->closure(container.state) in
+
+-- Get all the incoming Transitions of the collected States, including
+-- Transitions incoming to entryPoint Pseudostates owned by the States and
+-- all segments of compound Transitions.
+let allIncoming = allStates.incoming->union(
+		allStates.connectionPoint->select(kind = PseudostateKind::entryPoint).incoming
+	)->asSet()->closure(
+		if source.oclIsKindOf(Pseudostate) then source.incoming
+		else Set{} endif
+	) in
+	
+-- Get all the outgoing Transitions of the collected States, including
+-- Transitions outgoing from exitPoint Pseudostates owned by the States and
+-- all segments of compound Transitions.
+let allOutgoing = allStates.outgoing->union(
+		allStates.connectionPoint->select(kind = PseudostateKind::exitPoint).outgoing
+	)->asSet()->closure(
+		if target.oclIsKindOf(Pseudostate) then target.outgoing
+		else Set{} endif
+	) in
+
+-- Check the conformance of the various State Behaviors. (Note that 
+-- doActivity Behaviors are separately required to have only &quot;in&quot; Parameters.)
+(self.entry &lt;> null implies 
+	conformsToAll(self.entry.ownedParameter, allIncoming.trigger)) and
+(self.doActivity &lt;> null implies 
+	conformsToAll(self.doActivity.ownedParameter, allIncoming.trigger)) and
+(self.exit &lt;> null implies 
+	conformsToAll(self.exit.ownedParameter, allOutgoing.trigger)) and
+
+-- Check the conformance of the effect and guard Behaviors on outgoing 
+-- Transitions. (Note that the behavior on an OpaqueExpression is
+-- separately required to have only &quot;in&quot; Parameters, other than a single
+-- return parameter.)
+allOutgoing->forAll(transition | 
+	(transition.effect &lt;> null implies 
+		conformsToAll(transition.effect.ownedParameter, allOutgoing.trigger)) and
+	(transition.guard &lt;> null and 
+     transition.guard.specification.oclIsKindOf(OpaqueExpression) implies 
+	     let behavior = transition.guard.specification.
+	     	oclAsType(OpaqueExpression).behavior in
+	     behavior &lt;> null implies
+	     conformsToAll(
+			behavior.ownedParameter->
+				reject(direction = ParameterDirectionKind::return), 
+			allOutgoing.trigger
+	))
+)
+</body>
         </specification>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Constraint" xmi:id="_mzLw8NEaEeWMvYElZ5Ee4w" name="pssm_transition_vertexes">
-        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_44KZUNEaEeWMvYElZ5Ee4w">
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_ZAtrMMtqEeWF7I4YWspV6w" name="pssm_state_machine_context">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_spC8sMtqEeWF7I4YWspV6w">
           <language>Natural language</language>
-          <body>The source and target Vertexes of a Transition must be contained by the same StateMachine as the Transition.</body>
+          <language>OCL</language>
+          <body>A StateMachine may not be a method and, if it has a context, it must be a classifierBehavior for that context.</body>
+          <body>self.specification = null and
+self._'context' &lt;> null implies self._'context'.classifierBehavior = self
+</body>
         </specification>
-      </packagedElement>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_eVRDIMtsEeWF7I4YWspV6w" name="pssm_transition_call_event_operations">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_-GJa0MtsEeWF7I4YWspV6w">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>The Operations of any CallEvents on the triggers of a Transition must be owned or inherited by the context of the containing StateMachine of the Transition.</body>
+          <body>let stateMachine = self.containingStateMachine() in
+let context_ = 
+	if stateMachine._'context' = null then stateMachine 
+	else stateMachine._'context' endif in
+context_.allFeatures()->includesAll(
+	self.trigger->select(oclIsKindOf(CallEvent)).
+		oclAsType(CallEvent).operation
+)
+</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_r0dooMtrEeWF7I4YWspV6w" name="pssm_transition_triggers">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#Transition"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VUBsIMtsEeWF7I4YWspV6w">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>The triggers of a Transition must all be for CallEvents or SignalEvents.</body>
+          <body>self.trigger.event->forAll(
+	oclIsKindOf(CallEvent) or
+	oclIsKindOf(SignalEvent)
+)
+</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_yEbBgMrAEeWF7I4YWspV6w" name="pssm_state_machine_extends_at_most_one">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#StateMachine"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_CzNTAMrBEeWF7I4YWspV6w">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>A StateMachine must not have more than one extendedStateMachine.</body>
+          <body>self.extendedStateMachine->size() &lt;= 1
+</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_edrJQKVaEeaQmNKlc2VWaw" name="pssm_state_do_activity_parameters">
+        <constrainedElement xmi:type="uml:Class" href="UML.uml#State"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_rij74KVaEeaQmNKlc2VWaw">
+          <language>Natural language</language>
+          <language>OCL</language>
+          <body>A doActivity Behavior of a State can only have &quot;in&quot; Parameters.</body>
+          <body>self.doActivity &lt;> null implies 
+	self.doActivity.ownedParameter->forAll(direction = ParameterDirectionKind::_'in')
+</body>
+        </specification>
+      </ownedRule>
     </packagedElement>
   </packagedElement>
 </uml:Model>
