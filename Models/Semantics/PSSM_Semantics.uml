@@ -6685,6 +6685,7 @@ if(regionActivation == this.getParent()){
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_-i-TEIagEea4nKUlV2qffA" name="callEventExecution" type="_Pz_pYFgGEeaqSKm88dX50g" association="_-i9sAIagEea4nKUlV2qffA"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3aR7ILsvEea5FZqaVW7Hkw" name="Presentation"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_LFUAwHVxEeSfVojhNHzNrw" name="Loci">
         <packageImport xmi:type="uml:PackageImport" xmi:id="_97AFkMN7EeWpYp0WmASFoQ">
