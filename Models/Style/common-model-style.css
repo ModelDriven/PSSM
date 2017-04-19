@@ -4,7 +4,7 @@
 	fontName: Arial;
 	elementIcon:false;
 	gradient:none;
-	fontHeight: 7;
+	fontHeight: 9;
 }
 
 /* Structure related style */
@@ -54,7 +54,6 @@ Operation{
 	parametersmultiplicity,
 	parameterstype,
 	visibility;
-	fontName: Arial;
 }
 
 Constraint{
